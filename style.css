@@ -23,6 +23,9 @@ sidebar{
 footer{
     float: left;   
 }
+container{
+ width: 100%;   
+}
 /*--------NAVBAR--------*/
 ul.navbar {
     list-style-type: none;
