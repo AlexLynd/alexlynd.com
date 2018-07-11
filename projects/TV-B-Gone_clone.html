@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>TV-B-Gone Clone</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type= "text/css" href="../style.css">
+		
+
+	</head>
+	<body>
+		<header>
+			<div class= "title">
+				<div class= "container">
+					<img src= "../images/schematics/TV-B-Gone_clone.svg">
+					<div class="centered"><h1>TV-B-Gone Clone</h1></div>	
+				</div>					
+			</div>
+			<div class= "navbar">
+				<div class= "left">
+					<a href="../index.html">Home</a>
+		    		<a href="../projects.html">Projects</a>
+		  			<a href="../resources.html">Resources</a>
+		 			<a href="../guides.html">Guides</a> 
+				</div>
+				<div class= "right">
+				 	<a href= "#nothing_yet" target="_blank" class="fa fa-youtube"></a>
+					<a href= "https://instagram.com/Alex_Lynd/" target="_blank" class="fa fa-instagram"></a>
+					<a href= "https://twitter.com/AlexLynd/" target="_blank" class="fa fa-twitter"></a>
+					<a href= "https://github.com/AlexLynd/" target="_blank" class="fa fa-github"></a>
+				</div>
+			</div>	
+		
+		</header>
+	
+		<div class="main">		
+			<p>
+			Quite a while back I bought myself the <a href="https://www.adafruit.com/product/73" target= "_blank">Adafruit TV-B-Gone kit</a>, which can turn off a whole range of TV brands, at the press of a button.  
+			Unfortunately, my soldering skills were not on point at that time, and I forget what had happened then, but it did not function.  I removed the ATTINY,
+			which still had the code flashed to it, and so, I set out to create my own TV-B-Gone clone, with a few modifications.
+			</p> </br>
+			<center><iframe width="560" height="315" src="https://www.youtube.com/embed/"></iframe></center></br>
+			<h3>Overview:</h3>
+			<p>The TV-B-Gone is intended to be a universal "turn off remote" that can be used to shut off TVs.  TV remotes generally use IR LEDs to produce certain
+			wavelengths in the IR spectrum of light, which the TV picks up and decodes as various instructions, such as turning volume up.  The "light" produced by
+			IR is not visible to human eyes.  Basically, the TV-B-GONE has a list of all the turn off codes for multiple TV brands, and will brute force test all of
+			them until the TV is turned off.  I made no change to the code, but replaced various hardware.  For example, I wanted something lightweight, so instead
+			of the bulky battery pack, I added a rechargeable Li-Po battery with a charging circuit, and swapped out some trivial things like transistor models. 
+			However, I did make a model with the battery pack, which I gave to a friend.</p>
+			<hr/>
+			<h3>Tools:</h3>
+			<ul>
+				<li>Soldering Iron</li>
+				<li>Solder Paste/Flux *</li>
+				<li>Solder</li>
+				<li>Third Hand Tool *</li>
+			</ul>
+			<p class="tiny">* Not required</p>
+			<h3>Materials:</h3>
+			<ul>
+				<li>Attiny85/Socket</li>
+				<li>Perf. board</li>
+				<li>Capacitors: .1uf, 100uf</li>
+				<li>Resistors: 10k, 1k</li>
+				<li>IR LEDs</li>
+				<li>Push button</li>
+				<li>Battery Pack</li>
+				<li>LED</li>
+				<li>Transistors: NPN, PNP</li>
+			</ul>
+			
+			<h3>Project Log:</h3>
+			<p>Initially I drew a schematic of the circuitry, based off this one <a href="">provided by Adafruit</a>.</p>
+			<p>I scaled my perf board down to the size of the battery pack, by tracing it first, etching into those lines, and snapping off the edges.</p>
+			<p>I then marked up the perf. board with a Sharpie to layout the components, and drew the solder traces to make sure there was no interference.</p>
+			<p>After, I got to soldering.  I first placed the DIP-8 socket down.</p>
+			<p></p>
+			<h3>Pictures:</h3>
+	  	</div>
+  	</body>	
+</html>
