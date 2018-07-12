@@ -6,28 +6,7 @@
 		<link rel="stylesheet" type= "text/css" href="../style.css">
 	</head>
 	<body>
-		<header>
-			<div class= "title">
-				<div class= "container">
-					<img src= "../images/rpi_with_sd.jpg" alt= "rpi" >
-					<div class="centered"><h1>How to Put a Raspberry Pi OS on SD card</h1></div>
-				</div>					
-			</div>
-			<div class= "navbar">
-				<div class= "left">
-					<a href="../index.html">Home</a>
-		    		<a href="../projects.html">Projects</a>
-		  			<a href="../resources.html">Resources</a>
-		 			<a href="../guides.html">Guides</a> 
-				</div>
-				<div class= "right">
-				 	<a href= "#nothing_yet" target="_blank" class="fa fa-youtube"></a>
-					<a href= "https://instagram.com/Alex_Lynd/" target="_blank" class="fa fa-instagram"></a>
-					<a href= "https://twitter.com/AlexLynd/" target="_blank" class="fa fa-twitter"></a>
-					<a href= "https://github.com/AlexLynd/" target="_blank" class="fa fa-github"></a>
-				</div>
-			</div>	
-		</header>
+		<?php include "header.php"; ?>
 	
 		<div class="main">		
 			<hr/><p>This guide will show you how to put an operating system on an SD card for your Raspberry Pi.</p><hr/>
