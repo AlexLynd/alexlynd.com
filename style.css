@@ -27,14 +27,22 @@ container{
  width: 100%;   
 }
 /*--------NAVBAR--------*/
+.sticky{
+position: -webkit-sticky;
+  position: sticky;
+  top: 0;	
+}
 ul.navbar {
     list-style-type: none;
     float: left;
     width: 100%;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+
     background-color: #111111;
+	position: -webkit-sticky;
+  	position: sticky;
+  	top: 0;	
 }
 
 li.navbar{
