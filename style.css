@@ -21,7 +21,9 @@ sidebar{
     
 }
 footer{
-    float: left;   
+    float: left;  
+	overflow: visible;
+    width: 100%;
 }
 container{
  width: 100%;   
