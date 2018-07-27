@@ -23,7 +23,7 @@ Nam ac lacus pharetra, efficitur sem at, dapibus dui. Proin iaculis sem ac lectu
         
             <p>Cats are nice, I like cats.  Cats are nice, I like cats.  Cats are nice, I like cats.  Cats are nice, I like cats.  Cats are nice, I like cats.  Cats are nice, I like cats.  Cats are nice, I like cats.  Cats are nice, I like cats.  Cats are nice, I like cats.  Cats are nice, I like cats.  Cats are nice, I like cats.  Cats are nice, I like cats.  Cats are nice, I like cats.  Cats are nice, I like cats.  Cats are nice, I like cats.  Cats are nice, I like cats.  Cats are nice, I like cats.  Cats are nice, I like cats.  Cats are nice, I like cats.  Cats are nice, I like cats.  Cats are nice, I like cats.  Cats are nice, I like cats.  Cats are nice, I like cats.  Cats are nice, I like cats.  Cats are nice, I like cats.  Cats are nice, I like cats.  Cats are nice, I like cats.  Cats are nice, I like cats.  Cats are nice, I like cats.  Cats are nice, I like cats.  Cats are nice, I like cats.  Cats are nice, I like cats.  Cats are nice, I like cats.  Cats are nice, I like cats.  Cats are nice, I like cats.  Cats are nice, I like cats.  Cats are nice, I like cats.  Cats are nice, I like cats.  </p>
 		</main>
-		<?php include "footer.php" ?>
+		
     </body>	
 			
 </html>
