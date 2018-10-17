@@ -1,10 +1,15 @@
+/*
+Color scheme:
+Dark:  #1c1c1c #111111
+Light: #cccccc #f2f2f2
+
+*/
 body { 
     color: #cccccc;
     background-color: #1c1c1c; 
-    font-family:"Yu Gothic", Monospace; 
+    font-family:"Segoe UI", Monospace; 
     margin: 0 auto;
 }
-
 header {
 	float: left;
    	overflow: visible;
@@ -12,44 +17,46 @@ header {
 }
 main{
     float: left;
-    width: 40%;
-    padding-left: 10%;
+    width: 70%;
+	padding: 2% 5% 0 5%;
 }
 sidebar{
     float: left;
-    width: 50%;
-    
+    width: 15%;
+	padding: 2% 5% 0 0;
 }
 footer{
-    float: left;   
+	background-color: #111111;
+    float: left; 
+	width: 90%;
+	padding: 0 5% 0 5%;
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
-container{
- width: 100%;   
-}
+a {color: #cccccc;}
 /*--------NAVBAR--------*/
 ul.navbar {
+	;
     list-style-type: none;
     float: left;
     width: 100%;
     margin: 0;
-    padding: 0;
+	padding: 0;
     overflow: hidden;
     background-color: #111111;
 }
 
-li.navbar{
-    float: left;
-}
-
-li.navbar a {
+.navbar a {
+	float: left;
     display: block;
     color: #f2f2f2;
     text-align: center;
     padding: 14px 14px;
     text-decoration: none;
 }
-
-li.navbar a:hover{
+.navbar a:hover{
     color: #111111;
     background-color: #f2f2f2;
 }
@@ -62,10 +69,6 @@ a.fa {
 	font-size: 26px;
 	color: #f2f2f2;
     text-decoration: none;
-}
-a.fa:hover{
-	background-color: #f2f2f2;
-    color: #111111;
 }
 /*----------------------*/
 .titleimg {
@@ -87,44 +90,4 @@ a.fa:hover{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%)
-}
-
-
-
-
-
-
-
-
-/*----------IMGHOLD----------*/		
-	
-.imghold{
-	text-align: center;
-}
-.imghold img{
-	padding: 20px;
-	width:250px;
-	height:250px;
-}	
-
-.imghold img:hover{
-	opacity:.5;
 }		
-/*----------MAIN----------*/		
-div.main{
-	margin-top: 410px;
-	float: left;
-	margin-left: 10%;
-	margin-right: 10%;	
-}	
-
-div.main h2 {
-	text-align: center;
-}
-div.main a{
-	text-decoration: underline;
-	color: #cccccc;	
-}
-div.main a:hover{
-	opacity: .5;
-}
