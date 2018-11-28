@@ -2,7 +2,7 @@
 Color scheme:
 Dark:  #1c1c1c #111111
 Light: #cccccc #f2f2f2
-
+Auxilary: #197278
 */
 body { 
     color: #cccccc;
@@ -20,6 +20,11 @@ main{
     width: 70%;
 	padding: 2% 5% 0 5%;
 }
+main.special{
+	width: 90%;
+	float:left;
+	padding: 2% 5% 0 5%;
+}
 sidebar{
     float: left;
     width: 15%;
@@ -30,10 +35,10 @@ footer{
     float: left; 
 	width: 90%;
 	padding: 0 5% 0 5%;
-  height: 100px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
+  	height: 100px;
+  	position: absolute;
+  	bottom: 0;
+  	left: 0;
 }
 a {color: #cccccc;}
 /*--------NAVBAR--------*/
@@ -91,3 +96,57 @@ a.fa {
     left: 50%;
     transform: translate(-50%, -50%)
 }		
+sidebar h4{
+	color: #197278;  
+}
+sidebar p{
+	margin-left: 20px;
+}
+sidebar p:hover{
+	text-decoration: underline;
+}
+sidebar a{
+	text-decoration: none;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+	box-sizing: border-box;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 33.33%; /* IE10 */
+    flex: 33.33%;
+    max-width: 33.33%;
+    padding: 0 10px;
+	box-sizing: border-box;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+	box-sizing: border-box;
+	width:100%
+}
+.column img:hover{
+	opacity: .4;
+}
+.column h3{
+	color: #197278;
+	text-overflow: ellipsis;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+	.column {
+		-ms-flex: 50%;
+    	flex: 50%;
+    	max-width: 50%;
+	  	box-sizing: border-box;
+  	}
+}
