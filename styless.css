@@ -4,33 +4,10 @@ Dark:  #1c1c1c #111111
 Light: #cccccc #f2f2f2
 Auxilary: #197278
 */
-.type{
-	animation: type 1s steps(10), blink .5s step-end infinite alternate;
-	overflow: hidden;
-	white-space: nowrap;
-	font-family: 'Space Mono';font-size: 100px;
-	border-right: 4px solid white;
-	width: 10ch;
-	color: white;
-}
-@keyframes type{
-	0%{ width: 0ch; }
-	100%{ width: 10ch; }
-}
-@keyframes blink {
-  50% {
-    border-color: transparent;
-  }
-}
-@-webkit-keyframes blink {
-  50% {
-    border-color: tranparent;
-  }
-}
 body { 
     color: #cccccc;
     background-color: #1c1c1c; 
-    font-family: 'Work Sans';font-size: 22px;
+    font-family: 'Work Sans';font-size: 16px;
     margin: 0 auto;
 }
 header {
@@ -40,7 +17,7 @@ header {
 }
 main{
     float: left;
-    width: 50%;
+    width: 70%;
 	padding: 2% 5% 0 5%;
 }
 main.special{
@@ -50,7 +27,7 @@ main.special{
 }
 sidebar{
     float: left;
-    width: 35%;
+    width: 15%;
 	padding: 2% 5% 0 0;
 }
 footer{
@@ -65,60 +42,36 @@ footer{
 }
 a {color: #cccccc;}
 /*--------NAVBAR--------*/
-.navbar {
-  overflow: hidden;
+ul.navbar {
+	;
+    list-style-type: none;
+    float: left;
+    width: 100%;
+    margin: 0;
+	padding: 0;
+    overflow: hidden;
+    background-color: #111111;
 }
+
 .navbar a {
-  float: left;
-  font-size: 16px;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+	float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 14px;
+    text-decoration: none;
+}
+.navbar a:hover{
+    color: #111111;
+    background-color: #f2f2f2;
 }
 
-.dropdown {
-  float: left; /*here*/
-  overflow: hidden;
-}
-
-.dropdown .dropbtn {
-  font-size: 16px;  
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
-}
-
-.navbar a:hover, .dropdown:hover .dropbtn {
-	text-decoration: underline;
-}
-.dropdown-content {
-  display: none;
-  position: absolute;
-  color: green;
-  min-width: 120px;
-  
-  z-index: 1;
-}
-.dropdown-content a {
-  float: none;
-  padding: 5px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: right;
-}
-.dropdown-content a:hover {
-  
-}
-.dropdown:hover .dropdown-content {
-  display: block;
+li.navbar a.active {
+    color: #111111;
+    background-color: #f2f2f2;
 }
 a.fa {
-	font-size: 22px;
+	font-size: 26px;
 	color: #f2f2f2;
     text-decoration: none;
 }
