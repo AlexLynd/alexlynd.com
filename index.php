@@ -9,21 +9,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Work Sans" rel="stylesheet">
 	</head>
 	<body>
-		<div class="navbar">
-		  <a href="index.html" style="margin-left: 50px;">Home</a>
-		  <a href="projects.html">Projects</a>
-		  <a href= "about.html">About</a>	
-		  <div class="dropdown" style="float:right; margin-right: 50px;">
-			<button class="dropbtn">Dropdown 
-			  <i class="fa fa-caret-down"></i>
-			</button>
-			<div class="dropdown-content">
-			  <a href="https://github.com/alexlynd/website_source">Github</a>
-			  <a href="https://twitter.com/alexlynd">Twitter</a>
-			  <a href="https://instagram.com/alex_lynd">Instagram</a>
-			</div>
-		  </div> 
-		</div>
+			<?php include "navbar.html";?>	
 		<main>
 		<h1 class="type">Alex Lynd</h1>
 		<p>Welcome to my website!  This is my personal page where you can find my project portfolio, my story, and resources and tutorials on various things including programming, hacking and more.  This page is curently under development and you can view the source <a href= "https://github.com/alexlynd/alexlynd.com_source">here</a>.</p>
