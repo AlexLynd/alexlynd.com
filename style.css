@@ -100,7 +100,7 @@ a {color: #cccccc;}
   display: none;
   position: absolute;
   color: green;
-  min-width: 120px;
+  min-width: 140px;
   
   z-index: 1;
 }
