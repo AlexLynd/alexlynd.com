@@ -9,7 +9,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Work Sans" rel="stylesheet">
 	</head>
 	<body>
-			<?php include "navbar.html";?>	
+		<?php include "navbar.html";?>	
 		<main>
 		<h1 class="type">Alex Lynd</h1>
 		<p>Welcome to my website!  This is my personal page where you can find my project portfolio, my story, and resources and tutorials on various things including programming, hacking and more.  This page is curently under development and you can view the source <a href= "https://github.com/alexlynd/alexlynd.com_source">here</a>.</p>
