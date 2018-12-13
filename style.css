@@ -99,9 +99,7 @@ a {color: #cccccc;}
 .dropdown-content {
   display: none;
   position: absolute;
-  color: green;
   min-width: 140px;
-  
   z-index: 1;
 }
 .dropdown-content a {
