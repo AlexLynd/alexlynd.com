@@ -11,7 +11,7 @@
 	<body>
 		<?php include "navbar.html";?>	
 		<main>
-			<h4 class="type">Portfolio</h4>
+			<h1 class="type">Portfolio</h1>
 		<p>My project portfolio.</p>
 		</main>
 		<sidebar>
