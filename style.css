@@ -109,9 +109,7 @@ a {color: #cccccc;}
   display: block;
   text-align: right;
 }
-.dropdown-content a:hover {
-  
-}
+
 .dropdown:hover .dropdown-content {
   display: block;
 }
@@ -153,7 +151,6 @@ sidebar p:hover{
 sidebar a{
 	text-decoration: none;
 }
-
 .row {
   display: -ms-flexbox; /* IE10 */
     display: flex;
