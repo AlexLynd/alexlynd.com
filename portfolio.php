@@ -11,8 +11,8 @@
 	<body>
 		<?php include "navbar.html";?>	
 		<main>
-		<h1 class="type">Alex Lynd</h1>
-		<p>Welcome to my website!  This is my personal page where you can find my project portfolio, my story, and resources and tutorials on various things including programming, hacking and more.  This page is curently under development and you can view the source <a href= "https://github.com/alexlynd/alexlynd.com_source">here</a>.</p>
+		<h4 class="type">Portfolio</h1>
+		<p>My project portfolio.</p>
 		</main>
 		<sidebar>
 			<!--img src="IMG_3058.JPG" style="width: 400px" -->
