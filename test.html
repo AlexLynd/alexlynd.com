@@ -3,33 +3,61 @@
 <head>
   <meta charset="UTF-8">
   <title>Typed.js - Type your heart out</title>
-  <script src="typed/lib/typed.js" type="text/javascript"></script>
+  		<link rel="stylesheet" type= "text/css" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Space Mono" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Work Sans" rel="stylesheet">
+		<script src="typed.js" type="text/javascript"></script>
 </head>
 	<script>
 		document.addEventListener('DOMContentLoaded',function() {
 		var typed = new Typed('#typed', {
-    strings: ['npm install^1000\n `installing components...` ^1000\n `Fetching from source...`'],
-    typeSpeed: 40,
-    backSpeed: 0,
-    loop: true
+		strings: ['<b>Alex Lynd&nbsp;</b>'],
+		typeSpeed: 10,
+		backSpeed: 0,
+		loop: false
   });
 	var typed2 = new Typed('#typed2', {
-    strings: ['My strings are: <i>strings</i>; with', 'My strings are: &lt;strong&gt;HTML&lt;/strong&gt;', 'My strings are: Chars &amp;times; &amp;copy;'],
-    typeSpeed: 0,
-    backSpeed: 0,
-    smartBackspace: true,
-    loop: true
+		strings: ['^500Welcome to my website!  This is my personal page where you can find my project portfolio, my story, and resources and tutorials on various things including programming, hacking and more.  This page is curently under development and you can view the source <a href= "https://github.com/alexlynd/alexlynd.com_source">here</a>.'],
+		typeSpeed: 0,
+		backSpeed: 0,
+		smartBackspace: true,
+		loop: false
   });
 		});
 	</script>
 <body>
-<div class="wrap">	
-  <div class="type-wrap">
-    <span id="typed" style="white-space:pre;"></span>
-  </div>
-  <div class="type-wrap">
-    <span id="typed2"></span>
-  </div>
+	<div class="navbar">
+	<a href="index.php" style="margin-left: 50px;">Home</a>
+	<a href="projects.php">Projects</a>
+	<a href= "about.php">About</a>
+	<a href="portfolio.php">Portfolio</a>
+	<div class="dropdown" style="float:right; margin-right: 50px;">
+		<button class="dropbtn">Social Media 
+			<i class="fa fa-caret-down"></i>
+		</button>
+		<div class="dropdown-content">
+			<a href="https://github.com/alexlynd/website_source">Github</a>
+			<a href="https://twitter.com/alexlynd">Twitter</a>
+			<a href="https://instagram.com/alex_lynd">Instagram</a>
+		</div>
+	</div> 
+	<div class="dropdown" style="float:right;">
+		<button class="dropbtn">Support me
+			<i class="fa fa-caret-down"></i>
+		</button>
+		<div class="dropdown-content" style="width:130px;">
+			<a href="https://www.buymeacoffee.com/9fWMXZsTB">Buy me a Coffee</a>
+			<a href="https://patreon.com/alexlynd">Patreon</a>
+		</div>
+	</div> 
 </div>
+	<main>
+		<titlewrap>
+			 <span id="typed" style="white-space:pre;"></span>
+		</titlewrap>
+   <p></p>
+    <span id="typed2"></span>
+	</main>
 </body>
 </html>
