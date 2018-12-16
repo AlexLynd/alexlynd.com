@@ -4,34 +4,16 @@ Dark:  #1c1c1c #111111
 Light: #cccccc #f2f2f2
 Auxilary: #197278
 */
-.type{
-	animation: type 1s steps(10), blink .5s step-end infinite alternate;
-	overflow: hidden;
-	white-space: nowrap;
-	font-family: 'Space Mono';font-size: 100px;
-	border-right: 4px solid white;
-	width: 10ch;
-	color: white;
-}
-@keyframes type{
-	0%{ width: 0ch; }
-	100%{ width: 10ch; }
-}
-@keyframes blink {
-  50% {
-    border-color: transparent;
-  }
-}
-@-webkit-keyframes blink {
-  50% {
-    border-color: tranparent;
-  }
-}
 body { 
     color: #cccccc;
     background-color: #1c1c1c; 
     font-family: 'Work Sans';font-size: 22px;
     margin: 0 auto;
+}
+titlewrap{
+	font-size: 100px;
+	color: white;
+	font-family: 'Space Mono';font-size: 100px;
 }
 header {
 	float: left;
