@@ -11,26 +11,27 @@
 	</head>
 	<body>
 		<script>
-			document.addEventListener('DOMContentLoaded',function() {
-				var typed = new Typed('#typed', {
-					strings: ['npm install^1000\n `installing components...` ^1000\n `Fetching from source...`'],
-					typeSpeed: 40,
-					backSpeed: 0,
-					loop: true
-				});
-				var typed2 = new Typed('#typed2', {
-					strings: ['My strings are: <i>strings</i>; with', 'My strings are: &lt;strong&gt;HTML&lt;/strong&gt;', 'My strings are: Chars &amp;times; &amp;copy;'],
-					typeSpeed: 0,
-					backSpeed: 0,
-					smartBackspace: true,
-					loop: true
-				});
-			});
+		document.addEventListener('DOMContentLoaded',function() {
+			var typed = new Typed('#typed', {
+				strings: ['<b>Alex Lynd&nbsp;</b>'],
+				typeSpeed: 10,
+				backSpeed: 0,
+				loop: false
+	  		});
+			var typed2 = new Typed('#typed2', {
+				strings: ['^500Welcome to my website!  This is my personal page where you can find my project portfolio, my story, and resources and tutorials on various things including programming, hacking and more.  This page is curently under development and you can view the source <a href= "https://github.com/alexlynd/alexlynd.com_source">here</a>.'],
+				typeSpeed: 0,
+				backSpeed: 0,
+				smartBackspace: true,
+				showCursor: false,
+				loop: false
+		  	});
+		});
 	</script>
 		<?php include "navbar.html";?>	
 		<main>
-		<h1 class="type">Alex Lynd</h1>
-		<p>Welcome to my website!  This is my personal page where you can find my project portfolio, my story, and resources and tutorials on various things including programming, hacking and more.  This page is curently under development and you can view the source <a href= "https://github.com/alexlynd/alexlynd.com_source">here</a>.</p>
+			<titlewrap> <span id="typed" style="white-space:pre;"></span> </titlewrap>
+			<p></p> <span id="typed2"></span>
 		</main>
 		<sidebar>
 			<!--img src="IMG_3058.JPG" style="width: 400px" -->
