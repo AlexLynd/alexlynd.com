@@ -13,14 +13,13 @@
 		<script>
 			document.addEventListener('DOMContentLoaded',function() {
 				var typed = new Typed('#typed', {
-					strings: ['<b>About me&nbsp;</b>', 'About this website&nbsp'],
+					strings: ['<b>About&nbsp;</b>'],
 					typeSpeed: 10,
 					backSpeed: 0,
-					smartBackspace: true,
 					loop: false
 				});
 				var typed2 = new Typed('#typed2', {
-					strings: ['^500About this website.'],
+					strings: ['^500About this website and me.'],
 					typeSpeed: 0,
 					backSpeed: 0,
 					smartBackspace: true,
