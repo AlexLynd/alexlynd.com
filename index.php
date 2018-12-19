@@ -32,6 +32,7 @@
 		<main>
 			<titlewrap> <span id="typed" style="white-space:pre;"></span> </titlewrap>
 			<p></p> <span id="typed2"></span>
+			<div class="arrow bounce"></div>
 		</main>
 	</body>
 </html>

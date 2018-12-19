@@ -3,6 +3,7 @@ Color scheme:
 Dark:  #1c1c1c #111111
 Light: #cccccc #f2f2f2
 */
+@import "compass/css3";
 body { 
     color: #cccccc;
     background-color: #1c1c1c; 
@@ -176,4 +177,79 @@ sidebar a{
     	max-width: 50%;
 	  	box-sizing: border-box;
   	}
+}
+
+@-moz-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+.container {
+  height: 100vh;
+}
+.below {
+  height: 100vh;
+}
+i {
+  display: block;
+  color: #fff;
+}
+.arrow {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -20px;
+  width: 40px;
+  height: 60px; /*change with size of arrow to make sit on bottom */
+/*   background-image: url(); */
+/*   background-size: contain; */
+}
+
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
 }
