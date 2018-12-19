@@ -19,12 +19,12 @@
 					loop: false
 				});
 				var typed2 = new Typed('#typed2', {
-					strings: ['^500About this website and me.'],
+					strings: ['^500About this website.','About me.'],
 					typeSpeed: 0,
 					backSpeed: 0,
 					smartBackspace: true,
 					showCursor: false,
-					loop: false
+					loop: true
 				});
 			});
 		</script>
