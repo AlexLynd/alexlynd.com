@@ -32,7 +32,8 @@
 		<main>
 			<titlewrap> <span id="typed" style="white-space:pre;"></span> </titlewrap>
 			<p></p> <span id="typed2"></span>
+			<div class="arrow bounce"><i class="fa fa-angle-down fa-5x" aria-hidden="true"></i></div>
 		</main>
-		<div class="arrow bounce"><i class="fa fa-angle-down fa-5x" aria-hidden="true"></i></div>
+		<div class="bounce"></div>
 	</body>
 </html>
