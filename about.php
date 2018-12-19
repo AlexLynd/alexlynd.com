@@ -13,18 +13,19 @@
 		<script>
 			document.addEventListener('DOMContentLoaded',function() {
 				var typed = new Typed('#typed', {
-					strings: ['<b>About&nbsp;</b>'],
+					strings: ['<b>About me&nbsp;</b>', 'About this website&nbsp'],
 					typeSpeed: 10,
 					backSpeed: 0,
+					smartBackspace: true,
 					loop: false
 				});
 				var typed2 = new Typed('#typed2', {
-					strings: ['^500About this website.','About me.'],
+					strings: ['^500About this website.'],
 					typeSpeed: 0,
 					backSpeed: 0,
 					smartBackspace: true,
 					showCursor: false,
-					loop: true
+					loop: false
 				});
 			});
 		</script>
