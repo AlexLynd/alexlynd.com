@@ -59,6 +59,7 @@ a {color: #cccccc;}
 }
 .navbar a {
   float: left;
+  display: block; /**/
   font-size: 16px;
   color: white;
   text-align: center;
@@ -67,7 +68,7 @@ a {color: #cccccc;}
 }
 
 .dropdown {
-   /*here*/
+  float: left; /*here*/
   overflow: hidden;
 }
 
