@@ -67,7 +67,7 @@ a {color: #cccccc;}
 }
 
 .dropdown {
-  float: left; /*here*/
+   /*here*/
   overflow: hidden;
 }
 
