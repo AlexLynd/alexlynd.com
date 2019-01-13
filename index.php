@@ -7,6 +7,8 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link href="https://fonts.googleapis.com/css?family=Space Mono" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Work Sans" rel="stylesheet">
+		<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 		<script src="typed.js" type="text/javascript"></script>
 	</head>
 	<body>
@@ -28,7 +30,7 @@
 				});
 			});
 		</script>
-		<?php include "navbar.html";?>	
+		<?php include "navbar.html";?>
 		<main>
 			<titlewrap> <span id="typed" style="white-space:pre;"></span> </titlewrap>
 			<p></p> <span id="typed2"></span>

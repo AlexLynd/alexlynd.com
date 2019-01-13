@@ -1,18 +1,31 @@
-<div class="navbar">
-	<a href="index.php" style="margin-left: 50px;">Home</a>
-	<a href="projects.php">Projects</a>
-	<a href= "about.php">About</a>
-	<a href="portfolio.php">Portfolio</a>
-	<a href="tutorials.php">Tutorials</a>
-	<div class="dropdown" id= "fuck">
-		<button class="dropbtn">Social Media
-			<i class="fa fa-caret-down"></i>
-		</button>
-		<div class="dropdown-content">
-			<a href="https://github.com/alexlynd/website_source">Github</a>
-			<a href="https://twitter.com/alexlynd">Twitter</a>
-			<a href="https://instagram.com/alex_lynd">Instagram</a>
-		</div>
-	</div>
-	<a href="support.php">Support Me</a>
+<div class="topnav" id="myTopnav">
+  <a href="#home" class="active">Home</a>
+  <a href="#news">Projects</a>
+  <a href="#contact">About</a>
+	<a href="c">Portfolio</a>
+	<a href="c">Tutorials</a>
+	<a href="c">Support Me</a>
+  <div class="dropdown">
+    <button class="dropbtn">Social Media
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="https://github.com/alexlynd">Github</a>
+      <a href="https://github.com/alexlynd">Twitter</a>
+      <a href="#">Instagram</a>
+			<a href="">YouTube</a>
+    </div>
+  </div>
+  <a href="#about">About</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
 </div>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
