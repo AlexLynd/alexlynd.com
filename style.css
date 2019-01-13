@@ -95,7 +95,7 @@ a {color: #cccccc;}
   display: none;
   position: absolute;
   background-color: #f9f9f9;
-  min-width: 160px;
+  min-width: 130px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
@@ -106,7 +106,7 @@ a {color: #cccccc;}
   padding: 12px 16px;
   text-decoration: none;
   display: block;
-  text-align: left;
+  text-align: right;
 }
 
 .topnav a:hover, .dropdown:hover .dropbtn {
@@ -151,6 +151,9 @@ a {color: #cccccc;}
     display: block;
     width: 100%;
     text-align: left;
+  }
+  #right{
+    float:none;
   }
 }
 /*----------------------*/
