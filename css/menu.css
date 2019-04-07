@@ -1,0 +1,59 @@
+/*code for navbar only*/
+#fuck {
+  float: right;
+}
+.navbar {
+  overflow: hidden;
+}
+.navbar a {
+  float: left;
+  display: block; /**/
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left; /*here*/
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+	text-decoration: underline;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 140px;
+  z-index: 1;
+}
+.dropdown-content a {
+  float: none;
+  padding: 5px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: right;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+a.fa {
+	font-size: 22px;
+	color: #f2f2f2;
+    text-decoration: none;
+}
+/*----------------------*/
