@@ -28,7 +28,7 @@
 				});
 			});
 		</script>
-		<?php include "../../navbar.html";?>	
+		<?php include "../../menu.html";?>	
 		<main>
 			<titlewrap> <span id="typed" style="white-space:pre;"></span> </titlewrap>
 			<p></p> <span id="typed2"></span>
