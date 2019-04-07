@@ -1,0 +1,119 @@
+/*
+Color scheme:
+Dark:  #1c1c1c #111111
+Light: #cccccc #f2f2f2
+*/
+@import "../compass/css3";
+body {
+    color: #cccccc;
+    background-color: #1c1c1c;
+    font-family: 'Work Sans'; font-size: 20px;
+    margin: 0 auto;
+}
+/********** Header **********/
+header {
+	padding-bottom: 40px;
+}
+.title{
+	font-size: 90px;
+	color: white;
+	font-family: 'Space Mono';
+	font-weight: bold;
+	text-align: center;
+	border: none;
+	padding-bottom: 10px;
+}
+.description {
+	font-size: 26px;
+	color: white;
+	font-family: 'Space Mono';
+	font-weight: bold;
+	text-align: center;
+	padding: 10px 0 30px 0;
+}
+/******** End Header ********/
+main{
+    float: left;
+    width: 88%;
+	padding: 2% 5% 0 5%;
+}
+main.special{
+	width: 90%;
+	float:left;
+	padding: 2% 5% 0 5%;
+}
+sidebar{
+    float: left;
+    width: 35%;
+	padding: 2% 5% 0 0;
+}
+footer{
+	background-color: #111111;
+    float: left;
+	width: 90%;
+	padding: 0 5% 0 5%;
+  	height: 100px;
+  	position: absolute;
+  	bottom: 0;
+  	left: 0;
+}
+a {color: #cccccc;}
+/*--------NAVBAR--------*/
+#fuck {
+  float: right;
+}
+.navbar {
+  overflow: hidden;
+}
+.navbar a {
+  float: left;
+  display: block; /**/
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left; /*here*/
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+	text-decoration: underline;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 140px;
+  z-index: 1;
+}
+.dropdown-content a {
+  float: none;
+  padding: 5px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: right;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+a.fa {
+	font-size: 22px;
+	color: #f2f2f2;
+    text-decoration: none;
+}
+/*----------------------*/
