@@ -1,0 +1,21 @@
+RewriteEngine On
+
+RewriteCond %{DOCUMENT_ROOT}/install -d
+RewriteRule !^install/ /install/ [L,NC,R=302]
+
+RewriteRule ^(.+(?:!|\~s))$ stats.php?url=$1 [L,QSA]
+
+RewriteRule ^(.+\~[pq])$ preview_url.php?url=$1 [L,QSA]    
+
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.+?)/?$ $1.html [L]
+
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.+?)/?$ $1.php [L]
+
+RewriteCond %{REQUEST_URI} !\.(php|js|css|jpe?g|png|gif|swf|ico|xml|txt|html?)$ [NC]
+RewriteCond %{REQUEST_URI} !^/index\.(php|html)$ [NC]
+RewriteCond %{REQUEST_URI} !^/$
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule .* url_redirector.php?url=$0 [L,QSA]
