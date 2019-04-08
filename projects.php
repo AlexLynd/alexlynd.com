@@ -19,7 +19,7 @@
 					loop: false
 				});
 				var typed2 = new Typed('#typed2', {
-					strings: ['^500My personal projects.'],
+					strings: ['^500Projects and things I&#39;ve done.'],
 					typeSpeed: 0,
 					backSpeed: 0,
 					smartBackspace: true,
@@ -32,5 +32,6 @@
 		<main>
 			<titlewrap> <span id="typed" style="white-space:pre;"></span> </titlewrap>
 			<p></p> <span id="typed2"></span>
+		</main>
 	</body>
 </html>

@@ -10,30 +10,12 @@
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous"> 	
 	</head>
 	<body>
-		<?php include "../navbar.html";?>
-		<div class="navbar">
-	<a href="index.php" style="margin-left: 50px;">Home</a>
-	<a href="projects.php">Projects</a>
-	<a href= "about.php">About</a>
-	<a href="portfolio.php">Portfolio</a>
-	<a href="tutorials.php">Tutorials</a>
-	<div class="dropdown" id= "fuck">
-		<button class="dropbtn">Social Media
-			<i class="fa fa-caret-down"></i>
-		</button>
-		<div class="dropdown-content">
-			<a href="https://github.com/alexlynd/website_source">Github</a>
-			<a href="https://twitter.com/alexlynd">Twitter</a>
-			<a href="https://instagram.com/alex_lynd">Instagram</a>
-		</div>
-	</div>
-	<a href="support.php">Support Me</a>
-</div>
+		<?php include "../menu_low.html";?>
 		<header>
 			<div class= "title">Straight Outta Compost</div>
 			<div class= "description">TI-Codes 2019 | A smart compost system with TI tech | <i class="fas fa-link"></i> <i class="fab fa-github-alt"></i>
 				<i class="fab fa-youtube"></i></div>
-			<center> <iframe width="900" height="385" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe></center>
+			<!--center> <iframe width="900" height="385" src=""></iframe></center-->
 		</header>
 		<main>
 
