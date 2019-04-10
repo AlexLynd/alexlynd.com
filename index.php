@@ -1,3 +1,4 @@
+<!-- MAIN -->
 <!doctype html>
 <html lang= "en-US">
 	<head>
@@ -29,14 +30,29 @@
 					showCursor: false,
 					loop: false
 				});
+				var typed3 = new Typed('#typed3', {
+					strings: ['^3500<a href="https://github.com/alexlynd" target="_blank"><i class="fab fa-github-alt"></i></a><i class="fab fa-youtube"></i><a href= "https://instagram.com/alex_lynd" target="_blank"><i class="fab fa-instagram"></i></a><a href= "https://twitter.com/alexlynd" target="_blank"><i class="fab fa-twitter"></i></a><i class="fab fa-patreon"></i>'],
+					typeSpeed: 0,
+					backSpeed: 0,
+					smartBackspace: true,
+					showCursor: false,
+					loop: false
+				});
 			});
 		</script>
 		<?php include "menu.html";?>
+		<div id="particles-js"></div>
+		<script src="particles.js"></script>
+		<script src="app.js"></script>
+		<div class= "text">
 		<main>
-			<titlewrap> <span id="typed" style="white-space:pre;"></span> </titlewrap>
-			<p></p> <span id="typed2"></span>
-			<i class="fab fa-github-alt"></i>
-				<i class="fab fa-youtube"></i>
+			
+				<titlewrap> <span id="typed" style="white-space:pre;"></span> </titlewrap>
+				<p></p> <span id="typed2"></span> <p></p>
+				<div class="iconwrap"><span id="typed3"></span></iconwrap>
+				</div>
+			
 		</main>
+		</div>
 	</body>
 </html>
