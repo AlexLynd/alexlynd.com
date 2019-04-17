@@ -160,3 +160,9 @@ canvas {
 	position: absolute;
 	background-color: "#111111";
 }
+@media screen and (max-width: 800px) {
+  main{
+     width: 90%;
+	padding: 2% 5% 0 5%; 
+  }
+}
