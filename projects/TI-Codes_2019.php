@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>TI-Codes 2019</title>
-		<link rel="stylesheet" type= "text/css" href="../css/projects.css">
+		<link rel="stylesheet" type= "text/css" href="../css/post.css">
 		<link rel="stylesheet" type= "text/css" href="../css/menu.css">
 		<link href="https://fonts.googleapis.com/css?family=Space Mono" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Work Sans" rel="stylesheet">
