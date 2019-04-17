@@ -1,0 +1,127 @@
+/*
+Color scheme:
+Dark:  #1c1c1c #111111
+Light: #cccccc #f2f2f2
+*/
+@import "../compass/css3";
+body {
+	vertical-align:baseline;
+    color: #cccccc;
+    background-color: #1c1c1c;
+    font-family: 'Work Sans'; font-size: 20px;
+    margin: 0 auto;
+}
+/********** Header **********/
+header {
+	padding-bottom: 40px;
+	overflow: visible; 
+	width: 100%;
+}
+.title{
+	font-size: 90px;
+	color: white;
+	font-family: 'Space Mono';
+	font-weight: bold;
+	text-align: center;
+	border: none;
+	padding-bottom: 10px;
+}
+.description {
+	font-size: 26px;
+	color: white;
+	font-family: 'Space Mono';
+	font-weight: bold;
+	text-align: center;
+	padding: 10px 0 30px 0;
+	word-wrap: break-word;
+}
+/******** End Header ********/
+main {
+    float: left;
+    width: 90%;
+	position: absolute;
+	padding: 0 5%;
+}
+sidebar{
+    float: left;
+    width: 25%;
+	padding: 5% 5% 0 0;
+}
+a {color: #cccccc;}
+/********** Containment **********/
+.container { 
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    align-content: center;
+	width: 100%;
+	background: green;
+	position: relative;
+}	
+.post {
+	text-align: center;
+	border: medium solid #f2f2f2;
+	margin: 3%; 	
+	background: rgba(17, 17, 17, 0.7);
+	height: 40%;
+	position: relative;
+}
+.post img{
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+.element {
+    -ms-flex: 33.33%;
+    flex: 33.33%;
+    max-width: 33.33%;
+	background: blue;
+}
+.element p{
+	text-overflow: ellipsis;
+}
+@media screen and (max-width: 1000px) {
+  .element {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+    margin: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .element {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+    margin: none;
+  }
+  .title {
+      font-size: 15vw;
+  }
+  .description {
+      
+  }
+}
+
+.imgfill {
+  object-fit: cover;
+  width: 100%;
+ }
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+/****** End Containment ******/
+#particles-js{
+  position:fixed;
+  width: 100%;
+  height: 100%;
+  background-color: "#111111";
+}
+.text {
+	width: 100%;
+    height: 100%;
+	position: absolute;
+	background-color: "#111111";
+}	
