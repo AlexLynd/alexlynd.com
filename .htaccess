@@ -1,5 +1,5 @@
 RewriteEngine On
-
+ErrorDocument 404 /404.html
 RewriteCond %{DOCUMENT_ROOT}/install -d
 RewriteRule !^install/ /install/ [L,NC,R=302]
 
