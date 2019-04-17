@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
-<file name="main.css" server="files.000webhost.com" local="131990888342731617" remote="131992322400000000" Dst="2" />
 <file name="projects.css" server="files.000webhost.com" local="131991365114773017" remote="131992319400000000" Dst="2" />
 <file name="menu.css" server="files.000webhost.com" local="131990847834306675" remote="131992319400000000" Dst="2" />
-<file name="main.css" server="files.000webhost.com/public_html/" local="131993373370746385" remote="131993743800000000" Dst="2" />
 <file name="menu.css" server="files.000webhost.com/public_html/" local="131992092139887487" remote="131993743800000000" Dst="2" />
-<file name="projects.css" server="files.000webhost.com/public_html/" local="131991365114773017" remote="131993743800000000" Dst="2" />
+<file name="home.css" server="files.000webhost.com/public_html/" local="131998709400000000" remote="131998709400000000" Dst="2" />
+<file name="post.css" server="files.000webhost.com/public_html/" local="131999973842876389" remote="132000225600000000" Dst="2" />
+<file name="portfolio.css" server="files.000webhost.com/public_html/" local="131999603884459393" remote="132000247200000000" Dst="2" />
+<file name="projects.css" server="files.000webhost.com/public_html/" local="132000000732111096" remote="132000256800000000" Dst="2" />
 </dwsync>
