@@ -3,6 +3,8 @@ Color scheme:
 Dark:  #1c1c1c #111111
 Light: #cccccc #f2f2f2
 */
+@import url('https://fonts.googleapis.com/css?family=Work+Sans');
+@import url('https://fonts.googleapis.com/css?family=Space Mono');
 @import "../compass/css3";
 body {
 	vertical-align:baseline;

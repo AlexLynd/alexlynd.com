@@ -2,9 +2,11 @@
 <html lang= "en-US">
 	<head>
 		<meta charset="utf-8">
-		<title>AuditPi</title>
+		<title>AuditPi 1.0</title>
 		<link rel="stylesheet" type= "text/css" href="../../css/post.css">
 		<link rel="stylesheet" type= "text/css" href="../../css/menu.css">
+		<link href="https://fonts.googleapis.com/css?family=Space Mono" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Work Sans" rel="stylesheet">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous"> 	
 	</head>
 	<body>
@@ -22,17 +24,9 @@
 			<center><p>This page contains current documentation for the AuditPi project.  Check project blogs above for archived logs.</p></center>
 		</header>
 		<main>
-			<h3>Description</h3>
-			<p>coming soon</p>
-			<h3>Parts List</h3>
-			<h3>Specs/Features</h3>
-			<ul>
-				<li>3.5" TFT</li>
-				<li>1/4" thread for tripod mount</li>
-				
-			</ul>
-			
-			
+			 <h3>Description</h3>
+			<p>AuditPi is a handheld </p>
+			<h3>Material</h3>
 		</main>
 		<sidebar>
 			<h3>Gallery</h3> <br>

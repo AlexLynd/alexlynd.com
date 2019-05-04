@@ -5,8 +5,6 @@
 		<title>TI-Codes 2019</title>
 		<link rel="stylesheet" type= "text/css" href="../css/post.css">
 		<link rel="stylesheet" type= "text/css" href="../css/menu.css">
-		<link href="https://fonts.googleapis.com/css?family=Space Mono" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Work Sans" rel="stylesheet">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous"> 	
 		
 	</head>
@@ -15,7 +13,7 @@
 		<script src="../js/particles.js"></script>
 		<script src="../home.js"></script>
 		<div class="text">
-		<?php include "../menu_low.html";?>
+		<?php include "../menu.html";?>
 		<header>
 			<div class= "title">Straight Outta Compost</div>
 			<div class= "description">TI-Codes 2019 | A smart compost system with TI tech | <i class="fas fa-link"></i> <i class="fab fa-github-alt"></i>
@@ -77,14 +75,9 @@
 		</main>
 		<sidebar>
 			<h3>Gallery</h3>
-			<div class= "gallery">
-				<div class= "headimage">
-					<img src="TI-Codes/schematic_TI-Codes_2019.png">
-				</div>
-			</div>
 			<br>
 			<h3>Team</h3>
-			<p>Alex Lynd<br>CarinaTI-Codes/schematic_TI-Codes_2019.png Bachmann<br>Ian Shin<br>Robin Gan<br>Simon Kim</p>
+			<p>Alex Lynd<br>Carina Bachmann<br>Ian Shin<br>Robin Gan<br>Simon Kim</p>
 			<h3>Files</h3>
 			<p><a href= "TI-Codes/schematic_TI-Codes_2019.png" download>Schematic diagram</a></p>
 			<p><a href= "TI-Codes/submission_TI-Codes_2019.pdf" download>Submission form</a></p>
