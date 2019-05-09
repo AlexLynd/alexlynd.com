@@ -8,17 +8,13 @@
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous"> 	
 	</head>
 	<body>
-		<div id="particles-js"></div>
-		<script src="../../js/particles.js"></script>
-		<script src="../../home.js"></script>
-		<div class="text">
 			<?php include "../../menu.html";?>
 		<header>
 			<div class= "title">AuditPi 1.0</div>
 			<div class= "description">A Modular Handheld Raspberry Pi PDA <i class="fas fa-link"></i> <i class="fab fa-github-alt"></i> <i class="fab fa-youtube"></i>
 			</div>
 			<center><iframe width="704" height="396" src="https://www.youtube.com/embed/--w1xGTmC7Y"></iframe></center>
-			<center><p>Projects Blogs / Archive: <a href="1.0.php">V1.0</a></p></center> <br>
+			<center><p>Projects Blogs / Archive: <a href="1.0">V1.0</a></p></center> <br>
 			<center><p>This page contains current documentation for the AuditPi project.  Check project blogs above for archived logs.</p></center>
 		</header>
 		<main>
@@ -29,10 +25,7 @@
 			<ul>
 				<li>3.5" TFT</li>
 				<li>1/4" thread for tripod mount</li>
-				
-			</ul>
-			
-			
+			</ul>	
 		</main>
 		<sidebar>
 			<h3>Gallery</h3> <br>
@@ -43,6 +36,5 @@
 			<h3>Links</h3>
 			<p></p>
 		</sidebar>
-		</div>
 	</body>
 </html>
