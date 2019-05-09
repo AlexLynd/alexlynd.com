@@ -12,14 +12,14 @@ particlesJS('particles-js',
         "value": "#ffffff"
       },
       "shape": {
-        "type": "circle",
+        "type": "lon",
         "stroke": {
           "width": 0,
           "color": "#000000"
         },
-        "polygon": {
-          "nb_sides": 5
-        },
+		  "polygon": {
+     "nb_sides": 5
+  },
         "image": {
           "src": "img/github.svg",
           "width": 100,
@@ -51,7 +51,7 @@ particlesJS('particles-js',
         "distance": 150,
         "color": "#ffffff",
         "opacity": 0.4,
-        "width": 1
+        "width": 1.5
       },
       "move": {
         "enable": true,
