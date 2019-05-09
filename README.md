@@ -4,3 +4,7 @@ Source code for my personal website.  Damn JS libs eating space.
 #### particles.js
 #### typed.js
 #### prettify.js (Google)
+### Stuff to add | ChangeLog
+- responsive menu
+- div fade in animation
+- concise
