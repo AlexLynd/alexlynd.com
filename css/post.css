@@ -3,14 +3,14 @@ Color scheme:
 Dark:  #1c1c1c #111111
 Light: #cccccc #f2f2f2
 */
-@import url('https://fonts.googleapis.com/css?family=Work+Sans');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 @import url('https://fonts.googleapis.com/css?family=Space Mono');
 @import "../compass/css3";
 body {
 	vertical-align:baseline;
     color: #cccccc;
     background-color: #1c1c1c;
-    font-family: 'Work Sans'; font-size: 20px;
+    font-family: 'Montserrat'; font-size: 20px;
     margin: 0 auto;
 }
 /********** Header **********/
@@ -118,18 +118,7 @@ h3{
 	color: white;
 	font-size: 28px;
 }
-#particles-js{
-  position:fixed;
-  width: 100%;
-  height: 100%;
-  background-color: "#111111";
-}
-.text {
-	width: 100%;
-    min-height: 100%;
-	position: absolute;
-	background-color: rgba(17, 17, 17, 0.4);
-}
+
 .gallery{
 	position: relative;
 }
