@@ -3,14 +3,14 @@ Color scheme:
 Dark:  #1c1c1c #111111
 Light: #cccccc #f2f2f2
 */
-@import url('https://fonts.googleapis.com/css?family=Work+Sans');
 @import url('https://fonts.googleapis.com/css?family=Space Mono');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 @import "../compass/css3";
 body {
 	vertical-align:baseline;
     color: #cccccc;
     background-color: #1c1c1c;
-    font-family: 'Work Sans'; font-size: 20px;
+    font-family: 'Montserrat'; font-size: 20px;
     margin: 0 auto;
 }
 /********** Header **********/
@@ -83,6 +83,9 @@ a {color: #cccccc;}
   .title {
       font-size: 15vw;
   }
+	#particles-js{
+		display: none;
+	}
 }
 .post {
 	text-align: center;
@@ -105,17 +108,24 @@ canvas {
 .cappy {
 	margin: 0 10px 30px;
 	padding-top: 10px;	
+	background: #f2f2f2;
+	border-radius: 0 0 5px 5px;
 }
 .cappy * {  
-	padding: 0;
+	padding: 5px 0;
 	margin: 0;
-	color: white;
+	color: #1c1c1c;
 	overflow:hidden;
 	text-overflow: ellipsis;
+	text-align: center;
 	white-space: nowrap;
 }
 div.cappy h1 {
-	font-size: 25px;
+	font-size: 30px;
+}
+.cappy p{
+	font-size: 15px;
+	padding-bottom: 10px;
 }
 /****** End Containment ******/
 #particles-js{
