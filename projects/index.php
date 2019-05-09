@@ -6,54 +6,37 @@
 		<meta charset="utf-8">
 		<link rel="stylesheet" type= "text/css" href="../css/portfolio.css">
 		<link rel="stylesheet" type= "text/css" href="../css/menu.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<script src="../js/typed.js" type="text/javascript"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
 	<body>
-		<script>
-		document.addEventListener('DOMContentLoaded',function() {
-				var typed = new Typed('#typed', {
-					strings: ['Projects docs and things I create. Check portfolio for competitions/resume stuff.'],
-					typeSpeed: 0,
-					backSpeed: 0,
-					smartBackspace: true,
-					showCursor: false,
-					loop: false
-				});
-			});
-		</script>
 		<div id="particles-js"></div>
 		<script src="../js/particles.js"></script>
 		<script src="../home.js"></script>
-		<div class="text">
+		<div class= "text">
 			<?php include "../menu.html";?>
+			
 			<header>
 				<div class= "title">Projects</div>
-				<center><span id="typed" style="white-space:pre;"></span></center>
+				<center><p>Project docs and things I create. Check portfolio for competitions/resume stuff.</p></center>
 			</header>
 			<main>
 				<div class="container">   
 					<div class="element">
 						<div class="post">
-							<a href= "AuditPi/index.php"><img src="AuditPi/IMG_3891.jpg"></a>
+							<a href= "AuditPi"><img src="AuditPi/IMG_3891.jpg"></a>
 						</div>
 						<div class="cappy">
-							<h1>AuditPi: A modular hackable PDA</h1>
+							<h1>AuditPi</h1>
+							<p>A modular hackable Raspberry Pi PDA</p>
 						</div>
 					</div>
 					<div class="element">
 						<div class="post">
-							<a href="CalcProbe/index.php"><img src="fug.jpg"></a>
+							<a href="CalcProbe"><img src="testttt.JPG"></a>
 						</div><div class="cappy">
-						<h1>CalcProbe: Exploiting Calculators</h1>
-						</div>
-					</div>
-					<div class="element">
-						<div class="post">
-							<img src="bar.jpg">
-						</div>
-						<div class="cappy">
-							<h1>TrashSort: AI Trash Classification</h1>
+						<h1>CalcProbe</h1>
+						<p>Exploiting 6 Function Calculators</p>
 						</div>
 					</div>
 					<div class="element">
@@ -61,7 +44,26 @@
 							<img src="fug.jpg">
 						</div>
 						<div class="cappy">
-							<h1>ESP8266 WarDriving</h1>
+							<h1>TrashSort</h1>
+							<p>AI based trash classification/sorting</p>
+						</div>
+					</div>
+					<div class="element">
+						<div class="post">
+							<img src="esp.JPG">
+						</div>
+						<div class="cappy">
+							<h1>ESP-DriveBy</h1>
+							<p>Wardriving with the ESP8266</p>
+						</div>
+					</div>
+					<div class="element">
+						<div class="post">
+							<a href= "IR-Tester"><img src="IR-Tester/img/IR-Tester.jpg"></a>
+						</div>
+						<div class="cappy">
+							<h1>IR-Tester</h1>
+							<p>Grab a quick IR value / protocol!</p>
 						</div>
 					</div>
 				</div>
