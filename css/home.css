@@ -3,14 +3,17 @@ Color scheme:
 Dark:  #1c1c1c #111111
 Light: #cccccc #f2f2f2
 */
-@import url('https://fonts.googleapis.com/css?family=Work+Sans');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 @import url('https://fonts.googleapis.com/css?family=Space Mono');
 @import "compass/css3";
+html{
+	scroll-behavior: smooth;	
+}
 body {
 	vertical-align:baseline;
     color: #cccccc;
     background-color: #1c1c1c;
-    font-family: 'Work Sans'; font-size: 22px;
+    font-family: 'Montserrat'; font-size: 22px;
     margin: 0 auto;
 }
 titlewrap {
@@ -21,6 +24,8 @@ titlewrap {
 .iconwrap{
 	font-size: 40px;
 	display:inline-block;
+	opacity: 0;
+	animation: fadeInUp 2s ease-in-out 0s forwards;
 }
 .iconwrap i {
 	color: white;
@@ -28,6 +33,23 @@ titlewrap {
 }
 .iconwrap i:hover{
 	opacity: .7;
+}
+.section1{
+    float: left;
+    width: 50%;
+	padding: 2% 5% 0 5%;
+}
+.section-wrap{
+	float: left;
+	width: 100%;
+}
+#block2{
+	background: #111111;
+	color: #cccccc;
+}
+#block3{
+	background:#cccccc;
+	color: #111111;
 }
 header {
 	float: left;
@@ -42,13 +64,7 @@ header {
 main{
 	position: absolute;
     float: left;
-    width: 50%;
-	padding: 2% 5% 0 5%;
-}
-main.special{
-	width: 90%;
-	float:left;
-	padding: 2% 5% 0 5%;
+    width: 100%;
 }
 sidebar{
     float: left;
@@ -134,25 +150,6 @@ display: none;}
     transform: none;
   }
 }
-p {
-  animation: fadeInUp 1s ease-in-out 0s forwards;
+p.float-fade-in {
+  animation: fadeInUp 2s ease-in-out 0s forwards;
 }
-p.first {
-  animation-delay: 2s;
-}
-p.second {
-  animation-delay: 3s;
-}
-p.third {
-  animation-delay: 5s;
-}
-p.fourth {
-  animation-delay: 7s;
-}
-p.fifth {
-  animation-delay: 9s;
-}
-p.sixth {
-  animation-delay: 11s;
-}
-
