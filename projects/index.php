@@ -10,15 +10,12 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
 	<body>
-		<div id="particles-js"></div>
-		<script src="../js/particles.js"></script>
-		<script src="../home.js"></script>
 		<div class= "text">
 			<?php include "../menu.html";?>
 			
 			<header>
 				<div class= "title">Projects</div>
-				<center><p>Project docs and things I create. Check portfolio for competitions/resume stuff.</p></center>
+				<center><p>Project docs and things I create. Check portfolio for more 'official' type stuff.</p></center>
 			</header>
 			<main>
 				<div class="container">   
