@@ -1,5 +1,5 @@
 # Alex Lynd
-Website source code and stuff.  Damn JS libs eating space.
+Source code for my personal website.  Damn JS libs eating space.
 ### JS Libs
 #### particles.js
 #### typed.js
