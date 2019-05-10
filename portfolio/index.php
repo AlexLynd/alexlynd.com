@@ -22,10 +22,6 @@
 				});
 			});
 		</script>
-		<div id="particles-js"></div>
-		<script src="../js/particles.js"></script>
-		<script src="../home.js"></script>
-		<div class="text">
 			<?php include "../menu.html";?>
 			<header>
 				<div class= "title">Portfolio</div>
@@ -41,6 +37,5 @@
 					<div class="element"><div class="post"><p>test</p></div></div>
 				</div>
 			</main>
-		</div>
 	</body>
 </html>

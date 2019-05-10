@@ -18,7 +18,16 @@
 				<center><p>Project docs and things I create. Check portfolio for more 'official' type stuff.</p></center>
 			</header>
 			<main>
-				<div class="container">   
+				<div class="container"> 
+					<div class="element">
+						<div class="post">
+							<img src="esp.JPG">
+						</div>
+						<div class="cappy">
+							<h1>ESP-DriveBy</h1>
+							<p>Wardriving with the ESP8266</p>
+						</div>
+					</div>
 					<div class="element">
 						<div class="post">
 							<a href= "AuditPi"><img src="AuditPi/IMG_3891.jpg"></a>
@@ -26,6 +35,15 @@
 						<div class="cappy">
 							<h1>AuditPi</h1>
 							<p>A modular hackable Raspberry Pi PDA</p>
+						</div>
+					</div>
+					<div class="element">
+						<div class="post">
+							<a href= "IR-Tester"><img src="IR-Tester/img/IR-Tester.jpg"></a>
+						</div>
+						<div class="cappy">
+							<h1>IR-Tester</h1>
+							<p>Grab a quick IR value / protocol!</p>
 						</div>
 					</div>
 					<div class="element">
@@ -45,24 +63,7 @@
 							<p>AI based trash classification/sorting</p>
 						</div>
 					</div>
-					<div class="element">
-						<div class="post">
-							<img src="esp.JPG">
-						</div>
-						<div class="cappy">
-							<h1>ESP-DriveBy</h1>
-							<p>Wardriving with the ESP8266</p>
-						</div>
-					</div>
-					<div class="element">
-						<div class="post">
-							<a href= "IR-Tester"><img src="IR-Tester/img/IR-Tester.jpg"></a>
-						</div>
-						<div class="cappy">
-							<h1>IR-Tester</h1>
-							<p>Grab a quick IR value / protocol!</p>
-						</div>
-					</div>
+					
 				</div>
 			</main>
 		</div>

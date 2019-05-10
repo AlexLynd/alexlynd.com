@@ -57,8 +57,8 @@
 						<img src="tmp/parrot.jpg" width=100%;>
 					</div>
 					<div class="section1" style="float: right">
-						<h1>About Me</h1>
-						<p>This is a test section where I will insert content about myself.  I am filling up space here to test the length of this div.</p>
+						<h1>About This Page</h1>
+						<p>I wrote this entire website from scratch using html, css, and js.  Even though the extensions are PHP files, I'm only using the PHP include function to include menus.</p>
 					</div>
 					
 				</div>
