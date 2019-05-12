@@ -1,7 +1,4 @@
 
-# Created by https://www.gitignore.io/api/dreamweaver
-# Edit at https://www.gitignore.io/?templates=dreamweaver
-
 ### Dreamweaver ###
 # DW Dreamweaver added files
 _notes
@@ -10,6 +7,7 @@ configs/
 dwsync.xml
 dw_php_codehinting.config
 *.mno
-.ftpconfig
 
-# End of https://www.gitignore.io/api/dreamweaver
+# Other
+.ftpconfig
+tmp/
