@@ -1,6 +1,6 @@
+# made with gitignore.io
 
 ### Dreamweaver ###
-# DW Dreamweaver added files
 _notes
 _compareTemp
 configs/
@@ -8,6 +8,6 @@ dwsync.xml
 dw_php_codehinting.config
 *.mno
 
-# Other
+### Local ###
 .ftpconfig
 tmp/
