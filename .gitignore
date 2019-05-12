@@ -3,6 +3,7 @@
 # Edit at https://www.gitignore.io/?templates=dreamweaver
 
 ### Dreamweaver ###
+# DW Dreamweaver added files
 _notes
 _compareTemp
 configs/
