@@ -7,4 +7,5 @@ Source code for my personal website.  Damn JS libs eating space.
 ### Stuff to add | ChangeLog
 - responsive menu
 - div fade in animation
-- concise
+- optimize css
+- content for portfolio
