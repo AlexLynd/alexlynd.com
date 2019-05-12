@@ -1,0 +1,31 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	margin: 0 auto;
+}
+.beeg {
+	background: orange;
+	height: 100%;
+	position: absolute;
+	width: 100%;
+	float: left;
+		
+}
+.part1 p {
+	margin: 0 auto;
+	background: green;
+}
+.part1 {
+	height: 100%;
+	width: 100%;
+	float: left;
+}
+.part2 {
+	height: 100%;
+	width: 100%;
+	float: left;
+}
+.part2 p {
+	margin: 0 auto;
+	background: red;
+}
