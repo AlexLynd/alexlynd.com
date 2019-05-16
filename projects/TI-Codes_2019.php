@@ -1,24 +1,22 @@
 <!doctype html>
 <html lang= "en-US">
 	<head>
-		<meta charset="utf-8">
 		<title>TI-Codes 2019</title>
-		<link rel="stylesheet" type= "text/css" href="../css/post.css">
-		<link rel="stylesheet" type= "text/css" href="../css/menu.css">
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous"> 	
+		<meta charset="utf-8">
+		<meta name="description" content="TI-Codes 2019 Project">
+  		<meta name="keywords"    content="Alex Lynd, electronics, TI, technology, Texas Instruments, TI-Codes">
+  		<meta name="author"      content="Alex Lynd">
+		<meta name="viewport"    content="width=device-width, initial-scale=1">
 		
+		<link rel="stylesheet" type= "text/css" href="/css/post.css">
+		<link rel="stylesheet" type= "text/css" href="/css/menu.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous"> 	
 	</head>
 	<body>
-		<div id="particles-js"></div>
-		<script src="../js/particles.js"></script>
-		<script src="../home.js"></script>
-		<div class="text">
 		<?php include "../menu.html";?>
 		<header>
 			<div class= "title">Straight Outta Compost</div>
-			<div class= "description">TI-Codes 2019 | A smart compost system with TI tech | <i class="fas fa-link"></i> <i class="fab fa-github-alt"></i>
-				<i class="fab fa-youtube"></i></div>
-			<!--center> <iframe width="900" height="385" src=""></iframe></center-->
+			<div class= "description">TI-Codes 2019 | A smart compost system with TI tech</div>
 		</header>
 		<main>
 
@@ -85,6 +83,5 @@
 			<h3>Links</h3>
 			<p><a href= "https://education.ti.com/en/promotion/rules/ti-codes-contest-rules">Official Rules</a></p>
 		</sidebar>
-		</div>
 	</body>
 </html>
