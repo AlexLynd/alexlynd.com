@@ -1,36 +1,24 @@
 <!doctype html>
 <html lang= "en-US">
 	<head>
-		<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width,initial-scale=1.0">
 		<title>Tutorials</title>
-		<link rel="stylesheet" type= "text/css" href="css/home.css">
-		<link rel="stylesheet" type= "text/css" href="css/menu.css">
+		<meta charset="utf-8">
+		<link rel="stylesheet" type= "text/css" href="/css/portfolio.css">
+		<link rel="stylesheet" type= "text/css" href="/css/menu.css">
+		<script src="/js/typed.js" type="text/javascript"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<script src="js/typed.js" type="text/javascript"></script>
 	</head>
 	<body>
-		<script>
-			document.addEventListener('DOMContentLoaded',function() {
-				var typed = new Typed('#typed', {
-					strings: ['<b>Tutorials&nbsp;</b>'],
-					typeSpeed: 10,
-					backSpeed: 0,
-					loop: false
-				});
-				var typed2 = new Typed('#typed2', {
-					strings: ['^500Tutorials and resources'],
-					typeSpeed: 0,
-					backSpeed: 0,
-					smartBackspace: true,
-					showCursor: false,
-					loop: false
-				});
-			});
-		</script>
-		<?php include "menu.html";?>	
-		<main>
-			<titlewrap> <span id="typed" style="white-space:pre;"></span> </titlewrap>
-			<p></p> <span id="typed2"></span>
-		</main>
+				<header>
+			<?php include "menu.html";?>
+			
+		
+				
+			</header>
+			<main>
+				<div class= "title">Tutorials</div>
+				<center><p>Nothing here yet!</p></center>
+			</main>
 	</body>
-</html>
+</html>	
