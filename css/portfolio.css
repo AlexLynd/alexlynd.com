@@ -18,24 +18,28 @@ header {
 	padding-bottom: 40px;
 	overflow: visible; 
 	width: 100%;
+	text-align: center;
 }
 .title{
 	font-size: 90px;
 	color: white;
 	font-family: 'Space Mono';
 	font-weight: bold;
-	text-align: center;
 	border: none;
 	padding-bottom: 10px;
 }
 .description {
-	font-size: 26px;
-	color: white;
+	font-size: 22px;
+	color: #cccccc;
+	padding: 10px 5% 30px 5%;
+	word-wrap: break-word;
+}
+#sub-page {
+	font-family: 'Montserrat';
+}
+#post {
 	font-family: 'Space Mono';
 	font-weight: bold;
-	text-align: center;
-	padding: 10px 0 30px 0;
-	word-wrap: break-word;
 }
 /******** End Header ********/
 main {
@@ -51,7 +55,7 @@ sidebar{
 }
 a {color: #cccccc;}
 /********** Containment **********/
-.container { 
+.post-container { 
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
@@ -59,14 +63,14 @@ a {color: #cccccc;}
   align-content: center;
 	width: 100%;
 }	
-.element {
+.post {
     -ms-flex: 33.33%;
     flex: 33.33%;
     max-width: 33.33%;
 	margin: none;
 }
 @media screen and (max-width: 1100px) {
-  .element {
+  .post {
     -ms-flex: 50%;
     flex: 50%;
     max-width: 50%;
@@ -74,7 +78,10 @@ a {color: #cccccc;}
   }
 }
 @media screen and (max-width: 700px) {
-  .element {
+	.description {
+		width: 90%;
+	}
+  .post {
     -ms-flex: 100%;
     flex: 100%;
     max-width: 100%;
@@ -83,35 +90,28 @@ a {color: #cccccc;}
   .title {
       font-size: 15vw;
   }
-	#particles-js{
-		display: none;
-	}
 }
-.post {
+.post-icon {
 	text-align: center;
 	margin: 0 10px;
 	height: 40vh;
 	background: #111111;
 }
-.post img{
+.post-icon img{
 	object-fit: cover;
 	width: 100%;
 	height: 100%;
 }
-.post img:hover{
+.post-icon img:hover{
 	opacity: .7;
 }
-canvas {
-  display: block;
-  vertical-align: bottom;
-}
-.cappy {
+.post-caption {
 	margin: 0 10px 30px;
 	padding-top: 10px;	
 	background: #f2f2f2;
 	border-radius: 0 0 5px 5px;
 }
-.cappy * {  
+.post-caption * {  
 	padding: 5px 0;
 	margin: 0;
 	color: #1c1c1c;
@@ -120,25 +120,14 @@ canvas {
 	text-align: center;
 	white-space: nowrap;
 }
-div.cappy h1 {
+div.post-caption h1 {
 	font-size: 30px;
 }
-.cappy p{
+.post-caption p{
 	font-size: 15px;
 	padding-bottom: 10px;
 }
 /****** End Containment ******/
-#particles-js{
-  position:fixed;
-  width: 100%;
-  height: 100%;
-  background-color: "#111111";
-}
-.text {
-	width: 100%;
-    height: 100%;
-	position: absolute;
-	background-color: "#111111";
-}
+
 img[src*="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"] {
 display: none;}
