@@ -16,12 +16,9 @@ navbar a:first-child {
 navbar a:hover{
 	text-decoration: underline;
 }
-
 #icon {
 	display: none;
 }
-
-
 /*  RESPONSIVE  */
 @media screen and (max-width: 800px) {
 	navbar {
@@ -47,9 +44,7 @@ navbar a:hover{
 		display: block;
 		z-index: 1; /* a */
 	}
-	#demo:not(:checked) ~ navbar{
-		display:none;
-	}
+	#demo:not(:checked) ~ navbar{ display:none; }
 	#icon {
 		display: block;
 		position: fixed;
@@ -62,12 +57,8 @@ navbar a:hover{
 		width: 5vh;
 		text-align: center;
 	}
-	#demo:not(:checked) ~ #icon {
-		background: rgba(15,15,15,.8);
-	}
-	#demo:checked ~ #icon {
-		z-index: 2;
-	}
+	#demo:not(:checked) ~ #icon { background: rgba(15,15,15,.8); }
+	#demo:checked ~ #icon { z-index: 2; }
 }
 @keyframes fadeInUp {
   from {

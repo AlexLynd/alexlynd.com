@@ -106,10 +106,7 @@ a {color: #cccccc;}
   object-fit: cover;
   width: 100%;
  }
-canvas {
-  display: block;
-  vertical-align: bottom;
-}
+
 /****** End Containment ******/
 h3{
 	color: white;
