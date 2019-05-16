@@ -37,7 +37,7 @@ feel free to snoop! | GitHub @alexlynd | Instagram @alex_lynd | Twitter @alexlyn
 		</script>
 		<div id="particles-js"></div>
 		<script src="js/particles.js"></script>
-		<script src="home.js"></script>
+		<script src="js/particles-main.js"></script>
 		<div class= "text">
 			<header> <?php include "menu.html";?> </header>
 			<main>
