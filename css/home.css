@@ -137,7 +137,7 @@ canvas {
 		margin: 5%;
 	}
 	titlewrap{
-		font-size: 13vw;
+		font-size: 3em;
 	}
 	#particles-js {
 		display: none;
