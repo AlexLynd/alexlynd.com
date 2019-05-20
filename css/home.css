@@ -67,8 +67,13 @@ header {
 main{
 	padding-left: 5%;
 	padding-top: 4%;
-    float: left;
-    width: 55%;
+  float: left;
+  width: 55%;
+}
+#wide {
+	width: 90%;
+	padding: 2% 5% 0 5%;
+	text-align: center;
 }
 sidebar{
     float: left;
@@ -86,6 +91,7 @@ footer{
   	left: 0;
 }
 a {color: #cccccc;}
+a:hover {opacity: 0.7;}
 .titleimg {
     width: 100%;
 	position: relative;
