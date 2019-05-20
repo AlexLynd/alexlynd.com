@@ -5,7 +5,7 @@ Light: #cccccc #f2f2f2
 */
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 @import url('https://fonts.googleapis.com/css?family=Space Mono');
-html{
+html {
 	scroll-behavior: smooth;	
 }
 body {
@@ -14,10 +14,6 @@ body {
   	background-color: #1c1c1c;
 	font-family: 'Montserrat'; font-size: 22px;
   	margin: 0 auto;
-}
-header {
-	float: left;
-	display: block;
 }
 titlewrap {
 	font-size: 7vw;
@@ -38,6 +34,7 @@ titlewrap {
 	opacity: .7;
 }
 header {
+	display: block;
 	float: left;
   	overflow: visible;
   	width: 100%;
@@ -59,44 +56,9 @@ main{
 	padding: 2% 5% 0 5%;
 	text-align: center;
 }
-sidebar{
-  	float: left;
-  	width: 35%;
-	padding: 2% 5% 0 0;
-}
-footer{
-	background-color: #111111;
-  	float: left;
-	width: 90%;
-	padding: 0 5% 0 5%;
-  	height: 100px;
-  	position: absolute;
-  	bottom: 0;
-  	left: 0;
-}
 a {color: #cccccc;}
 a:hover {opacity: 0.7;}
-.titleimg {
-	width: 100%;
-	position: relative;
-  	text-align: center;
-	color: white;
-	float: left;
-}
-.titleimg img{
-  	width: 100%;
-	height: 300px;
-	object-fit: cover;
-  	display: block;
-
-}
-.centered{
-	position: absolute;
-  	top: 50%;
-  	left: 50%;
-  	transform: translate(-50%, -50%)
-}
-/** here **/
+/*---------- PARTICLES WRAP ----------*/
 #particles-js{
  	position:fixed;
   	width: 100%;
@@ -145,3 +107,5 @@ a:hover {opacity: 0.7;}
 p.float-fade-in {
 	animation: fadeInUp 2s ease-in-out 0s forwards;
 }
+
+img[src*="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"] { display: none; }
