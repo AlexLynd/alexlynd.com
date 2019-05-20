@@ -5,7 +5,9 @@ Source code for my personal website.  Damn JS libs eating space.
 - typed.js
 - prettify.js (Google)
 ### Stuff to add | ChangeLog
-- merge css files (unified)
-- responsive content
+- merge menu css with home css stylesheet
+- optimize css code
+- rresponsive content
+- main page content
 - prettify.js implementation
 
