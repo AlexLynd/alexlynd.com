@@ -10,10 +10,10 @@ html{
 }
 body {
 	vertical-align:baseline;
-  color: #cccccc;
-  background-color: #1c1c1c;
-  font-family: 'Montserrat'; font-size: 22px;
-  margin: 0 auto;
+  	color: #cccccc;
+  	background-color: #1c1c1c;
+	font-family: 'Montserrat'; font-size: 22px;
+  	margin: 0 auto;
 }
 header {
 	float: left;
@@ -39,8 +39,8 @@ titlewrap {
 }
 header {
 	float: left;
-  overflow: visible;
-  width: 100%;
+  	overflow: visible;
+  	width: 100%;
 }
 .typed{
 	display: inline-block;
@@ -49,8 +49,8 @@ header {
 main{
 	padding-left: 5%;
 	padding-top: 4%;
-  float: left;
-  width: 55%;
+  	float: left;
+  	width: 55%;
 }
 #wide {
 	width: 90%;
@@ -60,61 +60,61 @@ main{
 	text-align: center;
 }
 sidebar{
-  float: left;
-  width: 35%;
+  	float: left;
+  	width: 35%;
 	padding: 2% 5% 0 0;
 }
 footer{
 	background-color: #111111;
-  float: left;
+  	float: left;
 	width: 90%;
 	padding: 0 5% 0 5%;
-  height: 100px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
+  	height: 100px;
+  	position: absolute;
+  	bottom: 0;
+  	left: 0;
 }
 a {color: #cccccc;}
 a:hover {opacity: 0.7;}
 .titleimg {
 	width: 100%;
 	position: relative;
-  text-align: center;
+  	text-align: center;
 	color: white;
 	float: left;
 }
 .titleimg img{
-  width: 100%;
+  	width: 100%;
 	height: 300px;
 	object-fit: cover;
-  display: block;
+  	display: block;
 
 }
 .centered{
 	position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%)
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%)
 }
 /** here **/
 #particles-js{
-  position:fixed;
-  width: 100%;
-  height: 100%;
-  background-color: "#111111";
+ 	position:fixed;
+  	width: 100%;
+  	height: 100%;
+  	background-color: "#111111";
 }
 .text {
 	width: 100%;
-  height: 100%;
+  	height: 100%;
 	position: absolute;
 	background-color: "#111111";
 }
 /*---------- RESPONSIVE ----------*/
 @media screen and (max-width: 800px) {
-  main {
+	main {
 	 	width: 90%;
 		padding: 2% 5% 0 5%; 
-  }
+  	}
 	.iconwrap {
 		width: 100%;
 		text-align: center;
@@ -131,17 +131,17 @@ a:hover {opacity: 0.7;}
 }
 /*---------- KEYFRAMES ----------*/
 @keyframes fadeInUp {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
-  }
+	from {
+		opacity: 0;
+		-webkit-transform: translate3d(0, 100%, 0);
+		transform: translate3d(0, 100%, 0);
+  	}
+  	to {
+		opacity: 1;
+		-webkit-transform: none;
+		transform: none;
+  	}
 }
 p.float-fade-in {
-  animation: fadeInUp 2s ease-in-out 0s forwards;
+	animation: fadeInUp 2s ease-in-out 0s forwards;
 }
