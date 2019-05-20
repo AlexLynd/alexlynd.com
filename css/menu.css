@@ -21,13 +21,7 @@ navbar a:hover{
 }
 /*  RESPONSIVE  */
 @media screen and (max-width: 800px) {
-	navbar {
-		position: fixed;
-		height: 100%;
-		width: 100%;
-		background: black;
-		padding: 25% 0;
-	}
+	navbar { display: none; }
 	navbar a{
 		display: inline-block;
 		text-align: right;
@@ -39,12 +33,15 @@ navbar a:hover{
 	navbar a:first-child{
 		margin-left: 0;
 	}
-	
 	#demo:checked ~ navbar {
 		display: block;
-		z-index: 1; /* a */
+		position: fixed;
+		height: 100%;
+		width: 100%;
+		padding: 25% 0;
+		background: black;
+		z-index: 1;
 	}
-	#demo:not(:checked) ~ navbar{ display:none; }
 	#icon {
 		display: block;
 		position: fixed;
