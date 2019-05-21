@@ -54,7 +54,7 @@
 				</div>
 				<div class="post">
 					<div class="post-icon">
-						<img src="fug.jpg">
+						<a href="TrashSort"><img src="fug.jpg"></a>
 					</div>
 					<div class="post-caption">
 						<h1>TrashSort</h1>
