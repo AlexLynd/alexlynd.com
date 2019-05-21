@@ -26,6 +26,7 @@ titlewrap {
 	opacity: 0;
 	animation: fadeInUp 2s ease-in-out 0s forwards;
 }
+
 .iconwrap i {
 	color: white;
 	margin: 40px 50px 0 0;
