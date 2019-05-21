@@ -5,16 +5,18 @@ navbar {
 navbar a {
 	color: white;
 	text-decoration: none;
-	padding: 10px;
+	padding: 20px;
 	float: left;
 	display: inline-block;
 	margin: 0 auto;
+	font-size: 20px;
 }
 navbar a:first-child {
 	margin-left: 5%;
 }
 navbar a:hover{
 	text-decoration: underline;
+	opacity: 1; /* override */
 }
 #icon {
 	display: none;
