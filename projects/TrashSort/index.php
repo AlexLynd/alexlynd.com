@@ -31,12 +31,16 @@
 		</main>
 		<sidebar>
 			<h3>Gallery</h3> <br>
+			<h3>Team</h3>
+			<ul>
+				<li>Alex Lynd</li>
+				<li>Carina Bachmann</li>
+				<li>Robin Gan</li>
+			</ul>
 			<h3>Files</h3>
-			<p><a href="">Download all</a> (ZIP)</p>
-			<p><a href="">sch01.png</a> (SCH)</p>
 			<br>
 			<h3>Links</h3>
-			<p></p>
+			<a href="https://github.com/alexlynd/trashsort" target="blank"><p>Source Code</p></a>
 		</sidebar>
 	</body>
 </html>
