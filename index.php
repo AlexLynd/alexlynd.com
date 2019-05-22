@@ -26,7 +26,7 @@ feel free to snoop! | GitHub @alexlynd | Instagram @alex_lynd | Twitter @alexlyn
 		<script src="js/typed.js" type="text/javascript"></script>
 	</head>
 	<body>
-		<script>
+		<script> 
 			document.addEventListener('DOMContentLoaded',function() {
 				var typed= new Typed('.typed', {
 					strings: ['<b>Alex Lynd&nbsp;</b>'],
