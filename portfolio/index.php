@@ -7,35 +7,18 @@
 		<link rel="stylesheet" type= "text/css" href="../css/portfolio.css">
 		<link rel="stylesheet" type= "text/css" href="../css/menu.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<script src="../js/typed.js" type="text/javascript"></script>
 	</head>
 	<body>
-		<script>
-		document.addEventListener('DOMContentLoaded',function() {
-				var typed = new Typed('#typed', {
-					strings: ['Competitions and other achievements.'],
-					typeSpeed: 0,
-					backSpeed: 0,
-					smartBackspace: true,
-					showCursor: false,
-					loop: false
-				});
-			});
-		</script>
 			<?php include "../menu.html";?>
 			<header>
 				<div class= "title">Portfolio</div>
-				<center><span id="typed" style="white-space:pre;"></span></center>
+				<div class="description">Competitions and other stuff.</div>
 			</header>
 			<main>
 				<div class="container">   
-					<div class="element"><div class="post"><h1>TI-Codes 2019</h1><p>Progress for my entry in TI-Codes 2019</p></div></div>
-					<div class="element"><div class="post"><h1>ACSL</h1></div></div>
-					<div class="element"><div class="post"><h1>This Website</h1></div></div>
-					<div class="element"><div class="post"><h1>test</h1></div></div>
-					<div class="element"><div class="post"><p>test</p></div></div>
-					<div class="element"><div class="post"><p>test</p></div></div>
+					<h3>Competitions</h3>
+					<a href="../projects/TI-Codes_2019.php"><p>TI-Codes 2019</p></a>
 				</div>
 			</main>
 	</body>
-</html>
+</html>	
