@@ -28,7 +28,7 @@
 				</div>
 				<div class="post">
 					<div class="post-icon">
-						<a href= "AuditPi"><img src="AuditPi/IMG_3891.jpg"></a>
+						<a href= "AuditPi"><img src="AuditPi/img/AuditPi.jpg"></a>
 					</div>
 					<div class="post-caption">
 						<h1>AuditPi</h1>
