@@ -19,7 +19,7 @@
 			<div class="post-container"> 
 				<div class="post">
 					<div class="post-icon">
-						<img src="ESP-DriveBy/img/ESP-DriveBy.jpg">
+						<a href="ESP-DriveBy"><img src="ESP-DriveBy/img/ESP-DriveBy.jpg"></a>
 					</div>
 					<div class="post-caption">
 						<h1>ESP-DriveBy</h1>
@@ -46,15 +46,16 @@
 				</div>
 				<div class="post">
 					<div class="post-icon">
-						<a href="CalcProbe"><img src="testttt.JPG"></a>
-					</div><div class="post-caption">
-					<h1>CalcProbe</h1>
-					<p>Exploiting 6 Function Calculators</p>
+						<a href="CalcProbe"><img src="CalcProbe/img/CalcProbe.jpg"></a>
+					</div>
+					<div class="post-caption">
+						<h1>CalcProbe</h1>
+						<p>Exploiting 6 Function Calculators</p>
 					</div>
 				</div>
 				<div class="post">
 					<div class="post-icon">
-						<a href="TrashSort"><img src="fug.jpg"></a>
+						<a href="TrashSort"><img src="TrashSort/img/TrashSort.png"></a>
 					</div>
 					<div class="post-caption">
 						<h1>TrashSort</h1>
