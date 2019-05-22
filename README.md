@@ -1,5 +1,5 @@
 # Alex Lynd
-Source code for my personal website.  Damn JS libs eating space.
+Source code for my personal website.  Why am I using PHP? I'm too lazy to retype code and am only using PHP to include menu.html in every page.
 ### JS Libs
 - particles.js
 - typed.js
