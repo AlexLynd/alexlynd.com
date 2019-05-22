@@ -1,8 +1,13 @@
 <!doctype html>
 <html lang= "en-US">
 	<head>
+		<title>AuditPi 1.0 | Alex Lynd </title>
 		<meta charset="utf-8">
-		<title>AuditPi 1.0</title>
+		<meta name="description" content="Haxx and spooky stuff">
+  		<meta name="keywords"    content="Alex Lynd, electronics, hacking, diy, tutorials, AuditPi, Raspberry Pi">
+  		<meta name="author"      content="Alex Lynd">
+		<meta name="viewport"    content="width=device-width, initial-scale=1">
+		
 		<link rel="stylesheet" type= "text/css" href="../../css/post.css">
 		<link rel="stylesheet" type= "text/css" href="../../css/menu.css">
 		<link href="https://fonts.googleapis.com/css?family=Space Mono" rel="stylesheet">
@@ -17,7 +22,7 @@
 			</div>
 			<center><iframe width="704" height="396" src="https://www.youtube.com/embed/--w1xGTmC7Y"></iframe></center>
 			<center><p>Projects Blogs / Archive: <a href="1.0.php">V1.0</a></p></center> <br>
-			<center><p>This page contains current documentation for the AuditPi project.  Check project blogs above for archived logs.</p></center>
+			<center><p>This page is contains blog post documentation on the build process of AuditPi 1.0.</p></center>
 		</header>
 		<main>
 			 <h3>Description</h3>
