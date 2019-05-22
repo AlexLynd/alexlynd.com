@@ -19,7 +19,7 @@
 			<div class="post-container"> 
 				<div class="post">
 					<div class="post-icon">
-						<img src="esp.JPG">
+						<img src="ESP-DriveBy/img/ESP-DriveBy.jpg">
 					</div>
 					<div class="post-caption">
 						<h1>ESP-DriveBy</h1>
