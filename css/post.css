@@ -28,7 +28,7 @@ header {
 	padding-bottom: 10px;
 }
 .description {
-	font-size: 26px;
+	font-size: 22px;
 	color: #cccccc;
 	padding: 10px 5% 30px 5%;
 	word-wrap: break-word;
@@ -39,6 +39,8 @@ header {
 #post {
 	font-family: 'Space Mono';
 	font-weight: bold;
+	font-size: 26px;
+	color: white;
 }
 /******** End Header ********/
 main {
@@ -59,12 +61,10 @@ sidebar{
 }
 a {color: #cccccc;}
 /********** Containment **********/
-
 h3{
 	color: white;
 	font-size: 28px;
 }
-/********** Containment **********/
 .post-container { 
   display: -ms-flexbox;
   display: flex;
