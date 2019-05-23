@@ -15,7 +15,7 @@
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 	</head>
 	<body>
-			<?php include "../../menu.html";?>
+		<?php include "../../menu.html";?>
 		<header>
 			<div class= "title">AuditPi 1.0</div>
 			<div class= "description">A Modular Handheld Raspberry Pi PDA <i class="fas fa-link"></i> <i class="fab fa-github-alt"></i> <i class="fab fa-youtube"></i>
@@ -25,8 +25,8 @@
 			<center><p>This page is contains blog post documentation on the build process of AuditPi 1.0.</p></center>
 		</header>
 		<main>
-			 <h3>Description</h3>
-			<p>AuditPi is a handheld </p>
+			 <h3>Background</h3>
+			<p> </p>
 			<h3>Material</h3>
 		</main>
 		<sidebar>
