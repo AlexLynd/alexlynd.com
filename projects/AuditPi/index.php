@@ -15,8 +15,8 @@
 	<body>
 		<?php include "../../menu.html";?>
 		<header>
-			<div class= "title">AuditPi 1.0</div>
-			<div class= "description">A Modular Handheld Raspberry Pi PDA </div>
+			<div class= "title">AuditPi</div>
+			<div class= "description" id="post">A Modular Handheld Raspberry Pi PDA </div>
 			<center><iframe width="704" height="396" src="https://www.youtube.com/embed/--w1xGTmC7Y"></iframe></center>
 			<center><p>Projects Blogs / Archive: <a href="1.0">V1.0</a></p></center> <br>
 			<center><p>This page contains current documentation for the AuditPi project.  Check project blogs above for archived logs.</p></center>

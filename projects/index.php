@@ -5,7 +5,7 @@
 	    <meta name="viewport" content="width=device-width,initial-scale=1.0">
 		<title>Projects</title>
 		<meta charset="utf-8">
-		<link rel="stylesheet" type= "text/css" href="../css/portfolio.css">
+		<link rel="stylesheet" type= "text/css" href="../css/post.css">
 		<link rel="stylesheet" type= "text/css" href="../css/menu.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
@@ -15,7 +15,7 @@
 			<div class= "title">Projects</div>
 			<div class="description" id="sub-page">Project documentation for stuff I make. Check portfolio for contests and resume content.</div>
 		</header>
-		<main>
+		<main id="wide">
 			<div class="post-container"> 
 				<div class="post">
 					<div class="post-icon">
