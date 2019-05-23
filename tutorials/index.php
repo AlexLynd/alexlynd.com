@@ -1,8 +1,6 @@
-<!-- PROJECTS -->
 <!doctype html>
 <html lang= "en-US">
 	<head>
-	    <meta name="viewport" content="width=device-width,initial-scale=1.0">
 		<title>Tutorials | Alex Lynd</title>
 		<meta charset="utf-8">
 		<meta name="description" content="Tutorials and guides">
