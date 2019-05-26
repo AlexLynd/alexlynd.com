@@ -29,6 +29,7 @@
 			<p>More info coming soon.</p>
 			
 			
+			
 		</main>
 		<sidebar>
 			<h3>Gallery</h3> <br>
