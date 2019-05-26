@@ -13,7 +13,8 @@
 		<?php include "../menu.html";?>
 		<header>
 			<div class= "title">Projects</div>
-			<div class="description" id="sub-page">Project documentation for stuff I make. Check portfolio for contests and resume content.</div>
+			
+			<p class="sub-title"><a href="/projects">Projects</a>  <a href="/software">Software</a>  <a href="">Contests</a> <a href="">Portfolio</a></p>
 		</header>
 		<main id="wide">
 			<div class="post-container"> 
