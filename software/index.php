@@ -1,9 +1,9 @@
-<!-- PROJECTS -->
+<!-- Software -->
 <!doctype html>
 <html lang= "en-US">
 	<head>
 	    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-		<title>Projects</title>
+		<title>Software</title>
 		<meta charset="utf-8">
 		<link rel="stylesheet" type= "text/css" href="../css/post.css">
 		<link rel="stylesheet" type= "text/css" href="../css/menu.css">
@@ -14,7 +14,7 @@
 		<header>
 			<div class= "title">Software</div>
 			
-			<p class="sub-title"><a href="/projects">Projects</a>  <a href="">Software</a>  <a href="">Contests</a> <a href="">Portfolio</a></p>
+			<p class="sub-title"><a href="/projects" >Projects</a>  <a href="">Software</a>  <a href="">Contests</a> <a href="">Portfolio</a></p>
 		</header>
 		<main id="wide">
 			<h3>PhoneGen</h3>
