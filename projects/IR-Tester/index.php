@@ -12,8 +12,7 @@
 		<header>
 			<div class= "title">IR-Tester</div>
 			<div class= "description">An IR value grabber with Arduino  <a href="https://github.com/alexlynd/IR-Tester" target="_blank"><i class="fab fa-github-alt"></i></a>
-			</div>
-			<center><p>Project documentation for IR-Tester.</p></center>
+			</div>		
 		</header>
 		<main>
 			<h3>Description</h3>
@@ -40,11 +39,10 @@
 		<sidebar>
 			<h3>Gallery</h3> <br>
 			<h3>Files</h3>
-			<p><a href="">Download all</a> (ZIP)</p>
-			<p><a href="">sch01.png</a> (SCH)</p>
+			<p><a href="">IR-Tester.ino</a> (Arduino)</p>
 			<br>
 			<h3>Links</h3>
-			<p></p>
+			<p><a href="http://github.com/AlexLynd/IR-Tester" target="_blank">GitHub Repo</a></p>
 		</sidebar>
 	</body>
 </html>
