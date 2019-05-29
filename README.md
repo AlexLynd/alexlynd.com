@@ -3,12 +3,11 @@ Source code for my personal website.  Why am I using PHP? I'm too lazy to retype
 ### JS Libs
 - particles.js
 - typed.js
-- prettify.js (Google)
 ### Stuff to add | ChangeLog
 - merge css files
 - optimize css code
 - responsive project post page
 - main page content
-- prettify.js implementation
 - change meta and header
+I'm temporarily using Gist embed instead of prettify js implementation.
 
