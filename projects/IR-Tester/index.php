@@ -4,7 +4,7 @@
 		<title>IR-Tester</title>
 		<meta charset="utf-8">
 		<meta name="description" content="IR LED value reader with Arduino">
-  		<meta name="keywords"    content="Alex Lynd, electronics, diy, IR-Tester, IR, Arduino, AVR>
+  		<meta name="keywords"    content="Alex Lynd, electronics, diy, IR-Tester, IR, Arduino, AVR">
   		<meta name="author"      content="Alex Lynd">
 		<meta name="viewport"    content="width=device-width, initial-scale=1">
 		
