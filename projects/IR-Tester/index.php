@@ -1,8 +1,18 @@
 <!doctype html>
 <html lang= "en-US">
 	<head>
-		<meta charset="utf-8">
 		<title>IR-Tester</title>
+		<meta charset="utf-8">
+		<meta name="description" content="IR LED value reader with Arduino">
+  		<meta name="keywords"    content="Alex Lynd, electronics, diy, IR-Tester, IR, Arduino, AVR>
+  		<meta name="author"      content="Alex Lynd">
+		<meta name="viewport"    content="width=device-width, initial-scale=1">
+		
+		<link rel="stylesheet" type= "text/css" href="../../css/post.css">
+		<link rel="stylesheet" type= "text/css" href="../../css/menu.css">
+		<link href="https://fonts.googleapis.com/css?family=Space Mono" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Work Sans" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 		<link rel="stylesheet" type= "text/css" href="../../css/post.css">
 		<link rel="stylesheet" type= "text/css" href="../../css/menu.css">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous"> 	
