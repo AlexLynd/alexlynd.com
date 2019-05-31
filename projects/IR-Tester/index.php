@@ -27,7 +27,7 @@
 			</ul>
 			<h3>Software</h3>
 			<p>I wrote the code in the Arduino IDE, and am using the IRremote library to read the IR values, and Adafruit's GFX and SSD1306 library.</p>
-			<style type="text/css">
+			<style type="text/css">z
 			
 			.gist{font-size: 18px}
 .gist-meta,.gist-data, .gist-file,.gist-data, .octotree_toggle, ul.comparison-list > li.title,button.button, a.button, span.button, button.minibutton, a.minibutton,span.minibutton, .clone-url-button > .clone-url-link{background: linear-gradient(#202020, #181818) !important;border-color: #383838 !important;border-radius: 0 0 3px 3px !important;text-shadow: none !important;color: #b5b5b5 !important}
