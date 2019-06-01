@@ -1,41 +1,50 @@
 navbar {
-	float: left;
-	width: 100%;
+	  float: left;
+	  width: 100%;
 }
+
 navbar a {
-	color: white;
-	text-decoration: none;
-	padding: 20px;
-	float: left;
-	display: inline-block;
-	margin: 0 auto;
-	font-size: 20px;
+	  color: white;
+	  text-decoration: none;
+	  padding: 20px;
+	  float: left;
+	  display: inline-block;
+	  margin: 0 auto;
+	  font-size: 20px;
 }
+
 navbar a:first-child {
-	margin-left: 5%;
+	  margin-left: 5%;
 }
-navbar a:hover{
+
+navbar a:hover {
 	text-decoration: underline;
-	opacity: 1; /* override */
+	opacity: 1;
+	/* override */
 }
+
 #icon {
 	display: none;
 }
+
 /*  RESPONSIVE  */
+
 @media screen and (max-width: 800px) {
-	navbar { display: none; }
-	navbar a{
+	navbar {
+		display: none;
+	}
+	navbar a {
 		display: inline-block;
 		text-align: right;
 		width: 90%;
 		height: 10%;
-		font-size: 5vh;	
-		animation: fadeInUp 2s ease-in-out 0s 
+		font-size: 5vh;
+		animation: fadeInUp 2s ease-in-out 0s
 	}
-	navbar a:first-child{
+	navbar a:first-child {
 		margin-left: 0;
 	}
-	#demo:checked ~ navbar {
+	#demo:checked~navbar {
 		display: block;
 		position: fixed;
 		height: 100%;
@@ -56,21 +65,27 @@ navbar a:hover{
 		width: 5vh;
 		text-align: center;
 	}
-	#demo:not(:checked) ~ #icon { background: rgba(15,15,15,.8); }
-	#demo:checked ~ #icon { z-index: 2; }
+	#demo:not(:checked)~#icon {
+		background: rgba(15, 15, 15, .8);
+	}
+	#demo:checked~#icon {
+		z-index: 2;
+	}
 }
+
 @keyframes fadeInUp {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
-  }
+	from {
+		opacity: 0;
+		-webkit-transform: translate3d(0, 100%, 0);
+		transform: translate3d(0, 100%, 0);
+	}
+	to {
+		opacity: 1;
+		-webkit-transform: none;
+		transform: none;
+	}
 }
+
 a.float-fade-in {
-  animation: fadeInUp 2s ease-in-out 0s forwards;
+	animation: fadeInUp 2s ease-in-out 0s forwards;
 }

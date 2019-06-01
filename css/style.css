@@ -1,0 +1,279 @@
+/*
+Color scheme:
+Dark:  #1c1c1c #111111
+Light: #cccccc #f2f2f2
+*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Space Mono');
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    vertical-align: baseline;
+    color: #cccccc;
+    background-color: #1c1c1c;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    margin: 0 auto;
+}
+
+/********** Header **********/
+
+.typed {
+    display: inline-block;
+    margin: 40px 0 10px 0;
+}
+
+header {
+    padding-bottom: 40px;
+    overflow: visible;
+    width: 100%;
+    text-align: center;
+}
+
+div.title {
+    font-size: 90px;
+    color: white;
+    font-family: 'Space Mono';
+    font-weight: bold;
+    border: none;
+    padding-bottom: 10px;
+}
+
+/* ICONWRAP */
+
+div.iconwrap {
+    font-size: 40px;
+    display: inline-block;
+    opacity: 0;
+    animation: fadeInUp 2s ease-in-out 0s forwards;
+}
+
+div.iconwrap i {
+    color: white;
+    margin: 40px 50px 0 0;
+}
+
+div.iconwrap i:hover {
+    opacity: .7;
+}
+
+.description {
+    font-size: 22px;
+    color: #cccccc;
+    padding: 10px 5% 30px 5%;
+    word-wrap: break-word;
+}
+
+#sub-page {
+    font-family: 'Montserrat';
+}
+
+#post {
+    font-family: 'Space Mono';
+    font-weight: bold;
+    font-size: 26px;
+    color: white;
+}
+
+/******** End Header ********/
+
+main {
+    float: left;
+    width: 60%;
+    padding: 0 5%;
+}
+
+#wide {
+    float: left;
+    width: 90%;
+    position: absolute;
+    padding: 0 5%;
+}
+
+sidebar {
+    float: left;
+    width: 25%;
+    padding: 0 5% 0 0;
+}
+
+a { color: #cccccc; }
+a:hover { opacity: 0.7; }
+
+/********** Containment **********/
+
+h3 {
+    color: white;
+    font-size: 28px;
+}
+
+.post-container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    align-content: center;
+    width: 100%;
+}
+
+.post {
+    -ms-flex: 33.33%;
+    flex: 33.33%;
+    max-width: 33.33%;
+    margin: none;
+}
+
+
+
+.post-icon {
+    text-align: center;
+    margin: 0 10px;
+    height: 40vh;
+    background: #111111;
+}
+
+.post-icon img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.post-icon img:hover {
+    opacity: .7;
+}
+
+.post-caption {
+    margin: 0 10px 30px;
+    padding-top: 10px;
+    background: #f2f2f2;
+    border-radius: 0 0 5px 5px;
+}
+
+.post-caption * {
+    padding: 5px 0;
+    margin: 0;
+    color: #1c1c1c;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+    white-space: nowrap;
+}
+
+div.post-caption h1 {
+    font-size: 30px;
+}
+
+.post-caption p {
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+
+p.sub-title {
+    word-spacing: 30px;
+}
+
+p.sub-title a {
+    color: white;
+    font-size: 26px;
+    text-transform: uppercase;
+    font-family: "Space Mono";
+    text-decoration: none;
+}
+
+p.sub-title a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/****** End Containment ******/
+
+p.float-fade-in {
+    animation: fadeInUp 2s ease-in-out 0s forwards;
+}
+
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: "#111111";
+}
+
+.text {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: "#111111";
+}
+
+mainn {
+    padding-left: 5%;
+    padding-top: 4%;
+    float: left;
+    width: 55%;
+    font-size: 22px;
+}
+
+#widee {
+    width: 90%;
+    height: 50%;
+    margin-top: 10%;
+    padding: 2% 5% 0 5%;
+    text-align: center;
+}
+/********** RESPONSIVE **********/
+@media screen and (max-width: 1100px) {
+    .post {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+        margin: none;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .description {
+        width: 90%;
+    }
+    .post {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+        margin: none;
+    }
+    .title {
+        font-size: 15vw;
+    }
+    mainn {
+        width: 90%;
+        padding: 2% 5% 0 5%;
+    }
+    .iconwrap {
+        width: 100%;
+        text-align: center;
+    }
+    .iconwrap i {
+        margin: 5%;
+    }
+    div.title {
+        font-size: 3em;
+    }
+    #particles-js {
+        display: none;
+    }
+}
+/********** KEYFRAMES **********/
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+/* Hide branding */
+img[src*="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"] { display: none; }
