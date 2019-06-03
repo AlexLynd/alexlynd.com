@@ -2,9 +2,13 @@
 <!doctype html>
 <html lang= "en-US">
 	<head>
-	    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-		<title>Projects</title>
+		<title>Projects | Alex Lynd</title>
 		<meta charset="utf-8">
+		<meta name="description" content="My projects">
+  		<meta name="keywords"    content="Alex Lynd, projects">
+  		<meta name="author"      content="Alex Lynd">
+		<meta name="viewport"    content="width=device-width, initial-scale=1">
+
 		<link rel="stylesheet" type= "text/css" href="../css/style.css">
 		<link rel="stylesheet" type= "text/css" href="../css/menu.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">

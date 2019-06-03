@@ -13,7 +13,7 @@ feel free to snoop! | GitHub @alexlynd | Instagram @alex_lynd | Twitter @alexlyn
 <!doctype html>
 <html lang= "en-US">
 	<head>
-		<title>Alex Lynd's Portfolio | Hacks, Fire and Electronics</title>
+		<title>Alex Lynd | Hacks, Fire and Electronics</title>
 		<meta charset="utf-8">
 		<meta name="description" content="Haxx and spooky stuff">
   		<meta name="keywords"    content="Alex Lynd, blog, electronics, programming, hacking, diy, tutorials">

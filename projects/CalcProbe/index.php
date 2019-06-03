@@ -1,8 +1,13 @@
 <!doctype html>
 <html lang= "en-US">
 	<head>
+		<title>CalcProbe</title>
 		<meta charset="utf-8">
-		<title>AuditPi</title>
+		<meta name="description" content="Exploiting six function calculators">
+  		<meta name="keywords"    content="Alex Lynd, electronics, hacking, diy, tutorials, CalcProbe, Raspberry Pi">
+  		<meta name="author"      content="Alex Lynd">
+		<meta name="viewport"    content="width=device-width, initial-scale=1">
+
 		<link rel="stylesheet" type= "text/css" href="../../css/style.css">
 		<link rel="stylesheet" type= "text/css" href="../../css/menu.css">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous"> 	
