@@ -16,12 +16,13 @@
 		<?php include "../../menu.html";?>
 		<header>
 			<div class= "title">ESP-DriveBy</div>
-			<div class= "description">[WIP]WarDriving with the ESP8266 <a href="https://github.com/alexlynd/TrashSort" target="_blank"><i class="fab fa-github-alt"></i></a>
+			<div class= "description" id="post">[WIP] WarDriving the ESP8266 <a href="https://github.com/alexlynd/TrashSort" target="_blank"><i class="fab fa-github-alt"></i></a>
 			</div>
 		</header>
 		<main>
 			<h3>Overview</h3>
 			<p>Wardriving is a form of reconnaissance that involves mapping Wi-Fi names (SSID's) to GPS coordinates and various information about them.  This allows a hacker/pen-tester to look at a map and pinpoint locations of Wi-Fi AP's to a physical location and useful information about them.  Wardriving can sometimes require bulky or excessive and complicated gear, so this project makes Wardriving a very portable and simple task, using the ESP8266.</p>
+			<h3>Troubleshooting</h3>
 			</hr>
 			<b><p>more documentation coming soon...</p></b>
 

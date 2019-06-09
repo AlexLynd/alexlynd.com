@@ -18,7 +18,6 @@
 			<div class= "title">CalcProbe</div>
 			<div class= "description">Exploiting 6 Function Calculators <i class="fas fa-link"></i> <i class="fab fa-github-alt"></i> <i class="fab fa-youtube"></i>
 			</div>
-			<center><p>Documentation for the CalcProbe project.</p></center>
 		</header>
 		<main>
 			<h3>Description</h3>

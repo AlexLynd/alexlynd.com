@@ -21,9 +21,9 @@
 			<p class="sub-title"><a href="/projects" >Projects</a>  <a href="">Software</a>  <a href="">Contests</a> <a href="">Portfolio</a></p>
 		</header>
 		<main id="wide">
-			<h3><a href="" style="color: white; text-decoration: none">PhoneGen</a></h3>
+			<h3>PhoneGen</h3>
 			<p>A program to generate phone number wordlists for Wi-Fi hacking.</p>
-			<h3>TWC/Spectrum Router Wi-Fi password generator</h3>
+			<h3><a href="Spectrum-Default-PassGen" style="color: white; text-decoration: none">Spectrum Router Password Generator</a></h3>
 			<p>Generate default router passwords for TWC and Spectrum.</p>
 		</main>
 	</body>

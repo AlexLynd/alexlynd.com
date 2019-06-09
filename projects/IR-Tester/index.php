@@ -21,7 +21,7 @@
 			<?php include "../../menu.html";?>
 		<header>
 			<div class= "title">IR-Tester</div>
-			<div class= "description">An IR value grabber with Arduino  <a href="https://github.com/alexlynd/IR-Tester" target="_blank"><i class="fab fa-github-alt"></i></a>
+			<div class= "description" id="post">An IR value grabber with Arduino  <a href="https://github.com/alexlynd/IR-Tester" target="_blank"><i class="fab fa-github-alt"></i></a>
 			</div>		
 		</header>
 		<main>
@@ -33,7 +33,7 @@
 			<ul>
 				<li>128x64 OLED</li>
 				<li>Arduino Nano</li>
-				<li>IR Reader Module</li>
+				<li>KY-022 IR Reader Module</li>
 			</ul>
 			<h3>Software</h3>
 			<p>I wrote the code in the Arduino IDE, and am using the IRremote library to read the IR values, and Adafruit's GFX and SSD1306 library.</p>

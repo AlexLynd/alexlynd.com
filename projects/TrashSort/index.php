@@ -16,7 +16,7 @@
 			<?php include "../../menu.html";?>
 		<header>
 			<div class= "title">TrashSort</div>
-			<div class= "description">[WIP]An AI based trash classifier using CV  <a href="https://github.com/alexlynd/TrashSort" target="_blank"><i class="fab fa-github-alt"></i></a>
+			<div class= "description" id="post">[WIP] An AI based trash classifier using CV  <a href="https://github.com/alexlynd/TrashSort" target="_blank"><i class="fab fa-github-alt"></i></a>
 			</div>
 		</header>
 		<main>

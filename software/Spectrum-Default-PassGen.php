@@ -13,17 +13,13 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
 	<body>
-		<?php include "../menu.html";?>
 		<header>
+		<?php include "../menu.html";?>
 			<div class= "title">Spectrum Default Password Generator</div>
 			
-			<p class="sub-title"><a href="/projects" >Projects</a>  <a href="">Software</a>  <a href="">Contests</a> <a href="">Portfolio</a></p>
 		</header>
-		<main id="wide">
-			<h3><a href="" style="color: white; text-decoration: none">PhoneGen</a></h3>
-			<p>A program to generate phone number wordlists for Wi-Fi hacking.</p>
-			<h3>Spectrum Router Wi-Fi password generator</h3>
-			<p>Generate default passwords for Spectrum routers.</p>
+		<main>
+		<script src="https://gist.github.com/AlexLynd/86f132aa133b3ce40cbb4267ca696584.js"></script>
 		</main>
 	</body>
 </html>	
