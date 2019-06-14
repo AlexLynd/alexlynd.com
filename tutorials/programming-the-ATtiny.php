@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang= "en-US">
 	<head>
-		<title>Tutorials | Alex Lynd</title>
+		<title>Programming the ATtiny | Alex Lynd</title>
 		<meta charset="utf-8">
 		<meta name="description" content="Tutorials and guides">
   		<meta name="keywords"    content="Alex Lynd, blog, electronics, programming, hacking, diy, tutorials">
@@ -15,10 +15,10 @@
 	<body>
 		<?php include "../menu.html";?>
 		<header>
-			<div class= "title">Tutorials</div>
-			<div class="description" id="sub-page">Tutorials.  Nothing here yet!</div>
+			<div class= "title">Programming the ATtiny</div>
+			<div class="description" id="sub-page">A cheap and small AVR microcontroller</div>
 		</header>
-		<main>
+		<main id="wide">
 			<p><a href="programming-the-ATtiny">Programming the ATtiny</a></p>
 		</main>
 	</body>

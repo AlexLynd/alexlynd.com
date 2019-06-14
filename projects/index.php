@@ -67,6 +67,15 @@
 						<p>AI based trash classification/sorting</p>
 					</div>
 				</div>
+				<div class="post">
+					<div class="post-icon">
+						<a href="DIY-TV-B-Gone"><img src="DIY-TV-B-Gone/img/DIY-TV-B-Gone.JPG"></a>
+					</div>
+					<div class="post-caption">
+						<h1>DIY TV-B-Gone</h1>
+						<p>Kill TV's with IR playback codes</p>
+					</div>
+				</div>
 			</div>
 		</main>
 	</body>
