@@ -20,11 +20,19 @@
 		</header>
 		<main>
 			<h3>Overview</h3>
-			<p>The TV-B-Gone is a device created by Adafruit that can shut off almost any TV using IR.  </p>
+			<p>The TV-B-Gone is a device created by Adafruit that can shut off almost any TV using IR.</p>
+			<h3>Parts</h3>
+			<ul>
+				<li><a href="">ATtiny85</a></li>
+				<li><a href="">DIP Spcket</a></li>
+				<li><a href="">x4 950 nm IR R LEDS</a></li>
+				<li><a href= ""> x4 NPN transistors</a></li>
+				<li><a href= "">PNP transistor</a></li>
+				
+			</ul>
 			<h3>Troubleshooting</h3>
 			</hr>
 			<b><p>more documentation coming soon...</p></b>
-
 		</main>
 		<sidebar>
 			<h3>Gallery</h3> <br>

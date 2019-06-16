@@ -1,4 +1,4 @@
-<!-- HOME -->
+<!doctype html>
 
 <!--
     ___    __             __                    __                           
@@ -10,7 +10,6 @@
 feel free to snoop! | GitHub @alexlynd | Instagram @alex_lynd | Twitter @alexlynd
 -->
 
-<!doctype html>
 <html lang= "en-US">
 	<head>
 		<title>Alex Lynd | Hacks, Fire and Electronics</title>
