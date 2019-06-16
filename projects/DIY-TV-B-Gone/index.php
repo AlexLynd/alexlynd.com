@@ -10,9 +10,12 @@
 		
 		<link rel="stylesheet" type= "text/css" href="/css/style.css">
 		<link rel="stylesheet" type= "text/css" href="/css/menu.css">
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous"> 	
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="../../js/google-code-prettify/skins/doxy.css">
+<script type="text/javascript" src="../../js/google-code-prettify/prettify.js"></script>
+
 	</head>
-	<body>
+	<body onload="PR.prettyPrint()">
 		<?php include "../../menu.html";?>
 		<header>
 			<div class= "title">DIY TV-B-Gone</div>
@@ -20,7 +23,14 @@
 		</header>
 		<main>
 			<h3>Overview</h3>
-			<p>The TV-B-Gone is a device created by Adafruit that can shut off almost any TV using IR.</p>
+			<p>The TV-B-Gone is a device created by Adafruit that can shut off almost any TV using IR.  Using their open-source documentation, I created my own TV-B-Gone for much cheaper and using a piece of perfboard.</p>
+			<h3>How it Works</h3>
+			<p>
+			TV remotes operate using IR or infrared radiation, light at a wavelength not visible to humans.  By flashing pulses of IR light in timed intervals, a remote can communicate with the TV to send it codes like how morse code works.  For instance, something like "101101110001" could be a turn off code.  However, since TV manufacturers use different code instructions, we can't readily use one remote to control every TV.  
+			</p>
+			<p>
+			Adafruit compiled a list of turn-off codes for 230 TV brands, which can be iterated through bruteforce until the TV turns off.  The TV-B-Gone utilizes an ATtiny85 as the processor, which runs through all these codes and emits them through IR LED's, hoping to turn off the target TV.
+			</p>
 			<h3>Parts</h3>
 			<ul>
 				<li><a href="">ATtiny85</a></li>
@@ -28,9 +38,19 @@
 				<li><a href="">x4 950 nm IR R LEDS</a></li>
 				<li><a href= ""> x4 NPN transistors</a></li>
 				<li><a href= "">PNP transistor</a></li>
+				<li><a href= "">AVR ISP</a></li>
 				
 			</ul>
-			<h3>Troubleshooting</h3>
+			<h3>Software</h3>
+			<p>Start by installing avrdude</p>
+			<pre class="prettyprint lang-bash">
+sudo apt install avrdude</pre>
+			<p>Set the fuses in the ATtiny to use external 8mhz resonator.</p>
+			<pre class="prettyprint lang-bash">
+avrdude -c avrisp -p t85 -U lfuse:w:0xfe:m -U hfuse:w:0xdf:m -U efuse:w:0xff:m -P /dev/ttyACM0 -b 19200</pre>
+			<p>Flash tvbgone.hex to ATtiny85</p>
+			<pre class="prettyprint lang-bash">
+avrdude -p t85 -P /dev/ttyACM0 -c avrisp -b 19200 -U flash:w:tvbgone.hex</pre>
 			</hr>
 			<b><p>more documentation coming soon...</p></b>
 		</main>
