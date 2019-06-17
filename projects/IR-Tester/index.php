@@ -93,7 +93,5 @@ void loop(){
 			<h3>Links</h3>
 			<p><a href="http://github.com/AlexLynd/IR-Tester" target="_blank">GitHub Repo</a></p>
 		</sidebar>
-
-
 	</body>
 </html>
