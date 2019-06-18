@@ -66,13 +66,13 @@ code.prettyprint, pre.prettyprint {
     -o-border-radius: 8px;
     -ms-border-radius: 8px;
     -khtml-border-radius: 8px;
-    border-radius: 8px
+    border-radius: 8px;
 }
 
 pre.prettyprint {
-    width: 95%;
+    width: 94%;
     margin: 1em auto;
-    padding: 1em;
+    padding: 1em 3%;
     white-space: pre-wrap;
     word-wrap: break-word;
 }

@@ -5,10 +5,8 @@ Light: #cccccc #f2f2f2
 */
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 @import url('https://fonts.googleapis.com/css?family=Space Mono');
-/********** ESSENTIAL **********/
-html {
-    scroll-behavior: smooth;
-}
+
+html { scroll-behavior: smooth; }
 body {
     vertical-align: baseline;
     color: #cccccc;
@@ -16,6 +14,7 @@ body {
     font-family: 'Montserrat';
     font-size: 20px;
     margin: 0 auto;
+    word-wrap: break-word;
 }
 header {
     padding-bottom: 40px;
@@ -23,6 +22,7 @@ header {
     width: 100%;
     text-align: center;
 }
+hr { color: white; }
 .typed {
     display: inline-block;
     margin: 40px 0 10px 0;
@@ -49,17 +49,17 @@ div.iconwrap i {
 div.iconwrap i:hover {
     opacity: .7;
 }
-.description {
+div.description {
     font-size: 22px;
     color: #cccccc;
     padding: 10px 5% 30px 5%;
     word-wrap: break-word;
 }
-#sub-page {
-    font-family: 'Montserrat';
+div.description#sub-page {
+    font-family: "Montserrat";
 }
-#post {
-    font-family: 'Space Mono';
+div.description#post {
+    font-family: "Space Mono";
     font-weight: bold;
     font-size: 26px;
     color: white;
@@ -69,6 +69,10 @@ main {
     float: left;
     width: 60%;
     padding: 0 5%;
+}
+#post-only {
+    width: 70%;
+    padding: 0 15%;
 }
 #wide {
     float: left;
@@ -216,6 +220,10 @@ mainn {
     }
     .title { font-size: 15vw; }
     #particles-js { display: none; }
+    #post-only {
+        width: 90%;
+        padding: 0 5%;
+    }
 }
 /********** ANIMATION **********/
 @keyframes fadeInUp {
