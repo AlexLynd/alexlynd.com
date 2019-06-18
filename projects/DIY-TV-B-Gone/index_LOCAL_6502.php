@@ -45,13 +45,8 @@
 				<li><a href="">Colored LED</a></li>
 				
 			</ul>
-<<<<<<< HEAD
 			<h3>Design</h3>
 			<p>I started by looking at the <a href="https://raw.githubusercontent.com/adafruit/TV-B-Gone-kit/master/pcb/tvbgone3sch.png" target="_blank" class="link">Adafruit schematic for the TV-B-Gone 3</a>, and mapped the component layout to fit on a 12x18 piece of perfboard.  I am using the same style AAA double battery holder they use, for which the perfboard fits perfect.  All other components are the same, except I am using generic transistors and a different style resonator (but still 8mhz).</p>
-=======
-			<hr>
-			<p>I started by looking at the <a href="https://raw.githubusercontent.com/adafruit/TV-B-Gone-kit/master/pcb/tvbgone3sch.png" target="_blank" class="link">Adafruit schematic for the TV-B-Gone 3</a>, and mapped the component layout to fit on a 12x18 piece of perfboard.</p>
->>>>>>> 45b878e19eea7751aba686de7afd62d6f57aa11b
 			<img src="img/perf_sch0.png" style="width: 100%;">
 			<h3>Software</h3>
 			<p>Next, I programmed the ATtiny85 microcontroller which Adafruit calls for in their design.  Since the ATtiny chip comes in a DIP package instead of a dev board, we will need to use an ISP (in-system programmer) to upload code to it, which is wired by hand.  You can buy an ISP (preferrable) or make one using an Arduino like I did.  You can check out my guide <a href="">here</a>which gives a more detailed insight on programming ATtiny chips and choosing an ISP, as well as how to make an Arduino ISP.</p>
@@ -67,11 +62,7 @@ avrdude -c avrisp -p t85 -U lfuse:w:0xfe:m -U hfuse:w:0xdf:m -U efuse:w:0xff:m -
 			<p>Flash tvbgone.hex to ATtiny85</p>
 			<pre class="prettyprint lang-bash">
 avrdude -p t85 -P /dev/ttyACM0 -c avrisp -b 19200 -U flash:w:tvbgone.hex</pre>
-<<<<<<< HEAD
 			<hr>
-=======
-			</hr>
->>>>>>> 45b878e19eea7751aba686de7afd62d6f57aa11b
 			<p></p>
 			<b><p>more documentation coming soon...</p></b>
 		</main>
