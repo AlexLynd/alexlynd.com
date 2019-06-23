@@ -50,7 +50,6 @@
 			<img src="img/perf_sch0.png" style="width: 100%;">
 			<h3>Software</h3>
 			<p>Next, I programmed the ATtiny85 microcontroller which Adafruit calls for in their design.  Since the ATtiny chip comes in a DIP package instead of a dev board, we will need to use an ISP (in-system programmer) to upload code to it, which is wired by hand.  You can buy an ISP (preferrable) or make one using an Arduino like I did.  You can check out my guide <a href="">here</a>which gives a more detailed insight on programming ATtiny chips and choosing an ISP, as well as how to make an Arduino ISP.</p>
-			
 			<p>Since Adafruit provides compiled hex code, I used a command line tool called AVRDUDE to flash the code.  </p>
 			<p>I installed AVRDUDE (Linux) :</p>
 			<pre class="prettyprint lang-bash">
@@ -58,13 +57,31 @@ sudo apt install avrdude</pre>
 			<p>Next, I wanted to set the ATtiny to use an external oscillator (an 8MHz resonator) for higher precision.  I wired the resonator to the ATtiny with the Adafruit schematic, and hooked my Arduino ISP, and placed a capcitor between reset and ground to prevent resetting on upload.  With wiring in place, I set the fuses in the ATtiny.  Replace -P with your ISP port.</p>
 			<pre class="prettyprint lang-bash">
 avrdude -c avrisp -p t85 -U lfuse:w:0xfe:m -U hfuse:w:0xdf:m -U efuse:w:0xff:m -P /dev/ttyACM0 -b 19200</pre>
-			<p></p>
-			<p>Flash tvbgone.hex to ATtiny85</p>
+			<p>Next I downloaded the Adafruit GitHub repository, moved into the firmware directory, and flashed the tvbgone.hex file to the ATtiny.</p>
 			<pre class="prettyprint lang-bash">
+git clone https://github.com/adafruit/TV-B-Gone-kit
+cd TV-B-Gone-kit/firmware
 avrdude -p t85 -P /dev/ttyACM0 -c avrisp -b 19200 -U flash:w:tvbgone.hex</pre>
 			<hr>
-			<p></p>
-			<b><p>more documentation coming soon...</p></b>
+			<h3>Assembly</h3>
+			<p>Next I moved straight to assembling the perfboard, using the perfboard layout above.</p>
+			<ol>
+				<li>First, I soldered the IR LED's and their driver NPN transistors.  In the configuration below.  I tied all of the positive leads together, which I brought to the left side of the perfboard, creating a positive power railing.  I also tied all of transistor bases and tied the collectors, which I used to draw the negative power railing.</li>
+				<br>
+				<img src= "img/sch/layer0.png" style="width: 100%">
+				<br> <br>
+				<li>Next I placed the PNP transistor with the emitter inline with the positive power rail, and the collector to the NPN bases.</li>
+				<img src= "img/sch/layer1.png" style= "width: 100%">
+				<li>I soldered down the DIP socket facing the left, and connected a 1k Ω resistor to pin 5 and to the base of the PNP transistor.</li>
+				<li>I drew pin 8 of the DIP socket to the positive power line, and connected a 1k Ω resistor to pin 7.  I then connected the indicator LED to the other lead of the resistor and to power.</li>
+				<li>After this, I connected pin 6 (MISO) to ground with a 10K Ω resistor.  I also connected the 8 MHz resonator to pins 2 & 3 of the DIP socket, and the middle pin to the negative power rail.</li>
+				<li>I connected a tacticle switch between reset (pin 1) and ground of the DIP socket.</li>
+				<li>Finally, I added the last two components, the two capcitors which do voltage regulation.</li>
+				<li>I finished the board by adding the rest of the power connections, and attaching them to the double AAA battery pack power lines.</li>
+				<li>Using some double-sided foam tape, I stuck the perfboard down to the battery pack.</li>
+			</ol>
+			<h3>Conclusion</h3>
+			<p>I intended to closely replicate the Adafruit TV-B-Gone without having to buy their custom PCB at a pricey $20.  The main difference in my replication is the perfboard, and substitution of a few components.  While I chose to use the same battery pack they used, you can use any power supply between 3-5 V.  While I'm using wide-angled LEDs, I can still get a pretty good range on my TV-B-Gone, but will try to get some of the narrow-angled ones in the future.  I'm working on a micro iteration of the TV-B-Gone which I'm hoping to release soon.</p>
 		</main>
 	</body>
 </html>
