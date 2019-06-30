@@ -10,7 +10,7 @@ code .kwd, pre .kwd {
     color: #8470FF
 }
 
-code .com, pre .com {
+code .com, pre .com { /* comment */
     color: #32cd32;
     font-style: italic
 }
@@ -60,13 +60,13 @@ code.prettyprint, pre.prettyprint {
     font-family: Menlo, "Bitstream Vera Sans Mono", "DejaVu Sans Mono", Monaco, Consolas, monospace;
     font-weight: 700;
     font-size: 11pt;
-    background-color: #0f0f0f;
-    -moz-border-radius: 8px;
-    -webkit-border-radius: 8px;
-    -o-border-radius: 8px;
-    -ms-border-radius: 8px;
-    -khtml-border-radius: 8px;
-    border-radius: 8px;
+    background-color: #111111;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -o-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    border-radius: 10px;
 }
 
 pre.prettyprint {
@@ -80,7 +80,7 @@ pre.prettyprint {
 ol.linenums {
     margin-top: 0;
     margin-bottom: 0;
-    color: #8B8970
+    color: #fff
 }
 
 li.L0, li.L1, li.L2, li.L3, li.L5, li.L6, li.L7, li.L8 {
@@ -89,7 +89,7 @@ li.L0, li.L1, li.L2, li.L3, li.L5, li.L6, li.L7, li.L8 {
 
 @media print {
     code.prettyprint, pre.prettyprint {
-        background-color: #fff
+        background-color: #f2f2f2
     }
     code .str, pre .str {
         color: #088

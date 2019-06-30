@@ -21,7 +21,7 @@
 			<center><p>Projects Blogs / Archive: <a href="1.0">V1.0</a></p></center> <br>
 			<center><p>This page contains current documentation for the AuditPi project.  Check project blogs above for archived logs.</p></center>
 		</header>
-		<main>
+		<main id="post-only">
 			<h3>Overview</h3>
 			<p>AuditPi is a handheld pocket computer with a variety of uses, but aimed at mobile hacking and audits.  This device comes in a phone form factor and runs Linux, offering full functionality of a computer.  It's modular design allows it to easily be mounted in a variety of places and on standard tripods.</p>
 			<p>Please check the archives under the video if you are looking for an in depth build process for each iteration of the project.</p>
@@ -69,19 +69,5 @@
 				<div class="sketchfab-embed-wrapper"><iframe width="640" height="480" src="https://sketchfab.com/models/defd279928454ab598af15e7db9d01d1/embed?autospin=0.2&amp;autostart=1" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe></div>
 			</ol>
 		</main>
-		<sidebar>
-			<h3>Gallery</h3> <br>
-			<h3>Outline</h3>
-			<ul>
-				<li>Overview</li>
-				<li>Build Process</li>
-			</ul>
-			<h3>Files</h3>
-			<p><a href="">Case</a> (stl)</p>
-			<p><a href="">Case</a> (FreeCAD)</p>
-			<p><a href="">Lid</a> (stl)</p>
-			<p><a href="">Lid</a> (FreeCAD)</p>
-			<br>
-		</sidebar>
 	</body>
 </html>

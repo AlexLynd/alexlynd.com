@@ -120,11 +120,13 @@ h3 {
     margin: 0 10px;
     height: 40vh;
     background: #111111;
+    border-radius: 7px 7px 0 0;
 }
 .post-icon img {
     object-fit: cover;
     width: 100%;
     height: 100%;
+    border-radius: 7px 7px 0 0;
 }
 .post-icon img:hover {
     opacity: .7;
@@ -133,7 +135,7 @@ h3 {
     margin: 0 10px 30px;
     padding-top: 10px;
     background: #f2f2f2;
-    border-radius: 0 0 5px 5px;
+    border-radius: 0 0 7px 7px;
 }
 .post-caption * {
     padding: 5px 0;
@@ -150,6 +152,8 @@ div.post-caption h1 {
 .post-caption p {
     font-size: 15px;
     padding-bottom: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 p.sub-title {

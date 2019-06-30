@@ -15,7 +15,7 @@
 	<body>
 		<?php include "../menu.html";?>
 		<header>
-			<div class= "title">Programming the ATtiny</div>
+			<div class= "title" style="font-size: 80px; font-weight: none;">Programming the ATtiny</div>
 			<div class="description" id="sub-page">A cheap and small AVR microcontroller</div>
 		</header>
 		<main id="wide">
