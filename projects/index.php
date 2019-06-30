@@ -17,6 +17,7 @@
 		<?php include "../menu.html";?>
 		<header>
 			<div class= "title">Projects</div>
+			<hr style="width: 200px; color: #cccccc">
 			
 			<p class="sub-title"><a href="/projects">Projects</a>  <a href="/software">Software</a>  <a href="">Contests</a> <a href="">Portfolio</a></p>
 		</header>
@@ -69,7 +70,7 @@
 				</div>
 				<div class="post">
 					<div class="post-icon">
-						<a href="DIY-TV-B-Gone"><img src="DIY-TV-B-Gone/img/DIY-TV-B-Gone.JPG"></a>
+						<a href="DIY-TV-B-Gone"><img src="DIY-TV-B-Gone/img/DIY-TV-B-Gone.jpg"></a>
 					</div>
 					<div class="post-caption">
 						<h1>DIY TV-B-Gone</h1>
