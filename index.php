@@ -13,7 +13,7 @@ feel free to snoop! | GitHub @alexlynd | Instagram @alex_lynd | Twitter @alexlyn
 <html lang= "en-US">
 	<head>
 		<title>Alex Lynd | Hacks, Fire and Electronics</title>
-		<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+		<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico"/>
 		<meta charset="utf-8">
 		<meta name="description" content="Haxx and spooky stuff">
   		<meta name="keywords"    content="Alex Lynd, blog, electronics, programming, hacking, diy, tutorials">
@@ -56,7 +56,7 @@ feel free to snoop! | GitHub @alexlynd | Instagram @alex_lynd | Twitter @alexlyn
 		<div class="block" id="light">
 		<div class="description" id="home">
 				<h1>About Me</h1>
-				<p>I'm Alex Lynd, a 16 year old maker/hacker from California. </p>
+				<p>I'm Alex Lynd, a 16 year old maker/hacker from California.  I pursue a lot of hobbies including piano, skating, TaeKwonDo, parkour, hacking and more!  I spend most of my time hacking electonics / programming, and push my content to the internet and YouTube.  I'm interested in infosec and hacking, and have been teaching myself a lot about various CS subjects.  I'm a big fan of open-source and free content, and my life goal is to keep learning and to spread my knowledge to as many people as I can.</p>
 			</div>
 			<div class="image" id="home">
 				<img src="img/profile.png" >
@@ -68,7 +68,7 @@ feel free to snoop! | GitHub @alexlynd | Instagram @alex_lynd | Twitter @alexlyn
 			</div>
 			<div class="description" id="home">
 				<h1>My Work</h1>
-				<p>I'm Alex, and I like to set stuff on fire.  And hack.  This is some sample text so I can test some fancy divs and see if my page is working.</p>
+				<p>I'm currently in high school, and am self taught in everything CS.  I've worked on a lot of personal projects aimed mostly at hardware hacking and auditing devices, which I've recently started to upload to the internet.  I've picked up a lot in programming, hacking, electronics, and webdev.  I coded this website myself from scratch, and you can check out some of my <a href="projects">projects</a>.  I prototype electronics, hack/fix consumer electronics, make websites, and much more.  My current projects include a device for portable wardriving and an AI-based trash sorting device.  I also love pyrotechnics and fire stuff.</p>
 			</div>
 		</div>
 		</div>
