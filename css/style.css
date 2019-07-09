@@ -6,7 +6,10 @@ Light: #cccccc #f2f2f2
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 @import url('https://fonts.googleapis.com/css?family=Space Mono');
 
-html { scroll-behavior: smooth; min-height: 100%}
+html { 
+    scroll-behavior: smooth; 
+    min-height: 100%;
+}
 body {
     vertical-align: baseline;
     color: #cccccc;
@@ -18,11 +21,20 @@ body {
     min-height: 100%;
 }
 header {
+    padding-top: 4%;
     padding-bottom: 40px;
-     overflow: visible;
-     width: 100%;
-     text-align: center;
- }
+    overflow: visible;
+    width: 100%;
+    text-align: center;
+}
+footer {
+    background: black;
+    padding: 2%;
+    text-align: center;
+    width: 96%;
+    top: 0;
+    display: inline-block;
+}
 hr { color: white; }
 .typed {
     display: inline-block;
@@ -34,19 +46,29 @@ div.title {
     font-family: 'Space Mono';
     font-weight: bold;
     border: none;
-    padding-bottom: 10px;
+    padding: 0;
+}
+.centered h3 {
+    margin: 0;
 }
 /* ICONWRAP */
 div.iconwrap {
     font-size: 40px;
+    width: 100%;
     display: inline-block;
     opacity: 0;
     animation: fadeInUp 2s ease-in-out 0s forwards;
 }
 div.iconwrap i {
     color: white;
-    margin: 40px 50px 0 0;
 }
+div.iconwrap :first-child {
+    margin-left: 0;
+}
+div.iconwrap a {
+    margin: 0 3%;
+}
+
 div.iconwrap i:hover {
     opacity: .7;
 }
@@ -99,7 +121,7 @@ a:hover { opacity: 0.7; }
 /********** Containment **********/
 h3 {
     color: white;
-    font-size: 28px;
+    font-size: 3.5vh;
 }
 /********** PROJECT ICON**********/
 .post-container {
@@ -234,8 +256,8 @@ div.block#dark *{
     flex: 1;
 }
 .image#home img{
-    max-width: 100%;
-    max-height: 100%;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 .centered {
@@ -246,6 +268,19 @@ div.block#dark *{
     margin-left: 5%;
     width: 55%;
 }
+.tmp {
+    display: none;
+}
+
+.arrow {
+    bottom: 0;
+    position: absolute;
+    font-size: 70px;
+    text-align: center;
+    width: 100%;
+}
+
+  
 /********** RESPONSIVE **********/
 @media screen and (max-width: 1100px) {
     .post {
@@ -254,9 +289,37 @@ div.block#dark *{
         max-width: 50%;
         margin: none;
     }
-
+    .tmp {
+        display: block;
+        text-align: center;
+        color: white;
+        font-size: 15vh;
+    }
+    .title {
+        display: none;
+    }
+    main#home p {
+        display: none;
+    }
+    .centered {
+        width: 90%;
+        text-align: center;
+    }
+    .centered h1 {
+        margin: 0;
+    }
+    .centered h3 {
+        margin: 1vh 0 7% 0;
+    }
+    div.iconwrap :first-child {
+        margin-left: 3%;
+    }
+    div.iconwrap {
+        text-align: center;
+    }
 }
 @media screen and (max-width: 700px) {
+
     .description#home {
         -ms-flex: 100%;
         flex: 100%;
@@ -280,9 +343,7 @@ div.block#dark *{
         max-width: 100%;
         margin: none;
     }
-    .centered {
-        width: 90%;
-    }
+
     .iconwrap {
         width: 100%;
         text-align: center;
@@ -291,7 +352,6 @@ div.block#dark *{
         margin: 5%;
     }
     .title { font-size: 15vw; }
-    #particles-js { display: none; }
     #post-only {
         width: 90%;
         padding: 0 5%;
@@ -310,7 +370,47 @@ div.block#dark *{
         transform: none;
     }
 }
-p.float-fade-in { animation: fadeInUp 2s ease-in-out 0s forwards; }
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      -moz-transform: translateY(0);
+      -ms-transform: translateY(0);
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+    40% {
+      -moz-transform: translateY(-30px);
+      -ms-transform: translateY(-30px);
+      -webkit-transform: translateY(-30px);
+      transform: translateY(-30px);
+    }
+    60% {
+      -moz-transform: translateY(-15px);
+      -ms-transform: translateY(-15px);
+      -webkit-transform: translateY(-15px);
+      transform: translateY(-15px);
+    }
+  }
+  .bounce {
+    -moz-animation: bounce 2s infinite;
+    -webkit-animation: bounce 2s infinite;
+    animation: bounce 2s infinite;
+  }
+p.float-fade-in { 
+    animation: fadeInUp 2s ease-in-out 0s forwards; 
+    margin: 0;
+    padding: 5% 0;
+}
+h3.fade-in { 
+    animation: fadeIn 5s; 
+}
 
 /* Hide branding */
 img[src*="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"] { display: none; }
