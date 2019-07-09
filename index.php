@@ -43,7 +43,7 @@ feel free to snoop! | GitHub @alexlynd | Instagram @alex_lynd | Twitter @alexlyn
 			<main id="home">
 				<div class="centered">
 					<h1 class="tmp">Alex Lynd</h1>
-					<div class="title" style="font-size: 7vw"><span class="typed" style="white-space:pre;"></span></div>
+					<div class="title" style="font-size: 7vw" id= "home"><span class="typed" style="white-space:pre;"></span></div>
 					<h3 class="fade-in">Hacker | Maker | Programmer</h3>
 					<p class= "float-fade-in">Welcome to my website! This is my personal page where you can find my project documentation, portfolio, story, and other resources/tutorials on a variety of things including programming, hacking and more. This site is programmed and maintained by me, and you can view the source <a href="https://github.com/alexlynd/website">here</a>.  Click the icons below to head to my social media, or one of the links in the menu to check out my stuff!</p>
 					<div class="iconwrap">

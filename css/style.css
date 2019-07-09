@@ -295,7 +295,7 @@ div.block#dark *{
         color: white;
         font-size: 15vh;
     }
-    .title {
+    .title#home {
         display: none;
     }
     main#home p {
