@@ -16,9 +16,9 @@
 		<?php include "../menu.html";?>
 		<header>
 			<div class= "title">Tutorials</div>
-			<div class="description" id="sub-page">Tutorials.  Nothing here yet!</div>
 		</header>
 		<main>
+			<h3>Microcontrollers</h3>
 			<p><a href="programming-the-ATtiny">Programming the ATtiny</a></p>
 		</main>
 	</body>
