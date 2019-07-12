@@ -2,6 +2,8 @@
 <html lang= "en-US">
 	<head>
 		<title>Tutorials | Alex Lynd</title>
+		<link rel="shortcut icon" type="image/x-icon" href="../img/favicon.ico"/>
+		
 		<meta charset="utf-8">
 		<meta name="description" content="Tutorials and guides">
   		<meta name="keywords"    content="Alex Lynd, blog, electronics, programming, hacking, diy, tutorials">

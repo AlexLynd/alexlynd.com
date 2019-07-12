@@ -3,6 +3,8 @@
 <html lang= "en-US">
 	<head>
 		<title>Projects | Alex Lynd</title>
+		<link rel="shortcut icon" type="image/x-icon" href="../img/favicon.ico"/>
+
 		<meta charset="utf-8">
 		<meta name="description" content="My projects">
   		<meta name="keywords"    content="Alex Lynd, projects">
