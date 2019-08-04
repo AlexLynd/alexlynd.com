@@ -3,6 +3,7 @@ navbar {
 	  width: 100%;
 	  position: absolute;
 	  right: 0;
+	  z-index: 1;
 }
 
 navbar a {
@@ -17,6 +18,7 @@ navbar a {
 
 navbar a:first-child {
 	  margin-left: 5%;
+
 }
 
 navbar a:hover {
@@ -90,4 +92,9 @@ navbar a:hover {
 
 a.float-fade-in {
 	animation: fadeInUp 2s ease-in-out 0s forwards;
+}
+
+#contact {
+	float: right;
+	margin-right: 5%;
 }
