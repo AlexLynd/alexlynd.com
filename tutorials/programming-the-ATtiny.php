@@ -19,7 +19,8 @@
 			<div class="description" id="sub-page">A cheap and small AVR microcontroller</div>
 		</header>
 		<main id="wide">
-			<p><a href="programming-the-ATtiny">Programming the ATtiny</a></p>
+			<h3>Introduction</h3>
+			<p>The ATtiny family is a set of AVR microcontrollers developed by Atmel for small projects that come in many embeddable packages.
 		</main>
 	</body>
 </html>	

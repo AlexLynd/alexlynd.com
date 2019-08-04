@@ -23,6 +23,8 @@
 			
 			<p class="sub-title"><a href="/projects">Projects</a>  <a href="/software">Software</a>  <a href="">Contests</a> <a href="">Portfolio</a></p>
 		</header>
+		
+
 		<main id="wide">
 			<div class="post-container"> 
 				<div class="post">
