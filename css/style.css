@@ -103,13 +103,7 @@ main {
     position: absolute;
     padding: 0 5%;
 }
-#widee {
-    width: 90%;
-    height: 50%;
-    margin-top: 10%;
-    padding: 2% 5% 0 5%;
-    text-align: center;
-}
+
 sidebar {
     float: left;
     width: 25%;
@@ -137,6 +131,7 @@ h3 {
     flex: 33.33%;
     max-width: 33.33%;
     margin: none;
+    padding: none;
 }
 .post-icon {
     text-align: center;
@@ -279,8 +274,10 @@ div.block#dark *{
     text-align: center;
     width: 100%;
 }
+.project-form {
+    margin-left: 8%;
+}
 
-  
 /********** RESPONSIVE **********/
 @media screen and (max-width: 1100px) {
     .post {
@@ -289,6 +286,7 @@ div.block#dark *{
         max-width: 50%;
         margin: none;
     }
+
     .tmp {
         display: block;
         text-align: center;
@@ -414,3 +412,64 @@ h3.fade-in {
 
 /* Hide branding */
 img[src*="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"] { display: none; }
+
+
+
+
+.styled-select {
+   background: url(../img/select.png) no-repeat 96% 0;
+   height: 29px; /* ere */
+   overflow: hidden;
+   width: 240px;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+
+}
+
+.styled-select select {
+   font-family: Montserrat;
+   background: transparent;
+   border: none;
+   font-size: 14px;
+   height: 29px;
+   padding: 5px; /* If you add too much padding here, the options won't show in IE */
+   width: 268px;
+}
+
+
+.semi-square {
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   border-radius: 5px;
+}
+
+.blue    { background-color: #363636; }
+
+/* -------------------- Colors: Text */
+.blue select    { color: #f2f2f2; }
+
+.blog-container a {
+    display: block;
+    text-decoration: none;
+    line-height: 1.6em;
+}
+.blog-form {
+    display: inline-block;
+    padding: 0; margin: 0;
+    vertical-align: super;
+}
+.form-inline {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+label {
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.blog-container h3 {
+    font-family: "Space Mono";
+    font-size: 1.6em;
+}
