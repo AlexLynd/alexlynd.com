@@ -21,7 +21,7 @@ body {
     min-height: 100%;
 }
 header {
-    padding-top: 4%;
+    padding-top: 6%;
     padding-bottom: 40px;
     overflow: visible;
     width: 100%;
@@ -103,6 +103,12 @@ main {
     position: absolute;
     padding: 0 5%;
 }
+.project {
+    float: left;
+    width: 86%;
+    position: absolute;
+    padding: 0 7%;
+}
 
 sidebar {
     float: left;
@@ -125,6 +131,7 @@ h3 {
     flex-wrap: wrap;
     align-content: center;
     width: 100%;
+
 }
 .post {
     -ms-flex: 33.33%;
@@ -136,7 +143,7 @@ h3 {
 .post-icon {
     text-align: center;
     margin: 0 10px;
-    height: 40vh;
+    height: 35vh; /* temp */
     background: #111111;
     border-radius: 7px 7px 0 0;
 }
@@ -181,7 +188,7 @@ p.sub-title {
 p.sub-title a {
     color: white;
     font-size: 26px;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     font-family: "Space Mono";
     text-decoration: none;
 }
@@ -260,7 +267,7 @@ div.block#dark *{
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     position: absolute;
-    margin-left: 5%;
+    margin-left: 7%;
     width: 55%;
 }
 .tmp {

@@ -18,14 +18,27 @@
 	<body>
 		<?php include "../menu.html";?>
 		<header>
-			<div class= "title">Projects</div>
-			<hr style="width: 200px; color: #cccccc">
+			<div class= "title" style="font-size: 60px;">Projects</div>
+			
 			
 			<p class="sub-title"><a href="/projects">Projects</a>  <a href="/software">Software</a>  <a href="">Contests</a> <a href="">Portfolio</a></p>
 		</header>
 		
 
-		<main id="wide">
+		<main class="project">
+		<div class="form-inline" style="margin-bottom: 3%;">
+				<label for="sort-by-tag" style="margin-left: 10px;">Sort by tag: &nbsp</label>
+				<div class="styled-select blue semi-square">	
+					<select name="blog" onchange="process(this.value)">
+						<option value="all">All</option>
+						<option value="">Arduino</option>
+						<option value="ESP8266">ESP8266</option>
+						<option value="RPi">Raspberry Pi</option>
+						
+					</select>
+				</div>
+				<br><br>		
+			</div>
 			<div class="post-container"> 
 				<div class="post">
 					<div class="post-icon">

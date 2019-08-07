@@ -68,16 +68,22 @@ avrdude -p t85 -P /dev/ttyACM0 -c avrisp -b 19200 -U flash:w:tvbgone.hex</pre>
 			<ol>
 				<li>First, I soldered the IR LED's and their driver NPN transistors.  In the configuration below.  I tied all of the positive leads together, which I brought to the left side of the perfboard, creating a positive power railing.  I also tied all of transistor bases and tied the collectors, which I used to draw the negative power railing.</li>
 				<br>
-				<img src= "img/sch/layer0.png" style="width: 100%">
+				<img src= "img/sch/0.png" style="width: 100%">
 				<br> <br>
 				<li>Next I placed the PNP transistor with the emitter inline with the positive power rail, and the collector to the NPN bases.</li>
-				<img src= "img/sch/layer1.png" style= "width: 100%">
+				<img src= "img/sch/1.png" style="width: 100%">
 				<li>I soldered down the DIP socket facing the left, and connected a 1k Ω resistor to pin 5 and to the base of the PNP transistor.</li>
+				<img src= "img/sch/2.png" style="width: 100%">
 				<li>I drew pin 8 of the DIP socket to the positive power line, and connected a 1k Ω resistor to pin 7.  I then connected the indicator LED to the other lead of the resistor and to power.</li>
+				<img src= "img/sch/3.png" style="width: 100%">
 				<li>After this, I connected pin 6 (MISO) to ground with a 10K Ω resistor.  I also connected the 8 MHz resonator to pins 2 & 3 of the DIP socket, and the middle pin to the negative power rail.</li>
+				<img src= "img/sch/4.png" style="width: 100%">
 				<li>I connected a tacticle switch between reset (pin 1) and ground of the DIP socket.</li>
+				<img src= "img/sch/5.png" style="width: 100%">
 				<li>Finally, I added the last two components, the two capcitors which do voltage regulation.</li>
+				<img src= "img/sch/6.png" style="width: 100%">
 				<li>I finished the board by adding the rest of the power connections, and attaching them to the double AAA battery pack power lines.</li>
+				<img src= "img/sch/7.png" style="width: 100%">
 				<li>Using some double-sided foam tape, I stuck the perfboard down to the battery pack.</li>
 			</ol>
 			<h3>Conclusion</h3>

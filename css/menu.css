@@ -14,10 +14,11 @@ navbar a {
 	  display: inline-block;
 	  margin: 0 auto;
 	  font-size: 20px;
+	  margin-top: 1em;
 }
 
 navbar a:first-child {
-	  margin-left: 5%;
+	  margin-left: 7%;
 
 }
 
