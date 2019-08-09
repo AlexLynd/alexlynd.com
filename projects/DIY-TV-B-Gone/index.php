@@ -21,7 +21,8 @@
 			<div class= "title">DIY TV-B-Gone</div>
 			<div class= "description" id="post">Kill TV's with a button press</div>
 		</header>
-		<main id="post-only">
+		<!--main id="post-only"-->
+		<main class="project">
 			<h3>Overview</h3>
 			<p>The TV-B-Gone is a device created by Adafruit that can shut off almost any TV using IR.  Using their open-source documentation, I created my own TV-B-Gone for much cheaper and using a piece of perfboard.  This page documents the steps to how I created my TV-B-Gone, but I will do a more detailed tutorial soon.</p>
 			<h3>How it Works</h3>
