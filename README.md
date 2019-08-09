@@ -10,3 +10,5 @@ Source code for my personal website.  Why am I using PHP? I'm too lazy to retype
 - change meta and header
 - add icons
 - consistent margins
+### Notes to self
+- make margin of main consistent and relatve to **navbar** (and children)
