@@ -81,7 +81,7 @@ feel free to snoop! | GitHub @alexlynd | Instagram @alex_lynd | Twitter @alexlyn
 			</main>	
 			<div class="block" id="light" >
 				<div class="description" id="home" style="padding-left: 7%">
-					<h1>About Me</h1>
+					<h1 style="color: #ee6352">About Me</h1>
 					<p>I'm Alex Lynd, a 16 year old maker/hacker from California.  I pursue a lot of hobbies including piano, skating, TaeKwonDo, parkour, hacking and more!  I spend most of my time hacking electonics / programming, and push my content to the internet and YouTube.  I'm interested in infosec and hacking, and have been teaching myself a lot about various CS subjects.  I'm a big fan of open-source and free content, and my goal is to keep learning and to spread my knowledge to as many people as I can.</p>
 				</div>
 				<div class="image" id="home" style="padding-right: 7%">
@@ -98,7 +98,7 @@ feel free to snoop! | GitHub @alexlynd | Instagram @alex_lynd | Twitter @alexlyn
 				</div>
 			</div>	
 			<footer>
-				<p>© 2019 | Alex Lynd</p>
+				<p> Alex Lynd | © 2019 All Rights Reserved.</p>
 			</footer>
 		</div> <!--text-->
 		<script>

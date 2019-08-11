@@ -22,13 +22,16 @@ navbar a:first-child {
 }
 
 navbar a:hover {
-	text-decoration: underline;
 	opacity: 1;
+	color: #17bebb;
+	border-bottom: 1px solid #17bebb;
+	
 	/* override */
 }
 .sticky {
 	position: fixed;
 	background: black;
+	opacity: .8;
 }
 #icon {
 	display: none;
