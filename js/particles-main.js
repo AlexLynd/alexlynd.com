@@ -2,24 +2,21 @@ particlesJS('particles-js',
   {
     "particles": {
       "number": {
-        "value": 100,
+        "value": 60,
         "density": {
           "enable": true,
           "value_area": 800
         }
       },
       "color": {
-        "value": "#17bebb"
+        "value": "#17bebb"  // dot color
       },
       "shape": {
-        "type": "lon",
+        "type": "none",  //shape
         "stroke": {
           "width": 0,
-          "color": "#000000"
+          "color": "#ffffff"
         },
-		  "polygon": {
-     "nb_sides": 5
-  },
         "image": {
           "src": "img/github.svg",
           "width": 100,
@@ -27,7 +24,7 @@ particlesJS('particles-js',
         }
       },
       "opacity": {
-        "value": 0.5,
+        "value": .6, // here for dot strength
         "random": false,
         "anim": {
           "enable": false,
@@ -49,9 +46,9 @@ particlesJS('particles-js',
       "line_linked": {
         "enable": true,
         "distance": 150,
-        "color": "#f2f2f2",
-        "opacity": 0.4,
-        "width": 1.5
+        "color": "#17bebb",
+        "opacity": 0.45,
+        "width": 2  // thicc
       },
       "move": {
         "enable": true,
