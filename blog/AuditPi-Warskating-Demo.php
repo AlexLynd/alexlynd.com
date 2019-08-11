@@ -15,7 +15,7 @@
 	<body onload="javascript:process('all')">
 		<?php include "../menu.html";?>
 		<main id="wide">
-        
+            
 		</main>
 
 	</body>

@@ -26,7 +26,6 @@
 			<h3>Troubleshooting</h3>
 			</hr>
 			<b><p>more documentation coming soon...</p></b>
-			
 		</main>
 		<sidebar>
 			<h3>Gallery</h3> <br>
