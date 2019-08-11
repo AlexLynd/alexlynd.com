@@ -1,9 +1,9 @@
 navbar {
 	  float: left;
 	  width: 100%;
-	  position: absolute;
+	  position: ; /*change to abs*/
 	  right: 0;
-	  z-index: 1;
+	  z-index: 1;	
 }
 
 navbar a {
@@ -12,9 +12,8 @@ navbar a {
 	  padding: 20px;
 	  float: left;
 	  display: inline-block;
-	  margin: 0 auto;
 	  font-size: 20px;
-	  margin-top: 1em;
+	  margin: 1em 0;
 }
 
 navbar a:first-child {
@@ -27,7 +26,10 @@ navbar a:hover {
 	opacity: 1;
 	/* override */
 }
-
+.sticky {
+	position: fixed;
+	background: black;
+}
 #icon {
 	display: none;
 }
@@ -93,9 +95,4 @@ navbar a:hover {
 
 a.float-fade-in {
 	animation: fadeInUp 2s ease-in-out 0s forwards;
-}
-
-#contact {
-	float: right;
-	margin-right: 5%;
 }
