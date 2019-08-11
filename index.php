@@ -25,7 +25,7 @@ feel free to snoop! | GitHub @alexlynd | Instagram @alex_lynd | Twitter @alexlyn
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous"> 
 		<script src="js/typed.js" type="text/javascript"></script>
 	</head>
-	<body>
+	<body onload="javascript:menu()">
 		<script> 
 			document.addEventListener('DOMContentLoaded',function() { 
 				var typed= new Typed('.typed', {
@@ -39,7 +39,26 @@ feel free to snoop! | GitHub @alexlynd | Instagram @alex_lynd | Twitter @alexlyn
 		<script src="js/particles.js"></script>
 		<script src="js/particles-main.js"></script>
 		<div class= "text">
+
 			<?php include "menu.html";?>
+			<style>
+				navbar {
+					position: absolute;
+				}
+			</style>
+			<script>
+				window.onscroll = function() {myFunction()};
+
+				var header = document.getElementById("navbar");
+				var sticky = header.offsetTop;
+				function myFunction() {
+				if (window.pageYOffset > 100) {
+					header.classList.add("sticky");
+				} else {
+					header.classList.remove("sticky");
+				}
+				}
+			</script>
 			<main id="home">
 				<div class="centered">
 					<h1 class="tmp">Alex Lynd</h1>
@@ -61,20 +80,20 @@ feel free to snoop! | GitHub @alexlynd | Instagram @alex_lynd | Twitter @alexlyn
 				</div>
 			</main>	
 			<div class="block" id="light" >
-				<div class="description" id="home">
+				<div class="description" id="home" style="padding-left: 7%">
 					<h1>About Me</h1>
 					<p>I'm Alex Lynd, a 16 year old maker/hacker from California.  I pursue a lot of hobbies including piano, skating, TaeKwonDo, parkour, hacking and more!  I spend most of my time hacking electonics / programming, and push my content to the internet and YouTube.  I'm interested in infosec and hacking, and have been teaching myself a lot about various CS subjects.  I'm a big fan of open-source and free content, and my goal is to keep learning and to spread my knowledge to as many people as I can.</p>
 				</div>
-				<div class="image" id="home">
+				<div class="image" id="home" style="padding-right: 7%">
 					<img src="img/profile.png" >
 				</div>
 			</div>
 			<div class="block" id="dark">
 				<div class="image" id="home">
-					<img src="img/fire.jpg">
+					<img src="img/fire.jpg" style="padding-left: 7%">
 				</div>
-				<div class="description" id="home">
-					<h1>My Work</h1>
+				<div class="description" id="home" style="padding-right: 7%">
+					<h1 style="color: #17bebb">My Work</h1>
 					<p>I'm currently in high school, and am self taught in everything CS.  I've worked on a lot of personal projects aimed mostly at hardware hacking and auditing devices, which I've recently started to upload to the internet.  I've picked up a lot in programming, hacking, electronics, and webdev.  I coded this website myself from scratch, and you can check out some of my <a href="projects">projects</a>.  I prototype electronics, hack/fix consumer electronics, make websites, and much more.  My current projects include a device for portable wardriving and an AI-based trash sorting device.  I also love pyrotechnics and fire stuff.</p>
 				</div>
 			</div>	
@@ -82,5 +101,11 @@ feel free to snoop! | GitHub @alexlynd | Instagram @alex_lynd | Twitter @alexlyn
 				<p>© 2019 | Alex Lynd</p>
 			</footer>
 		</div> <!--text-->
+		<script>
+			function menu() {
+				navbar_item= document.getElementsByName("navbar");
+				// change inner style element (to do)
+			}
+		</script>
 	</body>
 </html>
