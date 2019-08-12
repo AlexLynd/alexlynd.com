@@ -14,21 +14,19 @@
 	</head>
 	<body>
 		<?php include "../../menu.html";?>
-		<header>
+		<header style="">
 			<div class= "title">AuditPi</div>
 			<div class= "description" id="post">A Modular Handheld Raspberry Pi PDA </div>
-			<center><iframe width="704" height="396" src="https://www.youtube.com/embed/--w1xGTmC7Y"></iframe></center>
-			<center><p>Projects Blogs / Archive: <a href="1.0">V1.0</a></p></center> <br>
 			<center><p>This page contains current documentation for the AuditPi project.  Check project blogs above for archived logs.</p></center>
 		</header>
-		<main id="post-only">
+		<main class="post">
 			<h3>Overview</h3>
 			<p>AuditPi is a handheld pocket computer with a variety of uses, but aimed at mobile hacking and audits.  This device comes in a phone form factor and runs Linux, offering full functionality of a computer.  It's modular design allows it to easily be mounted in a variety of places and on standard tripods.</p>
 			<p>Please check the archives under the video if you are looking for an in depth build process for each iteration of the project.</p>
 			
 			<h3>Description</h3>
 			<p>AuditPi is a Linux computer that uses a Raspberry Pi 3 as the processor, and features a 3.5" screen driven over SPI using the WaveShare TFT drivers.  These components have been slimmed down to fit in a smaller form factor and for arrangement.  The unit is powered by a 3.7V battery, stepped up with an Adafruit PowerBoost 1000C.  There is a 1/4"-20 thread mount at the bottom of the case that allows it to be tethered to tripods and other stands.  The design is intended to be as modular as possible, so I am working on making this a more open and easier design to replicate by designing custom PCBs.</p>
-			
+			<iframe width="704" height="396" src="https://www.youtube.com/embed/--w1xGTmC7Y"></iframe>
 			<h3>Specs/Features</h3>
 			<ul>
 				<li>3.5" Screen</li>
@@ -69,5 +67,9 @@
 				<div class="sketchfab-embed-wrapper"><iframe width="640" height="480" src="https://sketchfab.com/models/defd279928454ab598af15e7db9d01d1/embed?autospin=0.2&amp;autostart=1" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe></div>
 			</ol>
 		</main>
+		<sidebar>
+			<h3>Contents</h3>
+			<p>test</p>
+		</sidebar>
 	</body>
 </html>

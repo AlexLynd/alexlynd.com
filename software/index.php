@@ -20,7 +20,7 @@
 			
 			<p class="sub-title"><a href="/projects" >Projects</a>  <a href="">Software</a>  <a href="">Contests</a> <a href="">Portfolio</a></p>
 		</header>
-		<main id="wide">
+		<main>
 			<h3>PhoneGen</h3>
 			<p>A program to generate phone number wordlists for Wi-Fi hacking.</p>
 			<h3><a href="Spectrum-Default-PassGen" style="color: white; text-decoration: none">Spectrum Router Password Generator</a></h3>

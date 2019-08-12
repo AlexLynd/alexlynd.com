@@ -19,7 +19,7 @@
 			<div class= "description">Exploiting 6 Function Calculators <i class="fas fa-link"></i> <i class="fab fa-github-alt"></i> <i class="fab fa-youtube"></i>
 			</div>
 		</header>
-		<main>
+		<main class="post">
 			<h3>Description</h3>
 			<p>CalcProbe is an exploit that allows you to hack any regular 6 function calculator into an internet-capable device that can execute code.</p>
 			<h3>How It Works</h3>

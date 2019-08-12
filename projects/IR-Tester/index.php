@@ -23,7 +23,7 @@
 			<div class= "description" id="post">An IR value grabber with Arduino  <a href="https://github.com/alexlynd/IR-Tester" target="_blank"><i class="fab fa-github-alt"></i></a>
 			</div>		
 		</header>
-		<main id="post-only">
+		<main class="post">
 			<h3>Description</h3>
 			<p>Have you ever needed to grab a quick IR value from a remote or test if your IR LED's are working?  IR-Tester is a small keychain-sized project I created to test my IR LED's and remote controls.  IR-Tester is AVR based, using an Arduino Nano as the processor, reading IR values through an IR reciever module, and outputting the code in binary and hex to an OLED.</p>
 			<h3>What can I do with it?</h3>
@@ -85,5 +85,8 @@ void loop(){
   }
 }</pre>
 		</main>
+		<sidebar>
+			<h3>Links</h3>
+</sidebar>
 	</body>
 </html>

@@ -21,8 +21,7 @@
 			<div class= "title">DIY TV-B-Gone</div>
 			<div class= "description" id="post">Kill TV's with a button press</div>
 		</header>
-		<!--main id="post-only"-->
-		<main class="project">
+		<main class="post">
 			<h3>Overview</h3>
 			<p>The TV-B-Gone is a device created by Adafruit that can shut off almost any TV using IR.  Using their open-source documentation, I created my own TV-B-Gone for much cheaper and using a piece of perfboard.  This page documents the steps to how I created my TV-B-Gone, but I will do a more detailed tutorial soon.</p>
 			<h3>How it Works</h3>
@@ -90,5 +89,8 @@ avrdude -p t85 -P /dev/ttyACM0 -c avrisp -b 19200 -U flash:w:tvbgone.hex</pre>
 			<h3>Conclusion</h3>
 			<p>I intended to closely replicate the Adafruit TV-B-Gone without having to buy their custom PCB at a pricey $20.  The main difference in my replication is the perfboard, and substitution of a few components.  While I chose to use the same battery pack they used, you can use any power supply between 3-5 V.  While I'm using wide-angled LEDs, I can still get a pretty good range on my TV-B-Gone, but will try to get some of the narrow-angled ones in the future.  I'm working on a micro iteration of the TV-B-Gone which I'm hoping to release soon.</p>
 		</main>
+		<sidebar>
+			<h3>Links</h3>
+		</sidebar>
 	</body>
 </html>

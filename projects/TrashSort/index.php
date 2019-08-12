@@ -19,7 +19,7 @@
 			<div class= "description" id="post">[WIP] An AI based trash classifier using CV  <a href="https://github.com/alexlynd/TrashSort" target="_blank"><i class="fab fa-github-alt"></i></a>
 			</div>
 		</header>
-		<main>
+		<main class="post">
 			<h3>Overview | TL;DR</h3>
 			<p>Landfills are overflowing with re-usable trash.  A big portion of this problem originates from people not sorting their trash, and inefficient processing methods in trash facilities using expensive and excessive machines. We propose to harness the power of AI and computer vision (CV) to rectify this problem, and have created a prototype machine to model how this can be implemented.</p>
 			
