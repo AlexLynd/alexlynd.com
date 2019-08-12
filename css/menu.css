@@ -1,7 +1,7 @@
 navbar {
 	  float: left;
 	  width: 100%;
-	  position: ; /*change to abs*/
+	  position: relative; /*change to abs*/
 	  right: 0;
 	  z-index: 1;	
 }
@@ -36,7 +36,10 @@ navbar a:hover {
 #icon {
 	display: none;
 }
-
+#shop {
+	float: right;
+	margin-right: 7%;
+}
 /*  RESPONSIVE  */
 
 @media screen and (max-width: 800px) {

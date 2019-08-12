@@ -1,10 +1,12 @@
 /*
-Color scheme:
-Dark:  #1c1c1c #111111
-Light: #cccccc #f2f2f2
+    Color scheme:
+    Dark:  #1c1c1c #111111
+    Light: #cccccc #f2f2f2
+    Aux:   #17bebb #ee6352
+
+    no pre-processor used, wrote all this trash by hand.  some of it works.
 */
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
-@import url('https://fonts.googleapis.com/css?family=Space Mono');
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Space+Mono&display=swap');
 
 html { 
     scroll-behavior: smooth; 
@@ -95,29 +97,21 @@ main {
     float: left;
     display: block;
     position: relative;
-    width: 60%;
-    padding: 0 5%;
-}
-#post-only {
-    width: 70%;
-    padding: 0 15%;
-}
-#wide {
-    float: left;
-    width: 90%;
-    position: absolute;
-    padding: 0 5%;
-}
-.project {
-    float: left;
     width: 86%;
     padding: 0 7%;
+}
+main.post { /* project posts, use with sidebar */
+    float: left;
+    width: 61%;
+    padding: 0;
+    padding-left: 7%;
+    padding-right: 2%;
 }
 
 sidebar {
     float: left;
-    width: 25%;
-    padding: 0 5% 0 0;
+    width: 21%;
+    padding: 0 7% 0 2%;
 }
 a { color: #cccccc; }
 a.link { text-decoration: underline;} /** this is a placeholder **/
@@ -137,7 +131,7 @@ h3 {
     width: 100%;
 
 }
-.post {
+div.post {
     -ms-flex: 33.33%;
     flex: 33.33%;
     max-width: 33.33%;
@@ -285,9 +279,6 @@ div.block#dark *{
     text-align: center;
     width: 100%;
 }
-.project-form {
-    margin-left: 8%;
-}
 
 /********** RESPONSIVE **********/
 @media screen and (max-width: 1100px) {
@@ -361,10 +352,6 @@ div.block#dark *{
         margin: 5%;
     }
     .title { font-size: 15vw; }
-    #post-only {
-        width: 90%;
-        padding: 0 5%;
-    }
 }
 /********** ANIMATION **********/
 @keyframes fadeInUp {
@@ -423,9 +410,6 @@ h3.fade-in {
 
 /* Hide branding */
 img[src*="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"] { display: none; }
-
-
-
 
 .styled-select {
    background: url(../img/select.png) no-repeat 96% 0;
