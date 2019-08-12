@@ -14,7 +14,7 @@
 	</head>
 	<body onload="javascript:process('all')">
 		<?php include "../menu.html";?>
-		<main id="post-only">
+		<main>
 			<header>
 				<div class= "title">Blog</div>
 			</header>
@@ -28,6 +28,7 @@
 						<option value="all">All</option>
 						<option value="RPi">Raspberry Pi</option>
 						<option value="ESP8266">ESP8266</option>
+						<option value="tutorial">Tutorials</option>
 					</select>
 				</div>
 				<br><br>		
@@ -40,6 +41,7 @@
 		<script>
 			var blogs=[
 				["AuditPi WarSkating Demo",["RPi","AuditPi","Wardriving","Warskating"],"07-22-2019","AuditPi-Warskating-Demo"],
+				["[ Tutorial ] Programming the ATtiny",["DIY","electronics","tutorial"],"06-20-2019","../tutorials/programming-the-ATtiny"],
 				["Making a DIY TV-B-Gone",["DIY","electronics"],"06-20-2019",""],
 				["AuditPi: the modular handheld Raspberry Pi terminal",["RPi","AuditPi"],"05-19-2019","../projects/AuditPi"],
 				["Wifi controlled fireworks",["ESP8266","NodeMCU"],"05-23-2019",""],
