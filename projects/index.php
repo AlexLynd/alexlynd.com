@@ -42,7 +42,7 @@
 			<div class="post-container"> 
 				<div class="post">
 					<div class="post-icon">
-						<a href="ESP-DriveBy"><img src="ESP-DriveBy/img/ESP-DriveBy.jpg"></a>
+						<a href="ESP-DriveBy"><img src="ESP-DriveBy/img/EDB.JPG"></a>
 					</div>
 					<div class="post-caption">
 						<h1>ESP-DriveBy</h1>
@@ -78,7 +78,7 @@
 				</div>
 				<div class="post">
 					<div class="post-icon">
-						<a href="TrashSort"><img src="TrashSort/img/TrashSort.png"></a>
+						<a href="TrashSort"><img src="TrashSort/img/TrashSort.jpg"></a>
 					</div>
 					<div class="post-caption">
 						<h1>TrashSort</h1>

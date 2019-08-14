@@ -14,10 +14,9 @@
 	</head>
 	<body>
 		<?php include "../../menu.html";?>
-		<header style="">
+		<header id="AuditPi">
 			<div class= "title">AuditPi</div>
 			<div class= "description" id="post">A Modular Handheld Raspberry Pi PDA </div>
-			<center><p>This page contains current documentation for the AuditPi project.  Check project blogs above for archived logs.</p></center>
 		</header>
 		<main class="post">
 			<h3>Overview</h3>
@@ -26,7 +25,7 @@
 			
 			<h3>Description</h3>
 			<p>AuditPi is a Linux computer that uses a Raspberry Pi 3 as the processor, and features a 3.5" screen driven over SPI using the WaveShare TFT drivers.  These components have been slimmed down to fit in a smaller form factor and for arrangement.  The unit is powered by a 3.7V battery, stepped up with an Adafruit PowerBoost 1000C.  There is a 1/4"-20 thread mount at the bottom of the case that allows it to be tethered to tripods and other stands.  The design is intended to be as modular as possible, so I am working on making this a more open and easier design to replicate by designing custom PCBs.</p>
-			<iframe width="704" height="396" src="https://www.youtube.com/embed/--w1xGTmC7Y"></iframe>
+			
 			<h3>Specs/Features</h3>
 			<ul>
 				<li>3.5" Screen</li>
@@ -68,8 +67,11 @@
 			</ol>
 		</main>
 		<sidebar>
-			<h3>Contents</h3>
-			<p>test</p>
+			<h3>Gallery</h3>
+			<div class="video-container"><iframe width="853" height="200" src="https://www.youtube.com/embed/--w1xGTmC7Y" frameborder="0" allowfullscreen></iframe></div>
+			<h3>Links</h3>
+			<a href="https://blog.hackster.io/auditpi-portable-pi-setup-and-warskating-device-a152c2a0962f" target="_blank">Hackster.io Article</a>  
+			<a href="">WarSkating Vlog</a>
 		</sidebar>
 	</body>
 </html>

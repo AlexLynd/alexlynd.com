@@ -90,7 +90,8 @@ avrdude -p t85 -P /dev/ttyACM0 -c avrisp -b 19200 -U flash:w:tvbgone.hex</pre>
 			<p>I intended to closely replicate the Adafruit TV-B-Gone without having to buy their custom PCB at a pricey $20.  The main difference in my replication is the perfboard, and substitution of a few components.  While I chose to use the same battery pack they used, you can use any power supply between 3-5 V.  While I'm using wide-angled LEDs, I can still get a pretty good range on my TV-B-Gone, but will try to get some of the narrow-angled ones in the future.  I'm working on a micro iteration of the TV-B-Gone which I'm hoping to release soon.</p>
 		</main>
 		<sidebar>
-			<h3>Links</h3>
+			<h3>Gallery</h3>
+			<div class="video-container"><iframe width="853" height="480" src="https://www.youtube.com/embed/44Ok92cPIOk" frameborder="0" allowfullscreen></iframe></div>
 		</sidebar>
 	</body>
 </html>
