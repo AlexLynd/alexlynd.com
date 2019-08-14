@@ -17,10 +17,13 @@ body {
     color: #cccccc;
     background-color: #111111;
     font-family: 'Montserrat';
-    font-size: 20px;
+    font-size: 16px;
     margin: 0 auto;
     word-wrap: break-word;
     min-height: 100%;
+}
+p ,a{
+    line-height: 1.6em;
 }
 header {
     padding-top: 2%;
@@ -31,6 +34,11 @@ header {
     float: left;
     display: block;
     position: relative;
+    
+}
+header#AuditPi {
+    background: url('img/AuditPi.jpg');
+    background-size: contain;
 }
 footer {
     background: black;
@@ -55,6 +63,7 @@ div.title {
 }
 .centered h3 {
     margin: 0;
+    font-size: 30px;
 }
 /* ICONWRAP */
 div.iconwrap {
@@ -99,28 +108,32 @@ main {
     position: relative;
     width: 86%;
     padding: 0 7%;
+
 }
 main.post { /* project posts, use with sidebar */
-    float: left;
     width: 61%;
     padding: 0;
     padding-left: 7%;
     padding-right: 2%;
 }
-
+main.post h3, sidebar h3 {
+    color: white;
+    font-size: 2.5vh;
+    
+}
 sidebar {
     float: left;
     width: 21%;
     padding: 0 7% 0 2%;
 }
+sidebar a {
+    display: block;
+}
 a { color: #cccccc; }
 a.link { text-decoration: underline;} /** this is a placeholder **/
 a:hover { opacity: 0.7; }
 /********** Containment **********/
-h3 {
-    color: white;
-    font-size: 3.5vh;
-}
+
 /********** PROJECT ICON**********/
 .post-container {
     display: -ms-flexbox;
@@ -186,7 +199,6 @@ p.sub-title {
 p.sub-title a {
     color: white;
     font-size: 26px;
-    /*text-transform: uppercase;*/
     font-family: "Space Mono";
     text-decoration: none;
 }
@@ -218,7 +230,6 @@ main#home {
 }
 main#home p {
     font-size:20px;
-    line-height: 1.6em;
 }
 div.block {
     width: 100%;
@@ -282,7 +293,7 @@ div.block#dark *{
 
 /********** RESPONSIVE **********/
 @media screen and (max-width: 1100px) {
-    .post {
+    div.post {
         -ms-flex: 50%;
         flex: 50%;
         max-width: 50%;
@@ -337,7 +348,7 @@ div.block#dark *{
         flex-direction: column-reverse;
     }
 
-    .post {
+    div.post {
         -ms-flex: 100%;
         flex: 100%;
         max-width: 100%;
@@ -468,3 +479,18 @@ label {
     font-family: "Space Mono";
     font-size: 1.6em;
 }
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+    }
+    
+    .video-container iframe,
+    .video-container object,
+    .video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    }
