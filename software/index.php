@@ -17,8 +17,6 @@
 		<?php include "../menu.html";?>
 		<header>
 			<div class= "title">Software</div>
-			
-			<p class="sub-title"><a href="/projects" >Projects</a>  <a href="">Software</a>  <a href="">Contests</a> <a href="">Portfolio</a></p>
 		</header>
 		<main>
 			<h3>PhoneGen</h3>
