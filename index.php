@@ -8,6 +8,7 @@
 /_/  |_/_/\___/_/|_|  /_____/\__, /_/ /_/\__,_/  (_)   \___/\____/_/ /_/ /_/ 
                             /____/                                           
 feel free to snoop! | GitHub @alexlynd | Instagram @alex_lynd | Twitter @alexlynd
+
 -->
 
 <html lang= "en-US">
@@ -24,12 +25,13 @@ feel free to snoop! | GitHub @alexlynd | Instagram @alex_lynd | Twitter @alexlyn
 		<link rel="stylesheet" type= "text/css" href="css/menu.css">
 		<script src="js/typed.js" type="text/javascript"></script>
 	</head>
-	<body onload="javascript:menu()">
+	<body>
 		<script> 
 			document.addEventListener('DOMContentLoaded',function() { 
 				var typed= new Typed('.typed', {
-					strings: ['<b>Alex Lynd&nbsp;</b>'],
+					strings: ["Alex Lynd &nbsp;"],
 					typeSpeed: 50,
+					smartSpace: true,
 					loop: false
 				});
 			});
@@ -40,51 +42,25 @@ feel free to snoop! | GitHub @alexlynd | Instagram @alex_lynd | Twitter @alexlyn
 		<div class= "text">
 
 			<?php include "menu.html";?>
-			<style>
-				navbar {
-					position: absolute;
-				}
-			</style>
-			<script>
-				window.onscroll = function() {myFunction()};
-
-				var header = document.getElementById("navbar");
-				var sticky = header.offsetTop;
-				function myFunction() {
-				if (window.pageYOffset > 100) {
-					header.classList.add("sticky");
-				} else {
-					header.classList.remove("sticky");
-				}
-				}
-			</script>
 			<main id="home">
 				<div class="centered">
-					<h1 class="tmp">Alex Lynd</h1>
-					<div class="title" style="font-size: 7vw" id= "home"><span class="typed" style="white-space:pre;"></span></div>
-					<h3 class="fade-in">Hacker | Maker | Programmer</h3>
-					<p class= "float-fade-in">Welcome to my website! This is my personal page where you can find my project documentation, portfolio, story, and other resources/tutorials on a variety of things including programming, hacking and more. This site is programmed and maintained by me, and you can view the source <a href="https://github.com/alexlynd/website">here</a>.  Click the icons below to head to my social media, or one of the links in the menu to check out my stuff!</p>
-					<div class="iconwrap">
-						<a href="https://github.com/alexlynd" target="_blank"><i class="fab fa-github-alt"></i></a>
-						<a href="https://youtube.com/c/AlexLynd" target="_blank"><i class="fab fa-youtube"></i></a>
-						<a href= "https://instagram.com/alex_lynd" target="_blank"><i class="fab fa-instagram"></i></a>
-						<a href= "https://twitter.com/alexlynd" target="_blank"><i class="fab fa-twitter"></i></a>
-						<a href="https://patreon.com/alexlynd" target="_blank"><i class="fab fa-patreon"></i></a>
-					</div>
+					<div class="title" id= "home"><br><span class="typed"></span></div>
+					<p class= "float-fade-in" style="line-height: 2em">Well rounded hacker and maker looking for more opportunities to create cool CS projects and learn as much as I can.  I'm passionate about making YouTube videos and sharing my content with others.  Currently in high school and pursuing multiple hobbies including martial arts and music.</p>
+					
 				</div>
-				<div class= "arrow bounce">
+				<div class= "arrow">
 					<a href="#light">
-						<i class="fas fa-sort-down"></i>
+					<i class="fas fa-chevron-down"></i>
 					</a>
 				</div>
 			</main>	
 			<div class="block" id="light" >
 				<div class="description" id="home" style="padding-left: 7%">
 					<h1 style="color: #ee6352">About Me</h1>
-					<p>I'm Alex Lynd, a 16 year old maker/hacker from California.  I pursue a lot of hobbies including piano, skating, TaeKwonDo, parkour, hacking and more!  I spend most of my time hacking electonics / programming, and push my content to the internet and YouTube.  I'm interested in infosec and hacking, and have been teaching myself a lot about various CS subjects.  I'm a big fan of open-source and free content, and my goal is to keep learning and to spread my knowledge to as many people as I can.</p>
+					<p>I'm Alex Lynd, and a 16 year old maker/hacker from California.  I pursue a lot of hobbies including piano, skating, TaeKwonDo, parkour, hacking and more!  I spend most of my time hacking electonics / programming, and push my content to the internet and YouTube.  I'm interested in infosec and hacking, and have been teaching myself a lot about various CS subjects.  I'm a big fan of open-source and free content, and my goal is to keep learning and to spread my knowledge to as many people as I can.</p>
 				</div>
 				<div class="image" id="home" style="padding-right: 7%">
-					<img src="img/profile.png" >
+					<img src="img/profile.jpg" style="filter: grayscale(80%)">
 				</div>
 			</div>
 			<div class="block" id="dark">
@@ -99,12 +75,6 @@ feel free to snoop! | GitHub @alexlynd | Instagram @alex_lynd | Twitter @alexlyn
 			<footer>
 				<p> Alex Lynd | © 2019 All Rights Reserved.</p>
 			</footer>
-		</div> <!--text-->
-		<script>
-			function menu() {
-				navbar_item= document.getElementsByName("navbar");
-				// change inner style element (to do)
-			}
-		</script>
+		</div>
 	</body>
 </html>
