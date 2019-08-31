@@ -15,13 +15,11 @@
 		<link rel="stylesheet" type= "text/css" href="../css/menu.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
-	<body>
+	<body id="">
 		
 		<?php include "../menu.html";?>
-
-		<header>
-			<div class= "title" style="font-size: 60px;">Projects</div>
-			<p class="sub-title"><a href="/projects">Projects</a>  <a href="/software">Software</a>  <a href="">Contests</a> <a href="">Portfolio</a></p>
+		<header style="padding-top: 10%">
+			<div class= "title" style="font-size: 60px; margin-left: 5%; letter-spacing: 10px;">Projects</div>
 		</header>
 		
 
