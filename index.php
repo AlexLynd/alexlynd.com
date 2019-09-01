@@ -25,7 +25,7 @@ feel free to snoop! | GitHub @alexlynd | Instagram @alex_lynd | Twitter @alexlyn
 		<link rel="stylesheet" type= "text/css" href="css/menu.css">
 		<script src="js/typed.js" type="text/javascript"></script>
 	</head>
-	<body>
+	<body onload="javascript: largeMenu();">
 		<script> 
 			document.addEventListener('DOMContentLoaded',function() { 
 				var typed= new Typed('.typed', {
@@ -36,15 +36,26 @@ feel free to snoop! | GitHub @alexlynd | Instagram @alex_lynd | Twitter @alexlyn
 				});
 			});
 		</script>
+		<style>
+			navbar {
+				position: absolute;
+			}
+		</style>
 		<div id="particles-js"></div>
 		<script src="js/particles.js"></script>
 		<script src="js/particles-main.js"></script>
 		<div class= "text">
 
 			<?php include "menu.html";?>
+			<script>
+				function largeMenu() {
+					navbar = document.getElementsByTagName("navbar")[0];
+					navbar.className += "large";
+				}
+			</script>
 			<main id="home">
-				<div class="centered">
-					<div class="title" id= "home"><br><span class="typed"></span></div>
+				<div class="centered" id="home">
+					<div class="title" id= "home"><span class="typed"></span></div>
 					<p class= "float-fade-in" style="line-height: 2em">Well rounded hacker and maker looking for more opportunities to create cool CS projects and learn as much as I can.  I'm passionate about making YouTube videos and sharing my content with others.  Currently in high school and pursuing multiple hobbies including martial arts and music.</p>
 					
 				</div>
