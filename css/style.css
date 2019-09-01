@@ -104,7 +104,6 @@ main.post { /* project posts, use with sidebar */
 main.post h3, sidebar h3 {
     color: white;
     font-size: 2.5vh;
-    
 }
 sidebar {
     float: left;
@@ -423,4 +422,51 @@ label {
 }
 .fadeOutAnim {
     animation: fadeOut .3s forwards;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 30px;
+    text-align: left;
+    color: black;
+  }
+  .grid-container h1 {
+      margin: 0;
+      font-family: "Space Mono", monospace;
+      font-size: 25px;
+  }
+  .grid-container p {
+      margin: 1% 0;
+      font-size: 15px;
+  }
+  .event {
+    display: grid;
+    grid-template-columns: 30% auto;
+    border-radius: 5px;
+
+  }
+  .grid-item {
+    background-color: white;
+    padding: 20px;
+    font-size: 30px;
+    border-radius: 0 5px 5px 0;
+  }
+  .grid-item#date p {
+      font-family: "Space Mono", monospace;
+  }
+  .phot {
+    background-color: grey;
+    padding: 20px;
+    font-size: 30px;
+    grid-row: 1/3;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+}
+.event-test {
+    background: url("../img/fire.jpg");
 }
