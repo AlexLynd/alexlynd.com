@@ -1,19 +1,11 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous"> 
 <input type="checkbox" id="demo" style="display: none"/>
 <label for="demo" div id="icon">≡</label>
-
 <script>
 	function exitAnim(url, tone) {
 		var bodyy = document.getElementsByTagName("body")[0]; 
 		console.log(tone);
-		if (tone=='dark') {
-			console.log("dark");
-			bodyy.classList.add("fadeOutAnim-dark");
-		}
-		else {
-			console.log("light");
-			bodyy.classList.add("fadeOutAnim-light");
-		}
+		bodyy.classList.add("fadeOutAnim-dark");
 		setTimeout( function() { window.location = url }, 500 );
 	}
 </script>
