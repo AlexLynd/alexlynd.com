@@ -1,61 +1,55 @@
 navbar {
-	  float: left;
-	  width: 100%;
-	  position: relative; /*change to abs*/
-	  right: 0;
-	  z-index: 1;	
+	float: left;
+	width: 100%;
+	position: relative;
+	right: 0;
+	z-index: 1;	
 }
-
 navbar a {
-	  color: white;
-	  text-decoration: none;
-	  padding: 20px;
-	  float: left;
-	  display: inline-block;
-	  font-size: 20px;
-	  margin: 1em 0;
+	color: white;
+	text-decoration: none;
+	padding: .3em 30px;
+	float: left;
+	display: inline-block;
+	font-size: 16px;
+	margin: 1em 0;
+	animation: fadeInDown 1s ease-in-out 0s;
 }
-
+navbar.large a{
+	padding: 2% 30px;
+}
 navbar a:first-child {
-	  margin-left: 7%;
-
+	margin-left: 10%;
+	padding-left: 0;
 }
 
-navbar a:hover {
-	opacity: 1;
-	color: #17bebb;
-	border-bottom: 1px solid #17bebb;
-	
-	/* override */
-}
-.sticky {
-	position: fixed;
-	background: black;
-	opacity: .8;
-}
+navbar a:hover { opacity: .8;}
 #icon {
 	display: none;
 }
 #shop {
 	float: right;
-	margin-right: 7%;
+	margin-right: 10%;
 }
+
 /*  RESPONSIVE  */
 
 @media screen and (max-width: 800px) {
-	navbar {
-		display: none;
-	}
+	navbar { display: none; }
 	navbar a {
 		display: inline-block;
-		text-align: right;
+		font-family: "Space Mono", monospace;
+		margin: 0;
+		text-align: center;
 		width: 90%;
 		height: 10%;
 		font-size: 5vh;
+		font-weight: 100;
 		animation: fadeInUp 2s ease-in-out 0s
 	}
 	navbar a:first-child {
 		margin-left: 0;
+		padding: 2% 30px;
 	}
 	#demo:checked~navbar {
 		display: block;
@@ -85,7 +79,6 @@ navbar a:hover {
 		z-index: 2;
 	}
 }
-
 @keyframes fadeInUp {
 	from {
 		opacity: 0;
@@ -98,7 +91,16 @@ navbar a:hover {
 		transform: none;
 	}
 }
+@keyframes fadeInDown {
+	from {
+		opacity: 0;
+		-webkit-transform: translate3d(0,-100%,0);
+		transform: translate3d(0,-100%,0);
 
-a.float-fade-in {
-	animation: fadeInUp 2s ease-in-out 0s forwards;
+	}
+	to {
+		opacity: 1;
+		-webkit-transform: none;
+		transform: none;
+	}
 }
