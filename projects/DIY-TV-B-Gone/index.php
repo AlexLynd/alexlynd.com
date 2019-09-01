@@ -17,9 +17,11 @@
 	</head>
 	<body onload="PR.prettyPrint()">
 		<?php include "../../menu.html";?>
-		<header>
-			<div class= "title">DIY TV-B-Gone</div>
-			<div class= "description" id="post">Kill TV's with a button press</div>
+		<header class="project" id="project-TV-B-Gone">
+			<div class="centered">
+				<div class= "title">DIY TV-B-Gone</div>
+				<div class= "description" id="post">Kill TV's with a button press</div>
+			</div>
 		</header>
 		<main class="post">
 			<h3>Overview</h3>

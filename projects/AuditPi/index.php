@@ -14,9 +14,11 @@
 	</head>
 	<body>
 		<?php include "../../menu.html";?>
-		<header id="AuditPi">
-			<div class= "title">AuditPi</div>
-			<div class= "description" id="post">A Modular Handheld Raspberry Pi PDA </div>
+		<header class="project" id="AuditPi">
+			<div class= "centered">
+				<div class= "title">AuditPi</div>
+				<div class= "description" id="post">A Modular Handheld Raspberry Pi PDA </div>
+			</div>
 		</header>
 		<main class="post">
 			<h3>Overview</h3>
@@ -63,7 +65,7 @@
 			<h3>Assembly</h3>
 			<ol>
 				<li>Start by downloading the 2 stl files for this project on the side of the page.</li>
-				<div class="sketchfab-embed-wrapper"><iframe width="640" height="480" src="https://sketchfab.com/models/defd279928454ab598af15e7db9d01d1/embed?autospin=0.2&amp;autostart=1" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe></div>
+				
 			</ol>
 		</main>
 		<sidebar>

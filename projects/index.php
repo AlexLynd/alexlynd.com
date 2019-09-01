@@ -15,11 +15,17 @@
 		<link rel="stylesheet" type= "text/css" href="../css/menu.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
-	<body id="">
+	<body onload="javascript: largeMenu()">
 		
 		<?php include "../menu.html";?>
-		<header style="padding-top: 10%">
-			<div class= "title" style="font-size: 60px; margin-left: 5%; letter-spacing: 10px;">Projects</div>
+		<script>
+				function largeMenu() {
+					navbar = document.getElementsByTagName("navbar")[0];
+					navbar.className += "large";
+				}
+			</script>
+		<header>
+			<div class= "title" style="font-size: 60px;letter-spacing: 10px;">Projects</div>
 		</header>
 		
 
