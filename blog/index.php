@@ -37,40 +37,16 @@
 			<div class="blog-container">   
 				<!--js generate content-->
 			</div>
-
-			<div class="grid-container">
-                        <div class="event card">
-                                <div class="event-test phot"></div>
-                              <div class="grid-item" id="desc">
-                                  <h1>Club Rush</h1>
-                                  <p>Come check out our club at club rush in the gym during lunch!  We'll be discussing some of the events and activites in our club.</p>
-                              </div>  
-                              <div class="grid-item" id="date">
-                                  <p>[8/29/19]</p>
-                            </div>
-                        </div>
-                        <div class="event card">
-                                <div class="phot"></div>
-                              <div class="grid-item" id="desc">
-                                  <h1>First Club Meeting</h1>
-                                  <p>Coming soon ...</p>
-                              </div>  
-                              <div class="grid-item" id="date">
-                                  <p>[TBD]</p>
-                            </div>
-                        </div>
-                  </div>
 		</main>
 		<script>
 			var blogs=[
-				["AuditPi WarSkating Demo",["RPi","AuditPi","Wardriving","Warskating"],"07-22-2019","AuditPi-Warskating-Demo", "Warskating test"],
+				["AuditPi WarSkating Demo",["RPi","AuditPi","Wardriving","Warskating"],"07-22-2019","AuditPi-Warskating-Demo"],
 				["[ Tutorial ] Programming the ATtiny",["DIY","electronics","tutorial"],"06-20-2019","../tutorials/programming-the-ATtiny"],
 				["Making a DIY TV-B-Gone",["DIY","electronics"],"06-20-2019",""],
 				["AuditPi: the modular handheld Raspberry Pi terminal",["RPi","AuditPi"],"05-19-2019","../projects/AuditPi"],
 				["Wifi controlled fireworks",["ESP8266","NodeMCU"],"05-23-2019",""],
 				["Creating a Kali drive",["Hacking","a"],"06-22-2019",""]
 			];
-			/*Name , Tags , Date , Dir , Desc , Photo Dir*/
 			var month = ["January","February","March","April","May","June","July","August","September","October","November","December"];
 			var date =[];
 			var element = document.getElementsByClassName('blog-container');

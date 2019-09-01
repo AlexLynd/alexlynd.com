@@ -453,7 +453,7 @@ label {
     font-size: 30px;
     border-radius: 0 5px 5px 0;
   }
-  .grid-item#date p {
+  .grid-item.date p {
       font-family: "Space Mono", monospace;
   }
   .phot {
