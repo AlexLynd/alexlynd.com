@@ -18,9 +18,7 @@
 			<header>
 				<div class= "title">Blog</div>
 			</header>
-
-			<!--p class="labler">Sort by tag:</p-->
-			<p>Check ouy my YouTube channel for vlogs and updates!</p>
+			<!--p>Check ouy my YouTube channel forates!</p-->
 			<div class="form-inline">
 				<label for="sort-by-tag">Sort by tag: &nbsp</label>
 				<div class="styled-select blue semi-square">	
@@ -33,23 +31,24 @@
 				</div>
 				<br><br>		
 			</div>
-			<hr>
-			<div class="blog-container">   
-				<!--js generate content-->
+
+			<div class = "grid-container">
+
 			</div>
 		</main>
 		<script>
 			var blogs=[
-				["AuditPi WarSkating Demo",["RPi","AuditPi","Wardriving","Warskating"],"07-22-2019","AuditPi-Warskating-Demo"],
-				["[ Tutorial ] Programming the ATtiny",["DIY","electronics","tutorial"],"06-20-2019","../tutorials/programming-the-ATtiny"],
-				["Making a DIY TV-B-Gone",["DIY","electronics"],"06-20-2019",""],
-				["AuditPi: the modular handheld Raspberry Pi terminal",["RPi","AuditPi"],"05-19-2019","../projects/AuditPi"],
-				["Wifi controlled fireworks",["ESP8266","NodeMCU"],"05-23-2019",""],
-				["Creating a Kali drive",["Hacking","a"],"06-22-2019",""]
+				["AuditPi WarSkating Demo",["RPi","AuditPi","Wardriving","Warskating"],"07-22-2019","AuditPi-Warskating-Demo", "Portable wardriving with Raspberry Pi demonstration by Alex Lynd",""],
+				["[ Tutorial ] Programming the ATtiny",["DIY","electronics","tutorial"],"06-20-2019","../tutorials/programming-the-ATtiny", "Warskating",""],
+				["Making a DIY TV-B-Gone",["DIY","electronics"],"06-20-2019","", "Warskating",""],
+				["AuditPi: the modular handheld Raspberry Pi terminal",["RPi","AuditPi"],"05-27-2019","../projects/AuditPi", "Warskating",""],
+				["Wifi controlled fireworks",["ESP8266","NodeMCU"],"05-23-2019","", "Warskating",""],
+				["Creating a Kali drive",["Hacking","a"],"05-22-2019","", "Warskating",""]
 			];
+			/* name , tags , date , link , desc , img */
 			var month = ["January","February","March","April","May","June","July","August","September","October","November","December"];
 			var date =[];
-			var element = document.getElementsByClassName('blog-container');
+			var element = document.getElementsByClassName('grid-container');
 			function process(str){
 				date=[];
 				element[0].innerHTML="";  // clear
@@ -58,10 +57,24 @@
 				if (str=="all") {
 					for (var i = 0; i < blogs.length; i++) {
 						getDate(blogs[i][2]);
-						article_name = document.createElement("a");
-						article_name.innerHTML= blogs[i][0];
-						article_name.href= blogs[i][3];
-						element[0].appendChild(article_name);
+						blog_wrap= document.createElement("div"); blog_wrap.className += "event";
+						prof_wrap= document.createElement("div"); prof_wrap.className += "phot";
+
+						desc_wrap= document.createElement("div"); desc_wrap.className += "grid-item"; desc_wrap.id = "desc";
+						date_wrap= document.createElement("div"); date_wrap.className += "grid-item"; date_wrap.id = "date";
+
+						blog_name= document.createElement("h1"); blog_name.innerHTML= blogs[i][0];
+						blog_desc= document.createElement("p");  blog_desc.innerHTML= blogs[i][4];
+						desc_wrap.appendChild(blog_name);
+						desc_wrap.appendChild(blog_desc);
+
+						blog_date= document.createElement("p"); blog_date.innerHTML= blogs[i][2];
+						date_wrap.appendChild(blog_date);
+						
+						blog_wrap.appendChild(prof_wrap);
+						blog_wrap.appendChild(desc_wrap)
+						blog_wrap.appendChild(date_wrap);
+						element[0].appendChild(blog_wrap);
 					}
 				}
 				else {
@@ -69,13 +82,29 @@
 						for (var j=0; j<blogs[i][1].length; j++){
 							if (str==blogs[i][1][j]) {
 								getDate(blogs[i][2]);
-								article_name = document.createElement("a");
-								article_name.innerHTML= blogs[i][0];
-								article_name.href= blogs[i][3];
-								element[0].appendChild(article_name);
+						blog_wrap= document.createElement("div"); blog_wrap.className += "event";
+						prof_wrap= document.createElement("div"); prof_wrap.className += "phot";
+
+						desc_wrap= document.createElement("div"); desc_wrap.className += "grid-item"; desc_wrap.id = "desc";
+						date_wrap= document.createElement("div"); date_wrap.className += "grid-item"; date_wrap.id = "date";
+
+						blog_name= document.createElement("h1"); blog_name.innerHTML= blogs[i][0];
+						blog_desc= document.createElement("p");  blog_desc.innerHTML= blogs[i][4];
+						desc_wrap.appendChild(blog_name);
+						desc_wrap.appendChild(blog_desc);
+
+						blog_date= document.createElement("p"); blog_date.innerHTML= blogs[i][2];
+						date_wrap.appendChild(blog_date);
+						
+						blog_wrap.appendChild(prof_wrap);
+						blog_wrap.appendChild(desc_wrap)
+						blog_wrap.appendChild(date_wrap);
+						element[0].appendChild(blog_wrap);
 							}
 						}
 					}
+
+
 				}
 			}
 			function getDate(raw_date) {
@@ -83,7 +112,7 @@
 				if (date.includes(full)) return;
 				else {
 					date.unshift(full);
-					date_header = document.createElement("h3");
+					date_header = document.createElement("h2");
 					date_header.innerHTML = full;
 					element[0].appendChild(date_header);
 				}

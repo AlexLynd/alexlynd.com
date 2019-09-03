@@ -166,7 +166,7 @@ div.post {
 div.post-caption h1 {
     font-size: 30px;
     font-family: "Space Mono", monospace;
-    color: #17bebb;
+    color: grey;
 }
 .post-caption p {
     font-size: 15px;
@@ -387,6 +387,7 @@ img[src*="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhos
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    float: left;
 }
 label {
     font-size: 15px;
@@ -431,6 +432,11 @@ label {
     grid-gap: 30px;
     text-align: left;
     color: black;
+    float: left;
+    width: 100%;
+  }
+  .grid-container h2 {
+      color: white;
   }
   .grid-container h1 {
       margin: 0;
@@ -451,7 +457,6 @@ label {
     background-color: white;
     padding: 20px;
     font-size: 30px;
-    border-radius: 0 5px 5px 0;
   }
   .grid-item.date p {
       font-family: "Space Mono", monospace;
@@ -463,10 +468,11 @@ label {
     grid-row: 1/3;
     background-size: cover;
     background-repeat: no-repeat;
+    border-radius: 5px 0 0 5px;
 }
-.card {
-    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+#date { 
+    border-radius: 0 0 5px 0;
 }
-.event-test {
-    background: url("../img/fire.jpg");
+#desc {
+    border-radius: 0 5px 0 0;
 }
