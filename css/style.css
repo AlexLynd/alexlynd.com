@@ -470,9 +470,17 @@ label {
     background-repeat: no-repeat;
     border-radius: 5px 0 0 5px;
 }
-#date { 
+.date { 
     border-radius: 0 0 5px 0;
 }
-#desc {
+.desc {
     border-radius: 0 5px 0 0;
+}
+a.blog-wrapper {
+    text-decoration: none;
+    color: black;
+}
+a.blog-wrapper:hover {
+    text-decoration: underline;
+    opacity: .9;
 }
