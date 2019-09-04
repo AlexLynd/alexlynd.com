@@ -25,7 +25,7 @@
 				}
 			</script>
 		<header>
-			<div class= "title" style="font-size: 60px;letter-spacing: 10px;">Projects</div>
+			<div class= "title" style="font-size: 60px; letter-spacing: 10px;">Projects</div>
 		</header>
 		
 

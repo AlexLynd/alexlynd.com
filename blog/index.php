@@ -38,7 +38,7 @@
 		</main>
 		<script>
 			var blogs=[
-				["AuditPi WarSkating Demo",["RPi","AuditPi","Wardriving","Warskating"],"07-22-2019","AuditPi-Warskating-Demo", "Portable wardriving with Raspberry Pi demonstration by Alex Lynd",""],
+				["AuditPi WarSkating Demo",["RPi","AuditPi","Wardriving","Warskating"],"07-22-2019","AuditPi-Warskating-Demo", "Portable wardriving with Raspberry Pi demonstration by Alex Lynd","background: url('thumb.png'); background-size: cover;"],
 				["[ Tutorial ] Programming the ATtiny",["DIY","electronics","tutorial"],"06-20-2019","../tutorials/programming-the-ATtiny", "Warskating",""],
 				["Making a DIY TV-B-Gone",["DIY","electronics"],"06-20-2019","", "Warskating",""],
 				["AuditPi: the modular handheld Raspberry Pi terminal",["RPi","AuditPi"],"05-27-2019","../projects/AuditPi", "Warskating",""],
@@ -59,9 +59,15 @@
 						getDate(blogs[i][2]);
 						blog_wrap= document.createElement("div"); blog_wrap.className += "event";
 						prof_wrap= document.createElement("div"); prof_wrap.className += "phot";
+						link_wrap= document.createElement("a");   link_wrap.href= blogs[i][3];
 
-						desc_wrap= document.createElement("div"); desc_wrap.className += "grid-item"; desc_wrap.id = "desc";
-						date_wrap= document.createElement("div"); date_wrap.className += "grid-item"; date_wrap.id = "date";
+						link_wrap.className += "blog-wrapper";
+
+						prof_wrap.style = blogs[i][5];
+						
+
+						desc_wrap= document.createElement("div"); desc_wrap.className += "grid-item desc";
+						date_wrap= document.createElement("div"); date_wrap.className += "grid-item date";
 
 						blog_name= document.createElement("h1"); blog_name.innerHTML= blogs[i][0];
 						blog_desc= document.createElement("p");  blog_desc.innerHTML= blogs[i][4];
@@ -74,7 +80,8 @@
 						blog_wrap.appendChild(prof_wrap);
 						blog_wrap.appendChild(desc_wrap)
 						blog_wrap.appendChild(date_wrap);
-						element[0].appendChild(blog_wrap);
+						link_wrap.appendChild(blog_wrap);
+						element[0].appendChild(link_wrap);
 					}
 				}
 				else {
@@ -82,24 +89,31 @@
 						for (var j=0; j<blogs[i][1].length; j++){
 							if (str==blogs[i][1][j]) {
 								getDate(blogs[i][2]);
-						blog_wrap= document.createElement("div"); blog_wrap.className += "event";
-						prof_wrap= document.createElement("div"); prof_wrap.className += "phot";
+								blog_wrap= document.createElement("div"); blog_wrap.className += "event";
+								prof_wrap= document.createElement("div"); prof_wrap.className += "phot";
+								link_wrap= document.createElement("a");   link_wrap.href= blogs[i][3];
 
-						desc_wrap= document.createElement("div"); desc_wrap.className += "grid-item"; desc_wrap.id = "desc";
-						date_wrap= document.createElement("div"); date_wrap.className += "grid-item"; date_wrap.id = "date";
+								link_wrap.className += "blog-wrapper";
 
-						blog_name= document.createElement("h1"); blog_name.innerHTML= blogs[i][0];
-						blog_desc= document.createElement("p");  blog_desc.innerHTML= blogs[i][4];
-						desc_wrap.appendChild(blog_name);
-						desc_wrap.appendChild(blog_desc);
+								prof_wrap.style = blogs[i][5];
+								
 
-						blog_date= document.createElement("p"); blog_date.innerHTML= blogs[i][2];
-						date_wrap.appendChild(blog_date);
-						
-						blog_wrap.appendChild(prof_wrap);
-						blog_wrap.appendChild(desc_wrap)
-						blog_wrap.appendChild(date_wrap);
-						element[0].appendChild(blog_wrap);
+								desc_wrap= document.createElement("div"); desc_wrap.className += "grid-item desc";
+								date_wrap= document.createElement("div"); date_wrap.className += "grid-item date";
+
+								blog_name= document.createElement("h1"); blog_name.innerHTML= blogs[i][0];
+								blog_desc= document.createElement("p");  blog_desc.innerHTML= blogs[i][4];
+								desc_wrap.appendChild(blog_name);
+								desc_wrap.appendChild(blog_desc);
+
+								blog_date= document.createElement("p"); blog_date.innerHTML= blogs[i][2];
+								date_wrap.appendChild(blog_date);
+								
+								blog_wrap.appendChild(prof_wrap);
+								blog_wrap.appendChild(desc_wrap)
+								blog_wrap.appendChild(date_wrap);
+								link_wrap.appendChild(blog_wrap);
+								element[0].appendChild(link_wrap);
 							}
 						}
 					}
