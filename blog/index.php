@@ -97,7 +97,6 @@
 
 								prof_wrap.style = blogs[i][5];
 								
-
 								desc_wrap= document.createElement("div"); desc_wrap.className += "grid-item desc";
 								date_wrap= document.createElement("div"); date_wrap.className += "grid-item date";
 
