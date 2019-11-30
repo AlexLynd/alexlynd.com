@@ -48,6 +48,11 @@ header#project-TV-B-Gone {
     background-size: cover;
     background-repeat: no-repeat;
 }
+header#project-CreepDetector{
+    background: url('/projects/CreepDetector/img/CreepDetector.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 footer {
     background: black;
     padding: 2%;
@@ -84,6 +89,24 @@ div.description#post {
     font-family: "Space Mono";
     font-size: 26px;
     color: white;
+}
+div.img-captioned {
+    background: white;
+    border-radius: 6px; /* no show */
+    width: 70%;
+    margin: 5% auto;
+}
+div.img-captioned img {
+    border-radius: 5px 5px 0 0;
+}
+#post-img {
+    background: white;
+    border-radius: 0 0 5px 5px;
+    margin: 0; padding-top: 0;
+}
+#post-img p {
+    color: black;
+    padding: .5em;
 }
 /******** End Header ********/
 main {
@@ -276,6 +299,10 @@ div.title#home {
     }
     div.title#home {
         font-size: 8vw;
+    }
+    main.post {
+        width: 90%;
+        padding: 5%;
     }
 }
 @media screen and (max-width: 700px) {

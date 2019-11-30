@@ -46,7 +46,16 @@
 			<div class="post-container"> 
 				<div class="post">
 					<div class="post-icon">
-						<a href="ESP-DriveBy"><img src="ESP-DriveBy/img/EDB.JPG"></a>
+						<a href="CreepDetector"><img src="CreepDetector/img/CreepDetector.png"></a>
+					</div>
+					<div class="post-caption">
+						<h1>CreepDetector</h1>
+						<p>Detect stalkers using wardriving data (ft. Kody Kinzie)</p>
+					</div>
+				</div>
+				<div class="post">
+					<div class="post-icon">
+						<a href="ESP-DriveBy"><img src="ESP-DriveBy/img/EDB1.JPG"></a>
 					</div>
 					<div class="post-caption">
 						<h1>ESP-DriveBy</h1>
