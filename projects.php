@@ -39,10 +39,12 @@
                         <div>
                             <div class="uk-card uk-card-muted uk-card-body uk-padding uk-padding-remove">
                                 <div class="uk-cover-container uk-height-medium uk-animation-toggle" tabindex="0">
-                                    <img src="img/fire.jpg" class="uk-animation-kenburns" alt="" uk-cover uk-img>
+                                    <img src="projects/CreepDetector/img/RPi_Kismet_TFT.png" class="uk-animation-kenburns" alt="" uk-cover uk-img>
                                 </div>
-                                <h3 class="uk-margin uk-margin-small" style="font-weight: 600; font-family: 'Space Mono'!important;">CreepDetector</h3>
-                                <p class="uk-margin uk-margin-small">Detect stalkers using wardriving</p>
+                                <a href="projects/CreepDetector/index.php">
+                                    <h3 class="uk-margin uk-margin-small" style="font-weight: 600; font-family: 'Space Mono'!important;">CreepDetector</h3>
+                                    <p class="uk-margin uk-margin-small">Detect stalkers over WiFi using wardriving</p>
+                                </a>
                                 <span class="uk-badge">Microcontroller</span>
                                 <span class="uk-badge">Python</span>
                                 <span class="uk-badge">Raspberry Pi</span> 

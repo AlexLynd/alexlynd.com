@@ -74,11 +74,14 @@ body {
     background-color: "#111111";
     z-index: -1;
 }
-.main p, .home-sections p {
+.home-sections p {
     color: #cccccc !important;
     font-size: 1.2em;
-    line-height: 1.9em;
     font-weight: 400 !important;
+}
+
+* p {
+    line-height: 1.9em;
 }
 
 .home-sections p {
@@ -148,4 +151,8 @@ body {
 
 .blog p {
     font-size: .85em !important;
+}
+
+.header-content {
+    text-align: center;
 }
