@@ -25,7 +25,7 @@
         <div class="header-content">
             <h1 class="uk-heading-small">CreepDetector</h1>
             <p>Detecting stalkers over WiFi with Wardriving</p>
-            <span class="uk-article-meta"><span uk-icon="clock"></span>&nbsp;&nbsp;&nbsp;Jan 20, 2019</span>
+            <span class="uk-article-meta"><span uk-icon="clock"></span>&nbsp;&nbsp;&nbsp;Oct 11, 2019</span>
         </div>
     </div>
 
@@ -50,6 +50,19 @@
                             map against our route to see where they were spotted. This article will give you an overview
                             of how the CreepDetector tool works, how we tested it, and how you can set it up yourself.
                         </p>
+                        <h3 class="uk-heading-bullet">CreepDetector Featured</h3>
+                        <iframe height="200px" width="100%" frameborder="no" scrolling="no" seamless src="https://player.simplecast.com/e0deb819-e94a-42ac-bbb4-bcb91d472fff?dark=true"></iframe>
+                       <br> <br>
+                        <div class="uk-child-width-1-2@l" uk-grid uk-lightbox="animation: scale">
+                            <div>
+                                <iframe src="https://www.youtube.com/embed/ug9dHwm3h0s?autoplay=0&amp;showinfo=0&amp;rel=0&amp;modestbranding=1&amp;playsinline=1" width="1920" height="1080" frameborder="0" allowfullscreen uk-responsive uk-video="automute: true; autoplay: false;"></iframe>
+                            </div>
+                            <div>
+                                <iframe src="https://www.youtube.com/embed/wNke7teywOs?autoplay=0&amp;showinfo=0&amp;rel=0&amp;modestbranding=1&amp;playsinline=1" width="1920" height="1080" frameborder="0" allowfullscreen uk-responsive uk-video="automute: true; autoplay: false;"></iframe>
+
+                            </div>
+                        </div>
+
                         <h3 class="uk-heading-bullet">Components</h3>                        
                         <div>
                             <ul class="uk-list uk-list-collapse uk-list-disc">
@@ -68,9 +81,8 @@
                             to capture Wi-Fi data promiscuously, and attached a 3.5” TFT so I could have a small monitor
                             during the wardriving session. Then launching Kismet, a command-line wardriving utility, I
                             was set to start capturing creeps.</p>
-                        <a href="" style="color: white; font-size: 14px;">[Full installation instructions]</a>
                         <div class="uk-inline">
-                            <img src="img/RPi_Kismet_TFT.png" alt="">
+                            <img src="img/RPi_Kismet_TFT.png" alt="" >
                             <div class="uk-position-bottom-right uk-overlay uk-overlay-default" style="color: black !important">Raspberry Pi Running Kismet</div>
                         </div>
                         <p>
@@ -94,11 +106,9 @@
                             which contain the devices detected and locations they were spotted at. The CreepDetector
                             extracts this information, and creates a database of all wireless devices found, and
                             information including the ESSID, device type and spotted locations.</p>
-                        <div class="img-captioned">
-                            <img style="width: 100%" src="img/devices.png" alt="Jupyter Notebook CreepDetector code" />
-                            <div class="post-caption" id="post-img">
-                                <p>List of over 1200 devices detected</p>
-                            </div>
+                        <div class="uk-inline">
+                            <img src="img/devices.png" alt="">
+                            <div class="uk-position-bottom-right uk-overlay uk-overlay-default" style="color: black !important">List of over 1200 devices detected</div>
                         </div>
 
                         <p>After creating this list, the CreepDetector filters out devices spotted within a threshold
@@ -106,12 +116,11 @@
                             filtered, a "creep list" is rendered, and sure enough the “Creeper” device appears! It even
                             picked up Kody’s phone as an unintended side-effect, since we initially didn't expect it to
                             detect devices that are not Wi-Fi access points.</p>
-                        <div class="img-captioned">
-                            <img style="width: 100%" src="img/Creeps.png" alt="Jupyter Notebook CreepDetector code" />
-                            <div class="post-caption" id="post-img">
-                                <p>We found the Creep!</p>
-                            </div>
+                        <div class="uk-inline">
+                            <img src="img/Creeps.png" alt="">
+                            <div class="uk-position-bottom-right uk-overlay uk-overlay-default" style="color: black !important">We found the creep!</div>
                         </div>
+                        
                         <p>Finally to help visualise where the creeps were spotted, I used a Python library called
                             Folium for map plotting. I wrote a sketchy algorithm that plots my wardriving route and
                             layers Creeps on top of it with all the places they were detected at. If you want to

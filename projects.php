@@ -57,11 +57,10 @@
                                     <img src="/projects/AuditPi/img/AuditPi2.jpg" class=" uk-animation-kenburns" alt="" uk-cover uk-img>
                                 </div>
                                 <h3 class="uk-margin uk-margin-small" style="font-weight: 600; font-family: 'Space Mono'!important;">AuditPi</h3>
-                                <p class="uk-margin uk-margin-small">Detect stalkers using wardriving</p>
-                                <span class="uk-badge">Microcontroller</span>
-                                <span class="uk-badge">Python</span>
+                                <p class="uk-margin uk-margin-small">A portable, modular handheld Raspberry Pi terminal</p>
+
                                 <span class="uk-badge">Raspberry Pi</span> 
-                                <span class="uk-badge">Wardriving</span>
+                                
                                 
                             </div>
                         </div>
@@ -71,12 +70,8 @@
                                     <img src="/projects/IR-Tester/img/IR-Tester.jpg" class=" uk-animation-kenburns" alt="" uk-cover uk-img>
                                 </div>
                                 <h3 class="uk-margin uk-margin-small" style="font-weight: 600; font-family: 'Space Mono'!important;">IR-Tester</h3>
-                                <p class="uk-margin uk-margin-small">Detect stalkers using wardriving</p>
-                                <span class="uk-badge">Microcontroller</span>
-                                <span class="uk-badge">Python</span>
-                                <span class="uk-badge">Raspberry Pi</span> 
-                                <span class="uk-badge">Wardriving</span>
-                                
+                                <p class="uk-margin uk-margin-small">A tool to intercept and decode IR codes</p>
+                                <span class="uk-badge">Microcontroller</span>                       
                             </div>
                         </div>
                         <div>
@@ -85,12 +80,8 @@
                                     <img src="/projects/DIY-TV-B-Gone/img/DIY-TV-B-Gone.jpg" class=" uk-animation-kenburns" alt="" uk-cover uk-img>
                                 </div>
                                 <h3 class="uk-margin uk-margin-small" style="font-weight: 600; font-family: 'Space Mono'!important;">DIY TV-B-Gone</h3>
-                                <p class="uk-margin uk-margin-small">Detect stalkers using wardriving</p>
-                                <span class="uk-badge">Microcontroller</span>
-                                <span class="uk-badge">Python</span>
-                                <span class="uk-badge">Raspberry Pi</span> 
-                                <span class="uk-badge">Wardriving</span>
-                                
+                                <p class="uk-margin uk-margin-small">Create a cheap TV-B-Gone clone</p>
+                                <span class="uk-badge">Microcontroller</span>                             
                             </div>
                         </div>
                         <div>
@@ -101,8 +92,6 @@
                                 <h3 class="uk-margin uk-margin-small" style="font-weight: 600; font-family: 'Space Mono'!important;">ESP-DriveBy</h3>
                                 <p class="uk-margin uk-margin-small">Use the cheap ESP8266 as a wardriving platform</p>
                                 <span class="uk-badge">Microcontroller</span>
-                                <span class="uk-badge">Python</span>
-                                <span class="uk-badge">Raspberry Pi</span> 
                                 <span class="uk-badge">Wardriving</span>
                                 
                             </div>
@@ -113,11 +102,9 @@
                                     <img src="/projects/CalcProbe/img/CalcProbe.jpg" class=" uk-animation-kenburns" alt="" uk-cover uk-img>
                                 </div>
                                 <h3 class="uk-margin uk-margin-small" style="font-weight: 600; font-family: 'Space Mono'!important;">CalcProbe</h3>
-                                <p class="uk-margin uk-margin-small">Detect stalkers using wardriving</p>
+                                <p class="uk-margin uk-margin-small">Reverse engineering and hacking calculators</p>
                                 <span class="uk-badge">Microcontroller</span>
                                 <span class="uk-badge">Python</span>
-                                <span class="uk-badge">Raspberry Pi</span> 
-                                <span class="uk-badge">Wardriving</span>
                                 
                             </div>
                         </div>
