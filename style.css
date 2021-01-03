@@ -23,6 +23,15 @@
     border-bottom: 1px solid white;
 }
 
+.welcome-text {
+    text-align: center;
+    width: 60%;
+}
+
+.welcome-text p {
+    font-size: 1.2rem;
+}
+
 html {
     min-height: 100%;
     width: 100%;
@@ -47,13 +56,6 @@ body {
 
 .uk-card-muted {
     background-color: ;
-}
-.centered {  /* the uk-center class sucks */
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    position: absolute;
-    width: 45%;
 }
 
 .main h1 {
@@ -86,18 +88,24 @@ body {
 
 .home-sections p {
     color: white !important;
+    border: 3px solid white;
+    padding: 1rem;
+    margin: 2rem 0;
 }
 
 .home-sections h1 {
+    font-family: "Space Mono", monospace !important;
+    font-size: 3rem;
     font-weight: 500;
+    letter-spacing: 5px;
+    padding: 1.2rem;
+    background-color: white;
+    color: black !important;
+    display: inline-block;
 }
 
 @media screen and (max-width: 1000px) {
-    .centered {
-        box-sizing: border-box;
-        width: auto;
-        padding-right: 40px !important;
-    }
+
     .main h1 {
         font-size: 4em;
     }
@@ -107,15 +115,12 @@ body {
 
 }
 @media screen and (max-width: 960px) {
-    .centered {
-        padding-right: 30px !important;
+    .welcome-text {
+        width: 90%;
     }
 }
 
 @media screen and (max-width: 640px) {
-    .centered {
-        padding-right: 15px !important;
-    }
     .main h1 {
         font-size: 3em;
     }
@@ -123,6 +128,7 @@ body {
 
 .footer {
     text-align: center;
+    background-color: #111111;
 }
 .uk-modal-body {
     color: black !important;
