@@ -1,2 +1,3 @@
 canonifyURLs = false
-baseurl = "https://alexlynd.com/"
+relativeURLs = true
+baseurl = "https://alexlynd.github.io/alexlynd.com/"
