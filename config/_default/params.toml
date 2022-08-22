@@ -4,29 +4,29 @@
 title = "Alex Lynd"
 titleSeparator = "-"
 titleAddition = "My work, and more."
-description = "Doks is a Hugo theme for building secure, fast, and SEO-ready documentation websites, which you can easily update and customize."
+description = "Alex Lynd is a cybersecurity content creator, hardware hacker, and open-source product developer."
 
 ## Documentation
 # docsVersion = "0.3"
 
 ## Open Graph
-images = ["doks.png"]
+images = ["me.png"]
 ogLocale = "en_US"
 domainTLD = "doks.netlify.app"
 titleHome = "Doks Theme"
 
 ## Twitter Cards
-twitterSite = "@getdoks"
-twitterCreator = "@henkverlinde"
+twitterSite = "@alexlynd"
+twitterCreator = "@alexlynd"
 
 ## JSON-LD
 # schemaType = "Person"
 schemaType = "Organization"
 schemaName = "Doks"
 schemaAuthor = "Henk Verlinde"
-schemaAuthorTwitter = "https://twitter.com/henkverlinde"
-schemaAuthorLinkedIn = "https://www.linkedin.com/in/henkverlinde/"
-schemaAuthorGitHub = "https://github.com/h"
+schemaAuthorTwitter = "https://twitter.com/alexlynd"
+schemaAuthorLinkedIn = "https://www.linkedin.com/in/alexlynd/"
+schemaAuthorGitHub = "https://github.com/alexlynd"
 schemaLocale = "en-US"
 schemaLogo = "logo-doks.png"
 schemaLogoWidth = 512
