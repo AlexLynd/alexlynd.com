@@ -1,3 +1,2 @@
-canonifyURLs = false
-relativeURLs = true
-baseurl = "https://alexlynd.github.io/alexlynd.com/"
+canonifyURLs = true
+baseurl = "https://alexlynd.github.io/alexlynd.com/" 
