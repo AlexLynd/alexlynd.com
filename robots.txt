@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://alexlynd.github.io/alexlynd.com/sitemap.xml
+Sitemap: https://alexlynd.com/sitemap.xml
