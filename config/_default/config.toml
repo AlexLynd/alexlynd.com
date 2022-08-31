@@ -19,6 +19,9 @@ disableLanguages = ["de", "nl"]
 home = ["HTML", "RSS", "REDIRECTS", "HEADERS"]
 section = ["HTML", "RSS", "SITEMAP"]
 
+# custom css
+# custom_css = ["css/custom.css"]
+
 # remove .{ext} from text/netlify
 [mediaTypes."text/netlify"]
 suffixes = [""]

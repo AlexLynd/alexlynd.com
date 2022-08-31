@@ -4,7 +4,7 @@ description: "Detecting stalkers over WiFi with the CreepDetector."
 lead: "How I created a Python tool to identify stalkers using WiFi."
 date: 2022-06-21T18:11:52-07:00
 lastmod: 2022-06-21T18:11:52-07:00
-draft: false
+draft: true
 weight: 50
 images: ["creepdetector.jpg"]
 contributors: ["Alex Lynd","Kody Kinzie"]
