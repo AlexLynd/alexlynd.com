@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: /alexlynd.com/sitemap.xml
+Sitemap: /sitemap.xml
