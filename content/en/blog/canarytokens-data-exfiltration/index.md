@@ -7,9 +7,9 @@ date: 2022-08-27T11:07:26-07:00
 lastmod: 2022-08-27T11:07:26-07:00
 draft: false
 weight: 50
-images: []
-categories: ["CanaryTokens","DuckyScript","Data Exfiltration","USB Nugget"]
-tags: []
+images: ["incident-map.png"]
+tags: ["CanaryTokens","DuckyScript","Data Exfiltration","USB Nugget"]
+categories: []
 contributors: ["Alex Lynd"]
 pinned: false
 homepage: false

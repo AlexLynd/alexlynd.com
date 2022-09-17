@@ -24,9 +24,9 @@ twitterCreator = "@alexlynd"
 schemaType = "Organization"
 schemaName = "Doks"
 schemaAuthor = "Henk Verlinde"
-schemaAuthorTwitter = "https://twitter.com/alexlynd"
-schemaAuthorLinkedIn = "https://www.linkedin.com/in/alexlynd/"
-schemaAuthorGitHub = "https://github.com/alexlynd"
+schemaAuthorTwitter = "https://twitter.com/henkverlinde"
+schemaAuthorLinkedIn = "https://www.linkedin.com/in/henkverlinde/"
+schemaAuthorGitHub = "https://github.com/h-enk"
 schemaLocale = "en-US"
 schemaLogo = "logo-doks.png"
 schemaLogoWidth = 512
@@ -53,11 +53,22 @@ portraitPhotoWidths = [800, 700, 600, 500]
 lqipWidth = "20x"
 smallLimit = "300"
 
+# Images
+imageResponsive = true
+imageConvertTo = "webp"
+imageImageSizes = ["480","720","1080","1280","1600","2048"]
+singleSize = false
+imageAddClass = "img-fluid lazyload blur-up"
+
+### Image template
+defaultImage = "default-image.png" # put in `./assets/images/`
+fillImage = "1270x740 Center" # normalize image size
+
 # Footer
 footer = "© 2022 Alex Lynd / LyndLabs"
 
 # Feed
-copyRight = "Copyright (c) 2019-2022 Alex Lynd"
+copyRight = "Copyright (c) 2020-2021 Henk Verlinde"
 
 # Alert
 alert = false
@@ -83,6 +94,8 @@ lastMod = false
   clipBoard = true
   instantPage = true
   flexSearch = true
+  searchSectionsShow = []
+  searchSectionsIndex = []
   darkMode = true
   bootStrapJs = true
   breadCrumb = false
@@ -92,6 +105,8 @@ lastMod = false
   docsVersioning = false
   fullWidth = false
   navbarSticky = true
+  toTopButton = false
+  scrollSpy = false # experimental; needs Bootstrap >= 5.2.0-beta1
 
 [menu]
   [menu.section]

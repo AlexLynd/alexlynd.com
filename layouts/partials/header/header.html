@@ -22,7 +22,7 @@
     <div class="offcanvas offcanvas-start d-lg-none" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
       <div class="header-bar"></div>
       <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Browse {{ .Section  }}</h5>
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">{{ i18n "browse" }} {{ .Section  }}</h5>
         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
       <div class="offcanvas-body">
@@ -53,7 +53,7 @@
             {{- $active := or ($current.IsMenuCurrent "main" .) ($current.HasMenuCurrent "main" .) -}}
             {{- $active = or $active (eq .Name $current.Title) -}}
             {{- $active = or $active (and (eq .Name ($section | humanize)) (eq $current.Section $section)) -}}
-            {{- $active = or $active (and (eq .Name "Blog") (eq $current.Section "blog" "contributors")) -}}
+            {{- $active = or $active (and (eq .Name "Blog") (eq $current.Section "blog" "contributors" "categories" "tags")) -}}
             {{ if .HasChildren }}
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle ps-0 py-1" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -77,13 +77,20 @@
           {{ end -}}
         </ul>
 
-        <!-- {{ if .Site.Params.options.flexSearch -}}
+        {{- $showFlexSearch := .Site.Params.options.flexSearch }}
+        {{- if $showFlexSearch }}
+        {{- if and (isset .Site.Params.options "searchsectionsshow") (not (eq .Site.Params.options.searchSectionsShow "ALL")) }}
+        {{- $showFlexSearch = or (eq (len .Site.Params.options.searchSectionsShow) 0) (in .Site.Params.options.searchSectionsShow .Section) (and .IsHome (in .Site.Params.options.searchSectionsShow "HomePage")) }}
+        {{- end }}
+        {{- end }}
+
+        {{ if $showFlexSearch -}}
         <hr class="text-black-50 my-4 d-lg-none">
         <form class="doks-search position-relative flex-grow-1 ms-lg-auto me-lg-2">
-          <input id="search" class="form-control is-search" type="search" placeholder="Search Here!" aria-label="Search Here!" autocomplete="off">
+          <input id="search" class="form-control is-search" type="search" placeholder="{{ i18n "search-text" }}" aria-label="{{ i18n "search-text" }}" autocomplete="off">
           <div id="suggestions" class="shadow bg-white rounded d-none"></div>
         </form>
-        {{ end -}} -->
+        {{ end -}}
 
         <hr class="text-black-50 my-4 d-lg-none">
         <ul class="nav flex-column flex-lg-row">

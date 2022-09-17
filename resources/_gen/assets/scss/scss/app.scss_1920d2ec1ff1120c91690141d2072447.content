@@ -10320,7 +10320,9 @@ body {
 .error404 .content,
 .docs.list .content,
 .tutorial.list .content,
-.showcase.list .content {
+.showcase.list .content,
+.categories.list .content,
+.tags.list .content {
   padding-top: 1rem;
   padding-bottom: 3rem; }
 
@@ -10483,9 +10485,14 @@ body {
 .navbar a:focus {
   text-decoration: none; }
 
-#TableOfContents ul {
+#TableOfContents ul,
+#toc ul {
   padding-left: 0;
   list-style: none; }
+
+#toc a.active {
+  color: #5d2f86;
+  font-weight: 500; }
 
 ::selection {
   background: rgba(212, 53, 159, 0.2); }
@@ -11035,6 +11042,14 @@ $border-dark: darken($body-bg-dark, 2.5%);
 [data-dark-mode] details summary::before {
   content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='rgba%28222, 226, 230, 0.75%29' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 14l6-6-6-6'/%3e%3c/svg%3e"); }
 
+[data-dark-mode] #toc a.active {
+  color: #8ed6fb; }
+
+[data-dark-mode] .btn-light {
+  color: #8ed6fb;
+  background: #1b1f22;
+  border: 1px solid #1b1f22; }
+
 .alert {
   font-family: sfmono-regular, menlo, monaco, consolas, "Liberation Mono", "Courier New", monospace;
   font-size: 0.875rem; }
@@ -11563,7 +11578,19 @@ blockquote {
   font-weight: normal; }
 
 figure {
-  margin: 2rem 0; }
+  margin: 0 0 1rem;
+  display: inline-block; }
+
+figure img {
+  margin-bottom: 0.5rem;
+  line-height: 1;
+  max-width: 100%;
+  height: auto; }
+
+figure figcaption {
+  margin: 0.25rem 0 0.75rem;
+  font-size: 0.875em;
+  color: #6c757d; }
 
 .figure-caption {
   margin: 0.25rem 0 0.75rem; }
@@ -12032,7 +12059,11 @@ button#doks-versions {
   top: 0; }
 
 .btn-menu {
-  margin-left: 1rem; }
+  margin-left: 1rem;
+  border: transparent; }
+
+.btn-doks-light {
+  border: transparent; }
 
 .btn-menu,
 .doks-sidebar-toggle {
@@ -12043,12 +12074,15 @@ button#doks-versions {
 .btn-menu:hover,
 .btn-doks-light:hover,
 .doks-sidebar-toggle:hover {
-  background: #fcfaff; }
+  background: #fcfaff;
+  border: transparent; }
 
 .btn-menu:focus,
+.btn-doks-light:focus,
 .doks-sidebar-toggle:focus,
 .doks-mode-toggle:focus {
-  outline: 0; }
+  outline: 0;
+  border: transparent; }
 
 .doks-sidebar-toggle .doks-collapse,
 .doks-toc-toggle .doks-collapse {
@@ -12148,20 +12182,39 @@ p.meta {
 
 .home .card,
 .contributors.list .card,
-.blog.list .card {
+.blog.list .card,
+.blog.single .card,
+.categories.list .card,
+.tags.list .card {
   margin-top: 2rem;
   margin-bottom: 2rem;
   transition: transform 0.3s; }
 
 .home .card:hover,
 .contributors.list .card:hover,
-.blog.list .card:hover {
+.blog.list .card:hover,
+.blog.single .card:hover,
+.categories.list .card:hover,
+.tags.list .card:hover {
   transform: scale(1.025); }
+
+.contributors.list .card.card-terms:hover,
+.categories.list .card.card-terms:hover,
+.tags.list .card.card-terms:hover {
+  transform: none; }
 
 .home .card-body,
 .contributors.list .card-body,
-.blog.list .card-body {
+.blog.list .card-body,
+.blog.single .card-body,
+.categories.list .card-body,
+.tags.list .card-body {
   padding: 0 2rem 1rem; }
+
+.contributors.list .card-terms .card-body,
+.categories.list .card-terms .card-body,
+.tags.list .card-terms .card-body {
+  padding: 1rem; }
 
 .blog-header {
   text-align: center;
@@ -12169,6 +12222,12 @@ p.meta {
 
 .blog-footer {
   text-align: center; }
+
+.related-posts {
+  margin-top: 4rem; }
+
+h2.section-title, .section-title.h2 {
+  margin-bottom: 1.25rem; }
 
 .docs-links,
 .docs-toc {
