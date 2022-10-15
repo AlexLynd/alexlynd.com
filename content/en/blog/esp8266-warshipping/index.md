@@ -7,7 +7,7 @@ date: 2022-09-16T01:12:13-07:00
 lastmod: 2022-08-27T01:12:13-07:00
 draft: true
 weight: 50
-images: []
+images: ["warshipping.jpg"]
 categories: []
 tags: []
 contributors: []
