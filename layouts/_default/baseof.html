@@ -14,8 +14,8 @@
   {{ end -}}
   <body class="{{ .Scratch.Get "class" }}"{{ if eq .Site.Params.options.scrollSpy true }} data-bs-spy="scroll" data-bs-target="#toc" data-bs-root-margin="0px 0px -90%" data-bs-smooth-scroll="true" tabindex="0"{{ end }}>
     {{ partial "header/header.html" . }}
-    <div class="wrap container-{{ if .Site.Params.options.fullWidth }}fluid{{ else }}xxl{{ end }}" role="document">
-      <div class="content">
+    <div class="wrap container-{{ if .Site.Params.options.fullWidth }}fluid{{ else }}xxl{{ end }} {{ if .IsHome }}vh-100 d-flex aligns-items-center{{end -}}" role="document">
+      <div class="content {{ if .IsHome }} d-flex align-items-center vh-100 {{end -}}">
         {{ block "main" . }}{{ end }}
       </div>
     </div>
