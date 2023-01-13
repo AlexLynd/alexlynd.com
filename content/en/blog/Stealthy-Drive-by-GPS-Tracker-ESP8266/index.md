@@ -13,17 +13,14 @@ contributors: ["Alex Lynd"]
 ---
 
 <hr>
-
-{{< alert icon="⚠️" text="This project is still in progress! Check my blog and GitHub for the latest updates & upcoming documentation." />}}
-
-
+{{< alert icon="⚠️" >}}This project is still in progress! Check my blog and GitHub for the latest updates & upcoming documentation.{{< /alert >}}
 
 ## Low-Cost Tracking Challenge
 In a recent Hak5 episode, I took part in a challenge to track our elusive friend, Irish, and determine the various places he visited throughout the day.  
 
 Since low-cost hardware & disposable signals intelligence is a core part of my projects, I challenged myself to create a tracker in the smallest practical footprint, and designed a $10 device that uses *only* Wi-Fi to provide location updates once planted on Irish's car.
 
-Using DNS Exfiltration, [CanaryTokens](https://canarytokens.org), and an ESP8266 with specialized low-power hardware, I created a motion activated tracker that could transmit intermittent location updates, by connecting to open Wi-Fi networks that Irish would drive past.
+Using DNS Exfiltration, [CanaryTokens](https://canarytokens.org), an an ESP8266 with specialized low-power hardware, I created a motion activated tracker that could transmit intermittent location updates, by connecting to open Wi-Fi networks that Irish would drive past.
 
 **In this post, I'll talk about the design process of DNS DriveBy: a $10 proof-of-concept & wardriving technique that uses open Wi-Fi networks to provide location data, Wi-Fi reconnaissance, and other telemetry.**
 
@@ -49,7 +46,7 @@ While I *could* connect a SIM card module, this adds additional hardware and a c
 ## Bypass Captive Wi-Fi Portals with DNS
 The answer is yes, but obviously it wasn't as simple that - I found that most of the open networks I encountered had a captive portal that requires you to input an email address or some other nonsense before you can actually connect to the web.
 
-However, my friend [Kody](https://www.youtube.com/watch?v=H0Nwff0KDJ0) suggested I look into DNS requests to bypass the captive portal using a well-known technique called [DNS Exfiltration](https://www.youtube.com/watch?v=H0Nwff0KDJ0), which allows hackers to sneak sensitive information out of a network by hiding data "inside" of a domain name instead of sending a typical web request.
+However, my friend [Kody](https://www.youtube.com/watch?v=H0Nwff0KDJ0) suggested I look into DNS requests to bypass the captive portal using a well-known technique called [DNS Exfiltration](https://aristanetworks.force.com/AristaCommunity/s/article/DNS-Exfiltration-The-Light-at-the-End-of-the-DNS-Tunnel), which allows hackers to sneak sensitive information out of a network by hiding data "inside" of a domain name instead of sending a typical web request.
 
 This works by making a DNS request to a domain name like `alexlynd.com`, but prepending a subdomain like `<password_here>.alexlynd.com` - so that way I can retrieve the password (or other sensitive information) on my server, by looking at the nameserver logs.
 
@@ -77,7 +74,7 @@ I didn't have a lot of time to iterate before deploying this project on Irish, s
 
 ![DNS DriveBy tracker being placed on Irish's car](img/planting-dimensions.png)
 
-{{< alert icon="⚠️" text="<b>Full assembly guide and DIY kit coming soon.</b>" />}}
+{{< alert icon="⚠️" >}}<b>Full assembly guide and DIY kit coming soon.</b>{{< /alert >}}
 
 #### Breadboarding
 The [ESP8266](https://www.espressif.com/en/products/socs/esp8266) is my favorite low-cost Wi-Fi microcontroller for its attack & reconnaissance capabilities, and I chose the minimal [ESP-01](https://www.microchip.ua/wireless/esp01.pdf) form-factor to keep my tracker footprint as small as possible.  
@@ -96,11 +93,12 @@ I found that storing the GPS coordinates quickly ate up heap space, causing over
 
 To mitigate this, I implemented a [queue](https://www.geeksforgeeks.org/queue-data-structure/) system that pushes coordinates to the internal 1MB Flash Memory with [SPIFFS](https://www.tutorialspoint.com/esp32_for_iot/esp32_for_iot_spiffs_storage.htm) - which also allows me to retain data in case of a power loss or reset.
 
-To optimize the amount of memory available and reduce flash wear, I set the GPS to poll coordinates every 15 seconds, and only keep 100 coordinates in RAM as 34 character base32 encoded char arrays.  This allows me store around 15,600 coordinate pairs!
-
 ![](img/memory.png)
 
-{{< alert icon="⚠️" text="I might need to double check my math and algorithm." />}}
+To optimize the amount of memory available and reduce flash wear, I set the GPS to poll coordinates every 15 seconds, and only keep 100 coordinates in RAM as 34 character base32 encoded char arrays.  This allows me store around 15,600 coordinate pairs!
+
+{{< alert icon="⚠️" >}}I might need to double check my math and algorithm.{{< /alert >}}
+
 
 
 
@@ -121,7 +119,8 @@ Triggering the reset when Irish's car starts up was as simple as adding a shake 
 |[NPN Transistor](https://www.aliexpress.us/item/3256803576929395.html)|Used to control reset circuit, use 2N3904 or similar|3|3¢|
 |[10K Ω Resistor](https://www.aliexpress.us/item/2251832839624931.html)| Something about circuits |3|2¢|
 
-{{< alert icon="⚠️" text="Reset circuitry and battery components aren't necessary to run the basic PoC." />}}
+{{< alert icon="⚠️" >}}Reset circuitry and battery components aren't necessary to run the basic PoC.{{< /alert >}}
+
 
 #### Final Prototype
 To piece it all together, I soldered all my components on a perfboard, and implemented a cheap BMS using a voltage regulator & an 400mAh LiPo battery that gives me around 4.5 hours of continuous reconnaissance (at a current draw ~90mAh).
