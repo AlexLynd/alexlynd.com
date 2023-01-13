@@ -1,3 +1,2 @@
 canonifyURLs = true
-baseurl = "/" 
-timeout = "30000"
+baseurl = "/"
