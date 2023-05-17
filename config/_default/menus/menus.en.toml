@@ -44,6 +44,12 @@
   url = "/blog/"
   weight = 20
 
+[[main]]
+name = "Work"
+url = "/work/"
+weight = 30
+
+
 #[[main]]
 #  name = "Portfolio"
 #  url = "/blog/"

