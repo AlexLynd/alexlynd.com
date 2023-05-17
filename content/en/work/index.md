@@ -40,16 +40,16 @@ I helped host livestreams on Varonis's InfoSec Youtube channel, SecurityFWD for 
 <hr>
 
 ## Conferences
-##### Open Hardware Summit
+##### Open Hardware Summit ⚙️
 2023 - [Solder Your Own Cat-Shaped USB Hacking Tool with the Nugget](https://2023.oshwa.org/workshop-schedule/)
-##### BSides San Diego
+##### BSides San Diego 🏖️
 2023 - [DNS Driveby: Stealthy GPS Tracking Using Open WiFi](https://www.bsidessd.org/past-events/2023/program-2023)
-##### SoCal Linux Expo
+##### SoCal Linux Expo 🐧
 2023 - [Starting an Open Source Hardware Business at 18](https://www.socallinuxexpo.org/scale/20x/presentations/cat-shaped-hacker-hardware-how-i-created-open-source-business-18)  
 2022 - [Cat-Shaped Hacker Hardware](https://www.socallinuxexpo.org/scale/20x/speakers/alex-lynd)
-##### Hackaday Supercon
+##### Hackaday Supercon ☠️
 2022 - [Cat-Themed Soldering & USB Hacking Workshop](https://hackaday.com/2022/10/25/2022-hackaday-supercon-joe-kingpin-grand-keynote-and-workshops-galore/)
-##### Defcon
+##### Defcon 🖥️
 2022 - [Hak5 Booth]()
-##### Hackers On Planet Earth
+##### Hackers On Planet Earth 🌎
 2022 - [How I Accidentally Made a Hardware Business at 18](https://hope.net/talks.html)
