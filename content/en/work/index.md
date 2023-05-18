@@ -9,7 +9,7 @@ images: []
 <hr>
 
 ## Video Content
-##### Thistle
+##### Thistle Security
 [Easy OTA Updates on the Raspberry Pi](https://youtu.be/bLZZqJQ042g)
 
 ##### Hak5
@@ -50,6 +50,7 @@ I helped host livestreams on Varonis's InfoSec Youtube channel, SecurityFWD for 
 ##### Hackaday Supercon ☠️
 2022 - [Cat-Themed Soldering & USB Hacking Workshop](https://hackaday.com/2022/10/25/2022-hackaday-supercon-joe-kingpin-grand-keynote-and-workshops-galore/)
 ##### Defcon 🖥️
-2022 - [Hak5 Booth]()
+2022 - [Hak5 Booth Product Expert]()
 ##### Hackers On Planet Earth 🌎
-2022 - [How I Accidentally Made a Hardware Business at 18](https://hope.net/talks.html)
+2022 - [How I Accidentally Made a Hardware Business at 18](https://hope.net/talks.html)  
+2022 - [Build Your Own Cat-Shaped USB Hacking Tool with the Nugget](https://hope.net/workshops.html)
