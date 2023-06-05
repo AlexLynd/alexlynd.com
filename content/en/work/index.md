@@ -40,6 +40,10 @@ I helped host livestreams on Varonis's InfoSec Youtube channel, SecurityFWD for 
 <hr>
 
 ## Conferences
+##### Hardwear.io 🐞
+2023 - [Soldering Village & Workshops: WiFi Nugget]()
+##### LayerOne ⚒️
+2023 - [DNS Driveby: Stealthy GPS Tracking Using Open WiFi](https://www.layerone.org/speakers/#alexlynd)
 ##### Open Hardware Summit ⚙️
 2023 - [Solder Your Own Cat-Shaped USB Hacking Tool with the Nugget](https://2023.oshwa.org/workshop-schedule/)
 ##### BSides San Diego 🏖️
